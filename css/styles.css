@@ -187,6 +187,43 @@ textarea:focus-visible {
   background: #94a3b8;
 }
 
+/* Mobile UX & Touch Optimization */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Prevent auto-zoom on iOS when tapping inputs */
+@media (max-width: 768px) {
+  input, select, textarea {
+    font-size: 16px !important;
+  }
+}
+
+/* Hide scrollbar for horizontal mobile pill carousels */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Mobile Bottom Action Bar Safe Area Padding */
+.mobile-safe-bottom {
+  padding-bottom: max(0.625rem, env(safe-area-inset-bottom, 0.625rem));
+}
+
+/* Mobile touch targets */
+.touch-target-min {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Smooth video player styling */
+video {
+  border-radius: inherit;
+}
+
 /* Respect user's motion preferences */
 @media (prefers-reduced-motion: reduce) {
   *, ::before, ::after {
