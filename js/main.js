@@ -215,16 +215,39 @@
       });
     });
 
-    // Lightbox Trigger
+    // Lightbox Trigger (Supports Images & Videos)
+    const lightboxVideo = document.getElementById('lightboxVideo');
+
     galleryItems.forEach(item => {
       item.addEventListener('click', () => {
         const img = item.querySelector('img');
+        const video = item.querySelector('video');
+        const videoSrc = item.getAttribute('data-video-src') || video?.querySelector('source')?.src || video?.src;
         const caption = item.getAttribute('data-caption') || img?.alt || 'Revital Physiotherapy Media';
-        const src = img?.src || '';
 
-        if (lightboxModal && lightboxImg && lightboxCaption) {
-          lightboxImg.src = src;
+        if (lightboxModal && lightboxCaption) {
           lightboxCaption.textContent = caption;
+
+          if (videoSrc) {
+            // Video mode
+            if (lightboxImg) lightboxImg.classList.add('hidden');
+            if (lightboxVideo) {
+              lightboxVideo.classList.remove('hidden');
+              lightboxVideo.src = videoSrc;
+              lightboxVideo.play().catch(() => {});
+            }
+          } else {
+            // Image mode
+            if (lightboxVideo) {
+              lightboxVideo.pause();
+              lightboxVideo.classList.add('hidden');
+            }
+            if (lightboxImg) {
+              lightboxImg.classList.remove('hidden');
+              lightboxImg.src = img?.src || '';
+            }
+          }
+
           lightboxModal.classList.remove('hidden');
           lightboxModal.classList.add('flex');
           document.body.classList.add('overflow-hidden');
@@ -235,6 +258,10 @@
     // Close Lightbox
     function closeLightbox() {
       if (lightboxModal) {
+        if (lightboxVideo) {
+          lightboxVideo.pause();
+          lightboxVideo.src = '';
+        }
         lightboxModal.classList.add('hidden');
         lightboxModal.classList.remove('flex');
         document.body.classList.remove('overflow-hidden');

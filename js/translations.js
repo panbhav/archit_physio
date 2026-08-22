@@ -233,13 +233,13 @@ const translations = {
     // Video Section
     video_badge: "Visual Demonstrations",
     video_title: "See Our Physiotherapy Care",
-    video_subtitle: "Educational demonstrations, exercise guidance, and rehabilitation walkthroughs.",
-    video_card1_title: "Patient Assessment & Consultation Walkthrough",
-    video_card1_desc: "A systematic overview of how Dr. Archit Joshi evaluates joint movement, posture, and nerve function.",
-    video_card2_title: "Targeted Neuro Rehabilitation Techniques",
-    video_card2_desc: "Demonstration of task-oriented balance and mobility exercises for neurological recovery.",
-    video_card3_title: "Core & Spine Strengthening Exercises",
-    video_card3_desc: "Gentle physiotherapy exercises designed for lower back comfort and postural stabilization.",
+    video_subtitle: "Educational demonstrations, patient exercises, and active rehabilitation sessions at our Alwar clinic.",
+    video_card1_title: "Mobility & Gait Rehabilitation Session",
+    video_card1_desc: "Live functional mobility and gait training assisting patient balance and movement restoration at Revital Clinic.",
+    video_card2_title: "Hand & Finger Motor Rehabilitation",
+    video_card2_desc: "Targeted hand exerciser routines and finger coordination training for neuro and orthopedic recovery.",
+    video_card3_title: "Active Clinical Physiotherapy Session",
+    video_card3_desc: "Structured rehabilitation modalities and supervised therapeutic exercises at Revital Centre, Alwar.",
 
     // Testimonials
     testimonials_badge: "Patient Experiences",
@@ -545,15 +545,15 @@ const translations = {
     gallery_tab_videos: "वीडियो",
 
     // Video Section
-    video_badge: "वीडियो प्रदर्शन",
+    video_badge: "वास्तविक वीडियो सत्र",
     video_title: "हमारी फिजियोथेरेपी प्रक्रिया देखें",
-    video_subtitle: "जागरूकता, सही व्यायाम एवं पुनर्वास तकनीकों के प्रदर्शन।",
-    video_card1_title: "मरीज जांच एवं परामर्श प्रक्रिया",
-    video_card1_desc: "डॉ. अर्चित जोशी द्वारा जोड़ों की जांच, पोस्चर और नसों की कार्यप्रणाली का व्यवस्थित परीक्षण।",
-    video_card2_title: "न्यूरो रिहैबिलिटेशन तकनीकें",
-    video_card2_desc: "न्यूरोलॉजिकल रिकवरी के लिए टास्क-ओरिएंटेड बैलेंस और मूवमेंट एक्सरसाइज का प्रदर्शन।",
-    video_card3_title: "कमर एवं रीढ़ की मजबूती हेतु व्यायाम",
-    video_card3_desc: "कमर दर्द से राहत और रीढ़ को मजबूत बनाने के लिए सुरक्षित फिजियोथेरेपी एक्सरसाइज।",
+    video_subtitle: "रिवाइटल क्लिनिक अलवर में मरीजों के वास्तविक फिजियोथेरेपी एवं पुनर्वास सत्रों की झलक।",
+    video_card1_title: "मोबिलिटी एवं चाल सुधार (Gait Rehab) सत्र",
+    video_card1_desc: "मरीज को सुरक्षित चलने, संतुलन सुधारने और न्यूरो-मोटर रिकवरी के लिए विशेष प्रशिक्षण।",
+    video_card2_title: "हाथ एवं उंगलियों की न्यूरो फिजियोथेरेपी",
+    video_card2_desc: "हाथ की पकड़ मजबूत करने एवं सूक्ष्म गतिविधियों के पुनर्वास हेतु निर्देशित एक्सरसाइज।",
+    video_card3_title: "क्लिनिकल फिजियोथेरेपी एवं इलेक्ट्रोथेरेपी",
+    video_card3_desc: "डॉ. अर्चित जोशी की देखरेख में जोड़ों के दर्द निवारण एवं मांसपेशियों की सक्रियता हेतु थेरेपी।",
 
     // Testimonials
     testimonials_badge: "मरीजों के अनुभव",
