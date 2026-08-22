@@ -241,10 +241,18 @@ const translations = {
     video_card3_title: "Active Clinical Physiotherapy Session",
     video_card3_desc: "Structured rehabilitation modalities and supervised therapeutic exercises at Revital Centre, Alwar.",
 
-    // Testimonials
+    // Testimonials & Google Reviews
     testimonials_badge: "Patient Experiences",
     testimonials_title: "What Our Patients Say",
     testimonials_subtitle: "Real reflections from patients on their rehabilitation and recovery journey with Dr. Archit Joshi.",
+    google_rating_badge: "5.0 ★★★★★ (17 Google Reviews)",
+    google_reviews_title: "Rated 5.0 / 5.0 on Google Maps",
+    google_reviews_desc: "Based on 17+ verified patient reviews on Google for Revital Physiotherapy Centre, Alwar",
+    btn_view_google_reviews: "Read All 17 Google Reviews",
+    btn_write_google_review: "Write a Google Review",
+    verified_google_review: "Verified Google Review",
+    plus_code_label: "Google Plus Code",
+    btn_open_gmaps: "Open in Google Maps",
     test1_quote: "I was suffering from severe knee pain while walking. Dr. Archit Joshi’s personalized exercise regimen and guidance helped me regain comfortable movement.",
     test1_author: "R. Sharma",
     test1_meta: "Knee Mobility Care • Alwar",
@@ -555,10 +563,18 @@ const translations = {
     video_card3_title: "क्लिनिकल फिजियोथेरेपी एवं इलेक्ट्रोथेरेपी",
     video_card3_desc: "डॉ. अर्चित जोशी की देखरेख में जोड़ों के दर्द निवारण एवं मांसपेशियों की सक्रियता हेतु थेरेपी।",
 
-    // Testimonials
+    // Testimonials & Google Reviews
     testimonials_badge: "मरीजों के अनुभव",
     testimonials_title: "हमारे मरीज क्या कहते हैं",
     testimonials_subtitle: "डॉ. अर्चित जोशी के मार्गदर्शन में रिकवरी प्राप्त करने वाले मरीजों के वास्तविक अनुभव।",
+    google_rating_badge: "5.0 ★★★★★ (17 गूगल समीक्षाएं)",
+    google_reviews_title: "गूगल मैप्स पर 5.0 / 5.0 रेटिंग",
+    google_reviews_desc: "रिवाइटल फिजियोथेरेपी सेन्टर अलवर के लिए गूगल पर 17+ सत्यापित मरीज समीक्षाओं पर आधारित",
+    btn_view_google_reviews: "सभी 17 गूगल समीक्षाएं पढ़ें",
+    btn_write_google_review: "गूगल पर समीक्षा लिखें",
+    verified_google_review: "सत्यापित गूगल समीक्षा",
+    plus_code_label: "गूगल प्लस कोड",
+    btn_open_gmaps: "गूगल मैप्स में खोलें",
     test1_quote: "मुझे चलने में घुटनों का बहुत तेज दर्द रहता था। डॉ. अर्चित जोशी की बताई एक्सरसाइज और फिजियोथेरेपी से मुझे काफी आराम मिला।",
     test1_author: "आर. शर्मा",
     test1_meta: "घुटने का दर्द • अलवर",
