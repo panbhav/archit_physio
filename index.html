@@ -1972,20 +1972,52 @@
 
           </div>
 
-          <!-- Embedded Interactive Map Card -->
+          <!-- Embedded Interactive Map Card with Google Place Profile Overlay -->
           <div class="lg:col-span-7 bg-white p-3 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
-            <div class="w-full h-full min-h-[380px] rounded-xl overflow-hidden relative shadow-inner">
+            <div class="w-full h-full min-h-[420px] rounded-xl overflow-hidden relative shadow-inner">
+              
+              <!-- Floating Google Place Profile Badge Overlay -->
+              <div class="absolute top-3 left-3 z-10 max-w-xs sm:max-w-sm bg-white/95 backdrop-blur-md rounded-2xl p-3.5 shadow-xl border border-slate-200">
+                <div class="flex items-start gap-3">
+                  <img src="images/clinic_interior_hall.jpeg" alt="Revital Clinic Alwar" class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl object-cover flex-shrink-0 shadow-sm">
+                  <div class="min-w-0 flex-1">
+                    <h4 class="text-xs sm:text-sm font-bold text-navy-900 leading-tight">Revital Ortho & Neuro Physiotherapy Centre</h4>
+                    <p class="text-[11px] text-slate-500 font-medium">रिवाइटल ऑर्थो & न्यूरो फिजियोथेरेपी सेंटर</p>
+                    <div class="flex items-center gap-1.5 mt-1">
+                      <span class="text-xs font-bold text-navy-900">5.0</span>
+                      <div class="flex text-amber-400 text-xs">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                      </div>
+                      <span class="text-[11px] text-slate-500 font-medium">(17)</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mt-2.5 pt-2.5 border-t border-slate-100 flex items-center justify-between gap-2 text-[11px]">
+                  <a href="https://www.google.com/maps/place/Revital+Ortho+%26+Neuro+Physiotherapy+Centre/@27.5855279,76.612123,17z/data=!4m6!3m5!1s0x397299067a72c725:0x712838a4e2bd684d!8m2!3d27.5855279!4d76.612123!16s%2Fg%2F11wvh8q69x" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-1 bg-primary-600 hover:bg-primary-700 text-white font-semibold py-1.5 px-2.5 rounded-lg shadow-sm">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+                    <span>Directions</span>
+                  </a>
+                  <a href="https://www.google.com/maps/place/Revital+Ortho+%26+Neuro+Physiotherapy+Centre/@27.5855279,76.612123,17z/data=!4m8!3m7!1s0x397299067a72c725:0x712838a4e2bd684d!8m2!3d27.5855279!4d76.612123!9m1!1b1!16s%2Fg%2F11wvh8q69x" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold py-1.5 px-2.5 rounded-lg border border-slate-200">
+                    <svg class="w-3.5 h-3.5 text-amber-500 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <span>17 Reviews</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Official Google Maps Embed -->
               <iframe 
                 title="Revital Ortho & Neuro Physiotherapy Centre Alwar Google Maps Location"
-                src="https://maps.google.com/maps?q=27.5855279,76.612123+(Revital+Ortho+%26+Neuro+Physiotherapy+Centre)&t=&z=16&ie=UTF8&iwloc=B&output=embed" 
-                class="w-full h-full min-h-[380px] border-0" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3536.088329688418!2d76.60954807604598!3d27.58553263060132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397299067a72c725%3A0x712838a4e2bd684d!2sRevital%20Ortho%20%26%20Neuro%20Physiotherapy%20Centre!5e0!3m2!1sen!2sin!4v1718000000000!5m2!1sen!2sin" 
+                class="w-full h-full min-h-[420px] border-0" 
                 allowfullscreen="" 
                 loading="lazy" 
                 referrerpolicy="no-referrer-when-downgrade">
               </iframe>
             </div>
-            <div class="pt-3 flex items-center justify-between text-xs text-slate-500 px-1">
-              <span>📍 Revital Ortho & Neuro Physiotherapy Centre, Alwar</span>
+
+            <div class="pt-3 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 px-1 gap-2">
+              <span class="font-medium text-slate-700">📍 Revital Ortho & Neuro Physiotherapy Centre, Vijay Nagar, Alwar</span>
               <a href="https://www.google.com/maps/place/Revital+Ortho+%26+Neuro+Physiotherapy+Centre/@27.5855279,76.612123,17z/data=!4m6!3m5!1s0x397299067a72c725:0x712838a4e2bd684d!8m2!3d27.5855279!4d76.612123" target="_blank" rel="noopener noreferrer" class="text-primary-600 font-semibold hover:underline flex items-center gap-1">
                 <span data-i18n="btn_open_gmaps">Open in Google Maps</span>
                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
