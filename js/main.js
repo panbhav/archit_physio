@@ -24,6 +24,8 @@
     applyLanguage(currentLanguage);
     initNavigation();
     initFAQAccordion();
+    initEquipment();
+    initAmbientMusic();
     initGallery();
     initScrollAnimations();
     initModals();
@@ -282,6 +284,118 @@
         window.closeAppointmentModal?.();
         window.closeConditionModal?.();
       }
+    });
+  }
+
+  // 5b. Equipment Filtering & Dedicated Lightbox
+  function initEquipment() {
+    const equipFilterBtns = document.querySelectorAll('.equip-filter-btn');
+    const equipItems = document.querySelectorAll('.equip-item');
+
+    equipFilterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.getAttribute('data-equip-filter');
+
+        equipFilterBtns.forEach(b => {
+          b.classList.remove('bg-primary-600', 'text-white', 'shadow-sm');
+          b.classList.add('bg-slate-100', 'text-slate-700', 'hover:bg-slate-200');
+        });
+        btn.classList.add('bg-primary-600', 'text-white', 'shadow-sm');
+        btn.classList.remove('bg-slate-100', 'text-slate-700', 'hover:bg-slate-200');
+
+        equipItems.forEach(item => {
+          const itemCat = item.getAttribute('data-category');
+          if (filter === 'all' || itemCat === filter) {
+            item.classList.remove('hidden');
+          } else {
+            item.classList.add('hidden');
+          }
+        });
+      });
+    });
+
+    window.openEquipmentLightbox = function (imgSrc, title, desc) {
+      if (lightboxModal && lightboxCaption) {
+        lightboxCaption.innerHTML = `<strong class="text-white text-base">${title}</strong><br/><span class="text-xs text-slate-300">${desc}</span>`;
+        const lightboxVideo = document.getElementById('lightboxVideo');
+        if (lightboxVideo) {
+          lightboxVideo.pause();
+          lightboxVideo.classList.add('hidden');
+        }
+        if (lightboxImg) {
+          lightboxImg.classList.remove('hidden');
+          lightboxImg.src = imgSrc;
+        }
+        lightboxModal.classList.remove('hidden');
+        lightboxModal.classList.add('flex');
+        document.body.classList.add('overflow-hidden');
+      }
+    };
+  }
+
+  // 5c. Ambient Healing Music Controller
+  function initAmbientMusic() {
+    const audio = document.getElementById('ambientAudio');
+    const toggleBtn = document.getElementById('ambientMusicToggleBtn');
+    const playIcon = document.getElementById('musicPlayIcon');
+    const pauseIcon = document.getElementById('musicPauseIcon');
+    const toggleText = document.getElementById('musicToggleText');
+    const muteBtn = document.getElementById('ambientMuteBtn');
+    if (!audio || !toggleBtn) return;
+
+    audio.volume = 0.45; // gentle relaxing background volume
+
+    function updateBtnState(playing) {
+      if (playing) {
+        playIcon?.classList.add('hidden');
+        pauseIcon?.classList.remove('hidden');
+        if (toggleText) toggleText.textContent = currentLanguage === 'hi' ? 'संगीत बंद करें' : 'Pause Music';
+        toggleBtn.classList.remove('bg-primary-600', 'hover:bg-primary-700');
+        toggleBtn.classList.add('bg-emerald-600', 'hover:bg-emerald-700');
+      } else {
+        playIcon?.classList.remove('hidden');
+        pauseIcon?.classList.add('hidden');
+        if (toggleText) toggleText.textContent = currentLanguage === 'hi' ? 'संगीत चालू करें' : 'Play Calming Music';
+        toggleBtn.classList.remove('bg-emerald-600', 'hover:bg-emerald-700');
+        toggleBtn.classList.add('bg-primary-600', 'hover:bg-primary-700');
+      }
+    }
+
+    toggleBtn.addEventListener('click', () => {
+      if (audio.paused) {
+        audio.play().then(() => {
+          updateBtnState(true);
+        }).catch(() => {
+          // Autoplay protection fallback
+        });
+      } else {
+        audio.pause();
+        updateBtnState(false);
+      }
+    });
+
+    muteBtn?.addEventListener('click', () => {
+      audio.muted = !audio.muted;
+      muteBtn.classList.toggle('bg-amber-200', audio.muted);
+    });
+
+    // Auto-duck ambient music volume when any video on the page starts playing
+    document.querySelectorAll('video').forEach(vid => {
+      vid.addEventListener('play', () => {
+        if (!audio.paused) {
+          audio.volume = 0.12; // soft ducking
+        }
+      });
+      vid.addEventListener('pause', () => {
+        if (!audio.paused) {
+          audio.volume = 0.45; // restore
+        }
+      });
+      vid.addEventListener('ended', () => {
+        if (!audio.paused) {
+          audio.volume = 0.45; // restore
+        }
+      });
     });
   }
 

@@ -14,10 +14,12 @@ const translations = {
     nav_conditions: "Conditions",
     nav_neuro: "Neuro Rehab",
     nav_ortho: "Ortho Care",
-    nav_services: "Services",
-    nav_process: "How It Works",
+    nav_services: "Specialized Care",
+    nav_equipment: "Modern Equipment",
+    nav_process: "Treatment Journey",
     nav_why_us: "Why Choose Us",
     nav_gallery: "Gallery",
+    nav_videos: "Demonstrations",
     nav_faqs: "FAQs",
     nav_contact: "Contact & Timings",
     btn_book_appointment: "Book Appointment",
@@ -27,7 +29,7 @@ const translations = {
 
     // Hero Section
     hero_badge: "Free Consultation Available",
-    hero_title: "Move Better. Recover Stronger. Live Better.",
+    hero_title: "Move Without Pain, Live Without Limits.",
     hero_subtitle: "Professional Orthopedic & Neuro Physiotherapy Care in Alwar",
     hero_desc: "Revital Ortho & Neuro Physiotherapy Centre provides personalized, evidence-based physiotherapy and rehabilitation support for orthopedic, pain-related, and neurological conditions in a calm, modern setting.",
     hero_cta_book: "Book an Appointment",
@@ -56,6 +58,8 @@ const translations = {
     about_intro: "Revital Ortho & Neuro Physiotherapy Centre is a dedicated physiotherapy and rehabilitation clinic in Alwar, Rajasthan, established to help individuals overcome pain, recover from injuries, and regain functional independence.",
     about_p1: "Whether you are experiencing chronic joint pain, recovering from surgery, or managing neurological challenges such as stroke or paralysis, our centre provides compassionate, patient-centered care in a clean and well-equipped clinical environment.",
     about_p2: "We believe in a structured rehabilitation approach that combines targeted exercises, manual therapy techniques, patient education, and progressive functional training to support safe and sustained recovery.",
+    about_highlight2_badge: "Spacious & Accessible Facility",
+    about_highlight2_desc: "Advanced Physiotherapy Care You Can Trust in Alwar.",
     about_feature1_title: "Patient-Focused Care",
     about_feature1_desc: "Attentive listening and compassionate support throughout your recovery journey.",
     about_feature2_title: "Comfortable Environment",
@@ -219,6 +223,64 @@ const translations = {
     form_success_title: "Appointment Request Received!",
     form_success_msg: "Thank you for reaching out. We have noted your request and will call you shortly to confirm your consultation.",
 
+    // Advanced Technology & Equipment Section
+    equip_badge: "Modern Rehabilitation Technology",
+    equip_title: "Advanced Physiotherapy Equipment & Care Modalities",
+    equip_subtitle: "Equipped with state-of-the-art electrotherapy, spine decompression, automated knee mobilization, and precision myofascial release systems in Alwar.",
+    equip_cat_all: "All Equipment",
+    equip_cat_spine: "Spine & Traction",
+    equip_cat_electro: "Electrotherapy & Laser",
+    equip_cat_joint: "Joint & Mobility",
+    equip_cat_manual: "Myofascial & Manual",
+
+    equip1_badge: "Spine Decompression",
+    equip1_title: "Advanced Cervical & Lumbar Traction Bed",
+    equip1_desc: "Computerized mechanical decompression that gently creates space between compressed spinal vertebrae, relieving pinched nerves, disc herniation, sciatica, and cervical spondylosis.",
+
+    equip2_badge: "Post-Surgical Knee Rehab",
+    equip2_title: "Continuous Passive Motion (CPM) Machine",
+    equip2_desc: "Motorized joint mobilizer for post-operative recovery (Total Knee Replacement/TKR & ACL repair) to safely restore knee flexion, prevent stiffness, and reduce scar tissue.",
+
+    equip3_badge: "Deep Cellular Healing",
+    equip3_title: "High-Intensity Therapeutic Laser Unit",
+    equip3_desc: "Advanced photobiomodulation technology penetrating deep into ligaments and tendons to accelerate tissue regeneration, reduce inflammation, and alleviate acute/chronic pain.",
+
+    equip4_badge: "Deep Pain Management",
+    equip4_title: "4-Channel Interferential Therapy (IFT)",
+    equip4_desc: "Medium-frequency electrotherapy that penetrates deep into muscular tissue to block pain pathways (Gate Control Theory), improve circulation, and reduce inflammatory swelling.",
+
+    equip5_badge: "Neuro Re-Education",
+    equip5_title: "Clinical Muscle Stimulator (MS & NMES)",
+    equip5_desc: "Precision neuromuscular electrical currents that activate denervated or weakened muscles in stroke, hemiplegia, facial palsy, and nerve injuries to re-train motor control.",
+
+    equip6_badge: "Myofascial Release",
+    equip6_title: "Stainless Steel IASTM Precision Tools",
+    equip6_desc: "Instrument-Assisted Soft Tissue Mobilization blades designed to break down fibrous adhesions, release stubborn myofascial trigger points, and restore smooth muscular gliding.",
+
+    equip7_badge: "Circulation & Knot Release",
+    equip7_title: "Medical Vacuum Dry Cupping Set",
+    equip7_desc: "Negative pressure suction therapy that decompresses connective tissue, increases micro-vascular blood flow, and relieves chronic neck, shoulder, and lumbar tension.",
+
+    equip8_badge: "Dual Pain & Ultrasound Healing",
+    equip8_title: "TENS & Therapeutic Ultrasound Combo",
+    equip8_desc: "Synergistic combo therapy combining 1MHz/3MHz acoustic micro-massage for deep tendon healing with Transcutaneous Electrical Nerve Stimulation for instant pain gating.",
+
+    equip9_badge: "Shoulder Range of Motion",
+    equip9_title: "Calibrated Shoulder Rotator Wheel",
+    equip9_desc: "Smooth 360-degree rotational mobility exerciser for restoring abduction and rotation in frozen shoulder (adhesive capsulitis), rotator cuff injuries, and joint stiffness.",
+
+    equip10_badge: "Fine Motor & Grip Training",
+    equip10_title: "Hand Dynamometer & Finger Resistance Unit",
+    equip10_desc: "Targeted resistance exerciser for restoring finger dexterity, grip strength, and fine motor coordination in neurological hemiplegia and post-fracture hand rehabilitation.",
+
+    equip11_badge: "Plantar Reflexology",
+    equip11_title: "Pneumatic Foot Massager & Circulation Booster",
+    equip11_desc: "Acupressure and pneumatic massage therapy supporting plantar fasciitis recovery, diabetic foot neuropathy circulation, calcaneal spur relief, and heel comfort.",
+
+    equip12_badge: "Individualized Treatment",
+    equip12_title: "Private Treatment Bays & Orthopedic Bolsters",
+    equip12_desc: "Hygienic, private therapy stations equipped with orthopedic positioning bolsters, wedges, and sanitized treatment beds ensuring patient comfort and focused doctor attention.",
+
     // Gallery & Video
     gallery_badge: "Clinic & Care Media",
     gallery_title: "Our Clinic & Physiotherapy Care",
@@ -230,16 +292,37 @@ const translations = {
     gallery_tab_neuro: "Rehabilitation",
     gallery_tab_videos: "Videos",
 
-    // Video Section
-    video_badge: "Visual Demonstrations",
-    video_title: "See Our Physiotherapy Care",
-    video_subtitle: "Educational demonstrations, patient exercises, and active rehabilitation sessions at our Alwar clinic.",
-    video_card1_title: "Mobility & Gait Rehabilitation Session",
-    video_card1_desc: "Live functional mobility and gait training assisting patient balance and movement restoration at Revital Clinic.",
-    video_card2_title: "Hand & Finger Motor Rehabilitation",
-    video_card2_desc: "Targeted hand exerciser routines and finger coordination training for neuro and orthopedic recovery.",
-    video_card3_title: "Active Clinical Physiotherapy Session",
-    video_card3_desc: "Structured rehabilitation modalities and supervised therapeutic exercises at Revital Centre, Alwar.",
+    // Video Section (6 Real Clinical Procedures)
+    video_badge: "Real Video Sessions",
+    video_title: "Clinical Procedures & Caring Demonstrations",
+    video_subtitle: "Watch real therapeutic procedures, patient exercise guidance, and active rehabilitation sessions conducted at Revital Centre, Alwar.",
+    video_music_toggle: "Ambient Healing Music",
+    video_music_playing: "Music Playing",
+    video_music_paused: "Music Paused",
+
+    video_v1_badge: "Advanced ESWT",
+    video_v1_title: "Extracorporeal Shockwave Therapy (ESWT)",
+    video_v1_desc: "High-energy acoustic sound waves delivering non-invasive healing for chronic plantar fasciitis, tennis elbow, and calcific shoulder tendonitis.",
+
+    video_v2_badge: "Laser Technology",
+    video_v2_title: "Deep Tissue Laser Therapy Demonstration",
+    video_v2_desc: "Photobiomodulation infrared beam application promoting cellular repair, rapid swelling reduction, and joint pain relief.",
+
+    video_v3_badge: "Neuro Gait Training",
+    video_v3_title: "Hemiplegia & Stroke Gait Mobility Training",
+    video_v3_desc: "Step-by-step therapist-guided gait retraining, balance facilitation, and weight-transfer exercises for stroke recovery.",
+
+    video_v4_badge: "Foot Circulation",
+    video_v4_title: "Pneumatic Foot Massager & Circulation Care",
+    video_v4_desc: "Active circulatory stimulation and reflexology for plantar fasciitis, heel spurs, and lower-limb mobility enhancement.",
+
+    video_v5_badge: "Functional Assistance",
+    video_v5_title: "Supervised Motor & Functional Training",
+    video_v5_desc: "Individualized therapist-assisted active-assisted movement therapy designed for safe joint mobilization and functional independence.",
+
+    video_v6_badge: "Clinical Therapy",
+    video_v6_title: "Active Clinical Physiotherapy & Modality Care",
+    video_v6_desc: "Comprehensive therapeutic electrotherapy modalities and supervised exercise programs at Revital Centre, Alwar.",
 
     // Testimonials & Google Reviews
     testimonials_badge: "Patient Experiences",
@@ -336,10 +419,12 @@ const translations = {
     nav_conditions: "समस्याएं व उपचार",
     nav_neuro: "न्यूरो रिहैब",
     nav_ortho: "ऑर्थो केयर",
-    nav_services: "सेवाएं",
+    nav_services: "विशेष सेवाएं",
+    nav_equipment: "आधुनिक उपकरण",
     nav_process: "उपचार प्रक्रिया",
     nav_why_us: "हमें क्यों चुनें",
     nav_gallery: "गैलरी",
+    nav_videos: "प्रदर्शन वीडियो",
     nav_faqs: "अक्सर पूछे जाने वाले सवाल",
     nav_contact: "संपर्क एवं समय",
     btn_book_appointment: "अपॉइंटमेंट बुक करें",
@@ -349,7 +434,7 @@ const translations = {
 
     // Hero Section
     hero_badge: "निःशुल्क परामर्श (Free Consultation)",
-    hero_title: "बेहतर चलें। तेज़ी से रिकवर हों। स्वस्थ जीवन जिएं।",
+    hero_title: "दर्द से मुक्ति पाएं, सीमाओं से परे जिएं।",
     hero_subtitle: "अलवर में आधुनिक एवं विश्वसनीय ऑर्थोपेडिक व न्यूरो फिजियोथेरेपी",
     hero_desc: "रिवाइटल ऑर्थो एवं न्यूरो फिजियोथेरेपी सेन्टर में हड्डियों, जोड़ों के दर्द, चोटों और तंत्रिका (न्यूरो) संबंधी समस्याओं के लिए व्यक्तिगत, वैज्ञानिक और सुरक्षित फिजियोथेरेपी प्रदान की जाती है।",
     hero_cta_book: "अपॉइंटमेंट बुक करें",
@@ -378,6 +463,8 @@ const translations = {
     about_intro: "रिवाइटल ऑर्थो एवं न्यूरो फिजियोथेरेपी सेन्टर, अलवर (राजस्थान) में एक समर्पित स्वास्थ्य केंद्र है, जिसका उद्देश्य मरीजों को दर्द से राहत दिलाना और उनके सामान्य जीवन में गतिशीलता लौटाना है।",
     about_p1: "चाहे आप पुराने जोड़ों के दर्द, कमर दर्द, सर्जरी के बाद की रिकवरी या स्ट्रोक/लकवा जैसी न्यूरोलॉजिकल समस्याओं से जूझ रहे हों, हमारा क्लिनिक आपको शांत और स्वच्छ वातावरण में विशेषज्ञ देखभाल प्रदान करता है।",
     about_p2: "हम आधुनिक फिजियोथेरेपी तकनीकों, टारगेटेड एक्सरसाइज और मरीज के साथ नियमित संवाद के माध्यम से सुरक्षित और सतत सुधार पर बल देते हैं।",
+    about_highlight2_badge: "विशाल एवं सुलभ क्लिनिक",
+    about_highlight2_desc: "अलवर में उन्नत एवं विश्वसनीय फिजियोथेरेपी उपचार।",
     about_feature1_title: "मरीज-केंद्रित देखभाल",
     about_feature1_desc: "आपकी समस्या को ध्यानपूर्वक समझना और संपूर्ण इलाज के दौरान सहयोग देना।",
     about_feature2_title: "स्वच्छ एवं आरामदायक वातावरण",
@@ -541,6 +628,64 @@ const translations = {
     form_success_title: "अपॉइंटमेंट अनुरोध प्राप्त हुआ!",
     form_success_msg: "धन्यवाद। आपका अनुरोध प्राप्त हो गया है, हम जल्द ही कॉल करके आपका अपॉइंटमेंट पक्का करेंगे।",
 
+    // Advanced Technology & Equipment Section
+    equip_badge: "आधुनिक पुनर्वास तकनीक",
+    equip_title: "उन्नत फिजियोथेरेपी उपकरण एवं उपचार पद्धतियां",
+    equip_subtitle: "अलवर में उच्च स्तरीय इलेक्ट्रोथेरेपी, स्पाइन डीकम्प्रेशन, ऑटोमेटेड नी मोबिलाइजेशन और सटीक मायोफेशियल रिकवरी सिस्टम से सुसज्जित क्लिनिक।",
+    equip_cat_all: "सभी उपकरण",
+    equip_cat_spine: "स्पाइन एवं ट्रैक्शन",
+    equip_cat_electro: "इलेक्ट्रोथेरेपी एवं लेज़र",
+    equip_cat_joint: "जोड़ एवं मोबिलिटी",
+    equip_cat_manual: "मायोफेशियल एवं मैन्युअल",
+
+    equip1_badge: "स्पाइन डीकम्प्रेशन",
+    equip1_title: "एडवांस्ड सर्वाइकल एवं लम्बर ट्रैक्शन बेड",
+    equip1_desc: "कंप्यूटरीकृत मैकेनिकल डीकम्प्रेशन जो रीढ़ के मणकों के बीच दबाव कम करके दबी हुई नसों, स्लिप डिस्क, सायटिका और सर्वाइकल दर्द में गहरा आराम देता है।",
+
+    equip2_badge: "ऑपरेशन के बाद नी रिहैब",
+    equip2_title: "कंटीन्यूअस पैसिव मोशन (CPM) मशीन",
+    equip2_desc: "घुटने के ऑपरेशन (Total Knee Replacement / TKR) के बाद सुरक्षित रूप से घुटने का मोड़ना-खोलना शुरू करने, अकड़न रोकने और लचीलापन लौटाने हेतु ऑटोमेटेड मशीन।",
+
+    equip3_badge: "डीप टिश्यू हीलिंग",
+    equip3_title: "हाई-इंटेंसिटी थेराप्यूटिक लेज़र यूनिट",
+    equip3_desc: "उन्नत लेज़र तकनीक जो लिगामेंट्स और टेंडन्स की गहराई में जाकर कोशिकाओं की मरम्मत तेज करती है, सूजन घटाती है और तीव्र दर्द से राहत दिलाती है।",
+
+    equip4_badge: "गहरे दर्द का निवारण",
+    equip4_title: "4-चैनल आईएफटी (IFT) इलेक्ट्रोथेरेपी",
+    equip4_desc: "मांसपेशियों के भीतर तक जाने वाली मध्यम-आवृत्ति तरंगे जो दर्द के संकेतों को ब्लॉक करती हैं, रक्त संचार बढ़ाती हैं और सूजन को तेजी से कम करती हैं।",
+
+    equip5_badge: "न्यूरो-मोटर पुनर्वास",
+    equip5_title: "क्लिनिकल मसल स्टिमुलेटर (MS & NMES)",
+    equip5_desc: "स्ट्रोक, लकवा (पैरालिसिस), चेहरे के फेशियल पाल्सी और तंत्रिका चोटों में कमजोर मांसपेशियों को पुनः सक्रिय व प्रशिक्षित करने हेतु विशेष विद्युत तरंगे।",
+
+    equip6_badge: "मायोफेशियल रिलीज",
+    equip6_title: "स्टेनलेस स्टील आईएएसटीएम (IASTM) टूल्स",
+    equip6_desc: "मांसपेशियों के जकड़े हुए ट्रिगर पॉइंट्स को खोलने, अंदरूनी स्कार टिश्यू को ठीक करने और मांसपेशियों के सहज खिंचाव को बहाल करने हेतु सटीक मेडिकल टूल्स।",
+
+    equip7_badge: "सर्कुलेशन एवं जकड़न मुक्ति",
+    equip7_title: "मेडिकल वैक्यूम ड्राई कपिंग सेट",
+    equip7_desc: "सक्शन थेरेपी जो त्वचा व मांसपेशियों को ऊपर उठाकर माइक्रो-सर्कुलेशन बढ़ाती है और गर्दन, कंधे व पीठ की पुरानी जकड़न को तुरंत ढीला करती है।",
+
+    equip8_badge: "दर्द निवारण व अल्ट्रासाउंड",
+    equip8_title: "टेन्स (TENS) एवं थेराप्यूटिक अल्ट्रासोनिक कॉम्बो",
+    equip8_desc: "अल्ट्रासाउंड माइक्रो-मसाज से अंदरूनी चोटों की हीलिंग और टेन्स थेरेपी से नसों के दर्द को शांत करने वाली दोहरी शक्तिशाली उपचार प्रणाली।",
+
+    equip9_badge: "कंधे की गतिशीलता",
+    equip9_title: "कैलिब्रेटेड शोल्डर रोटेटर व्हील",
+    equip9_desc: "फ्रोजन शोल्डर (कंधा जाम), रोटेटर कफ की समस्या और चोट के बाद कंधे को 360-डिग्री घुमाने व हाथ ऊपर उठाने की क्षमता लौटाने वाला उपकरण।",
+
+    equip10_badge: "हाथ व उंगलियों का रिहैब",
+    equip10_title: "हैंड डायनेमोमीटर एवं फिंगर ग्रिपर यूनिट",
+    equip10_desc: "स्ट्रोक और न्यूरो समस्याओं के बाद उंगलियों की पकड़, सूक्ष्म गतिविधियों और हाथ की मांसपेशियों की ताकत को फिर से मजबूत बनाने वाला रिहैब स्टेशन।",
+
+    equip11_badge: "प्लांटर व फुट थेरेपी",
+    equip11_title: "न्यूमैटिक फुट मसाजर एवं सर्कुलेशन बूस्टर",
+    equip11_desc: "प्लांटर फैसीसाइटिस (एड़ी का दर्द), डायबिटिक फुट सर्कुलेशन और पैरों की थकान मिटाने हेतु एक्यूप्रेशर एवं न्यूमैटिक फुट थेरेपी।",
+
+    equip12_badge: "व्यक्तिगत उपचार",
+    equip12_title: "प्राइवेट थेरेपी बे एवं ऑर्थोपेडिक बोल्स्टर्स",
+    equip12_desc: "स्वच्छ, निजी एवं सुसज्जित थेरेपी बे जहाँ ऑर्थोपेडिक सपोर्ट कुशन एवं सैनिटाइज्ड बेड के साथ मरीज को पूरा आराम और डॉक्टर का एकाग्र ध्यान मिलता है।",
+
     // Gallery & Video
     gallery_badge: "क्लिनिक एवं केयर मीडिया",
     gallery_title: "हमारा क्लिनिक एवं फिजियोथेरेपी केयर",
@@ -552,16 +697,37 @@ const translations = {
     gallery_tab_neuro: "पुनर्वास",
     gallery_tab_videos: "वीडियो",
 
-    // Video Section
+    // Video Section (6 Real Clinical Procedures)
     video_badge: "वास्तविक वीडियो सत्र",
-    video_title: "हमारी फिजियोथेरेपी प्रक्रिया देखें",
-    video_subtitle: "रिवाइटल क्लिनिक अलवर में मरीजों के वास्तविक फिजियोथेरेपी एवं पुनर्वास सत्रों की झलक।",
-    video_card1_title: "मोबिलिटी एवं चाल सुधार (Gait Rehab) सत्र",
-    video_card1_desc: "मरीज को सुरक्षित चलने, संतुलन सुधारने और न्यूरो-मोटर रिकवरी के लिए विशेष प्रशिक्षण।",
-    video_card2_title: "हाथ एवं उंगलियों की न्यूरो फिजियोथेरेपी",
-    video_card2_desc: "हाथ की पकड़ मजबूत करने एवं सूक्ष्म गतिविधियों के पुनर्वास हेतु निर्देशित एक्सरसाइज।",
-    video_card3_title: "क्लिनिकल फिजियोथेरेपी एवं इलेक्ट्रोथेरेपी",
-    video_card3_desc: "डॉ. अर्चित जोशी की देखरेख में जोड़ों के दर्द निवारण एवं मांसपेशियों की सक्रियता हेतु थेरेपी।",
+    video_title: "क्लिनिकल प्रक्रियाएं एवं लाइव सत्र",
+    video_subtitle: "रिवाइटल क्लिनिक अलवर में डॉ. अर्चित जोशी की देखरेख में मरीजों के वास्तविक फिजियोथेरेपी व पुनर्वास सत्र देखें।",
+    video_music_toggle: "सुकूनदायक हीलिंग संगीत",
+    video_music_playing: "संगीत चालू",
+    video_music_paused: "संगीत बंद",
+
+    video_v1_badge: "एडवांस्ड ESWT",
+    video_v1_title: "एडवांस्ड शॉकवेव थेरेपी (ESWT) सत्र",
+    video_v1_desc: "एड़ी के पुराने दर्द (प्लांटर फैसीसाइटिस), टेनिस एल्बो और कंधे के कैल्सिफिक टेंडोनाइटिस में नॉन-सर्जिकल ध्वनि तरंगों से उपचार।",
+
+    video_v2_badge: "लेज़र तकनीक",
+    video_v2_title: "डीप टिश्यू लेज़र थेरेपी लाइव डिमॉन्स्ट्रेशन",
+    video_v2_desc: "लेज़र किरणों द्वारा लिगामेंट्स व मांसपेशियों की अंदरूनी हीलिंग और तीव्र जोड़ों के दर्द से राहत देने की प्रक्रिया।",
+
+    video_v3_badge: "न्यूरो गेट ट्रेनिंग",
+    video_v3_title: "हेमिप्लेजिया एवं स्ट्रोक चाल सुधार (Gait Rehab)",
+    video_v3_desc: "स्ट्रोक के बाद मरीज को सुरक्षित खड़े होने, वजन साधने और स्वतंत्र रूप से चलने का निर्देशित अभ्यास।",
+
+    video_v4_badge: "फुट सर्कुलेशन",
+    video_v4_title: "फुट मसाजर एवं प्लांटर सर्कुलेशन थेरेपी",
+    video_v4_desc: "पैरों और एड़ियों के रक्त प्रवाह को सक्रिय कर दर्द और भारीपन को दूर करने वाली न्यूमैटिक थेरेपी।",
+
+    video_v5_badge: "फंक्शनल असिस्टेंस",
+    video_v5_title: "थेरेपिस्ट निर्देशित फंक्शनल रिहैब सत्र",
+    video_v5_desc: "जोड़ों की मोबिलिटी और मांसपेशियों की सक्रियता लौटाने के लिए एक-से-एक निर्देशित फिजियोथेरेपी।",
+
+    video_v6_badge: "क्लिनिकल थेरेपी",
+    video_v6_title: "क्लिनिकल फिजियोथेरेपी एवं इलेक्ट्रोथेरेपी सत्र",
+    video_v6_desc: "आधुनिक थेरेपी मशीनों और निर्देशित एक्सरसाइजों का समन्वित उपचार कार्यक्रम।",
 
     // Testimonials & Google Reviews
     testimonials_badge: "मरीजों के अनुभव",
