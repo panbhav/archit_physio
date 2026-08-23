@@ -199,11 +199,21 @@
 
         // Update active tab styles
         galleryFilterBtns.forEach(b => {
-          b.classList.remove('bg-primary-600', 'text-white', 'shadow-md');
-          b.classList.add('bg-slate-100', 'text-slate-700', 'hover:bg-slate-200');
+          b.classList.remove('bg-primary-600', 'text-white', 'shadow-md', 'border-transparent');
+          b.classList.add('bg-white', 'text-slate-700', 'hover:bg-slate-100', 'border-slate-200');
+          const icon = b.querySelector('svg');
+          if (icon) {
+            icon.classList.remove('text-white');
+            icon.classList.add('text-primary-600');
+          }
         });
-        btn.classList.add('bg-primary-600', 'text-white', 'shadow-md');
-        btn.classList.remove('bg-slate-100', 'text-slate-700', 'hover:bg-slate-200');
+        btn.classList.add('bg-primary-600', 'text-white', 'shadow-md', 'border-transparent');
+        btn.classList.remove('bg-white', 'text-slate-700', 'hover:bg-slate-100', 'border-slate-200');
+        const activeIcon = btn.querySelector('svg');
+        if (activeIcon) {
+          activeIcon.classList.remove('text-primary-600');
+          activeIcon.classList.add('text-white');
+        }
 
         // Filter Items
         galleryItems.forEach(item => {
