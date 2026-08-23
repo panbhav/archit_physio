@@ -25,12 +25,14 @@ const translations = {
     nav_gallery: "Gallery",
     nav_videos: "Demonstrations",
     nav_facility_media: "Facility & Media",
+    nav_media_gallery: "Media & Videos",
     nav_faqs: "FAQs",
     nav_contact: "Contact & Timings",
     btn_book_appointment: "Book Appointment",
     btn_call_now: "Call 7690913118",
     btn_whatsapp: "WhatsApp Us",
     btn_directions: "Get Directions",
+    btn_explore_media: "View Full Video & Photo Gallery",
 
     // Hero Section
     hero_badge: "Consultation Charge: ₹100/- Only",
@@ -484,12 +486,14 @@ const translations = {
     nav_gallery: "गैलरी",
     nav_videos: "प्रदर्शन वीडियो",
     nav_facility_media: "सुविधाएं एवं मीडिया",
+    nav_media_gallery: "मीडिया एवं वीडियो",
     nav_faqs: "अक्सर पूछे जाने वाले सवाल",
     nav_contact: "संपर्क एवं समय",
     btn_book_appointment: "अपॉइंटमेंट बुक करें",
     btn_call_now: "कॉल करें: 7690913118",
     btn_whatsapp: "व्हाट्सएप करें",
     btn_directions: "गूगल मैप पर रास्ता देखें",
+    btn_explore_media: "संपूर्ण वीडियो व फोटो गैलरी देखें",
 
     // Hero Section
     hero_badge: "परामर्श शुल्क: मात्र ₹100/-",
