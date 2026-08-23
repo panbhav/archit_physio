@@ -508,6 +508,60 @@
         "पिरिफोर्मिस मांसपेशी की जकड़न दूर करना",
         "लंबे समय तक बैठने और उठने के सही नियमों का पालन"
       ]
+    },
+    heel: {
+      title_en: "Heel Pain & Plantar Fasciitis Care",
+      title_hi: "एड़ी का दर्द एवं प्लांटर फैसीसाइटिस केयर",
+      overview_en: "Sharp heel pain when taking the first morning steps is often caused by micro-tears and inflammation in the plantar fascia ligament or calcaneal spurs. Our specialized shockwave therapy and calf-fascia release provide prompt relief.",
+      overview_hi: "सुबह उठते ही जमीन पर पहला कदम रखने में तेज चुभन या दर्द प्लांटर फेशिया में सूजन और एड़ी की हड्डी में खिंचाव (Spur) से होता है। शॉकवेव थेरेपी और विशेष स्ट्रेचिंग से इसमें तुरंत आराम मिलता है।",
+      points_en: [
+        "High-energy Extracorporeal Shockwave Therapy (ESWT) to stimulate tissue healing",
+        "Pneumatic foot reflexology and calf gastrocnemius stretching protocols",
+        "Plantar arch support exercises and foot biomechanics correction",
+        "Footwear and ergonomic heel cushioning recommendations"
+      ],
+      points_hi: [
+        "ऊतकों को तेजी से ठीक करने हेतु हाई-एनर्जी एक्स्ट्राकॉर्पोरियल शॉकवेव थेरेपी (ESWT)",
+        "न्यूमेटिक फुट रिफ्लेक्सोलॉजी और पिंडलियों की मांसपेशियों की स्ट्रेचिंग",
+        "पैर के तलवे (Arch) को मजबूती देने वाले विशेष फिजियोथेरेपी व्यायाम",
+        "सही जूते, ऑर्थोटिक हील कुशन और चलने की तकनीक की सलाह"
+      ]
+    },
+    joint: {
+      title_en: "Joint Pain, Arthritis & Stiffness Support",
+      title_hi: "जोड़ों का दर्द, गठिया एवं जकड़न केयर",
+      overview_en: "Chronic joint stiffness and arthritic inflammation in knees, hips, wrists, or ankles reduce movement freedom. We utilize ultrasonic thermal therapy, synovial mobilization, and low-impact functional strengthening.",
+      overview_hi: "घुटनों, कूल्हों, कलाई या टखनों में पुराने दर्द, आर्थराइटिस और सुबह की जकड़न से दैनिक काम कठिन हो जाते हैं। हम अल्ट्रासोनिक थर्मल थेरेपी और सौम्य मोबिलाइजेशन द्वारा जोड़ों की चिकनाई बढ़ाते हैं।",
+      points_en: [
+        "Therapeutic dual-frequency ultrasound and TENS for deep pain gating",
+        "Gentle active-assisted range of motion and joint capsule lubrication",
+        "Low-impact isometric muscle strengthening around vulnerable joints",
+        "Joint preservation strategies and home self-care routines"
+      ],
+      points_hi: [
+        "दर्द को तुरंत शांत करने हेतु अल्ट्रासाउंड और TENS इलेक्ट्रोथेरेपी",
+        "जोड़ों के कैप्सूल में चिकनाई और लचीलापन बढ़ाने हेतु मोबिलाइजेशन",
+        "जोड़ों को सुरक्षित रखते हुए आसपास की मांसपेशियों की मजबूती (Isometric Exercises)",
+        "जोड़ों पर अनावश्यक दबाव से बचने और दैनिक व्यायाम के निर्देश"
+      ]
+    },
+    muscle: {
+      title_en: "Muscle Strain, Spasms & Sports Injury Rehab",
+      title_hi: "मांसपेशियों में खिंचाव, स्पैज्म व स्पोर्ट्स रिहैब",
+      overview_en: "Sudden muscle strains, painful spasms, and sports injuries require progressive soft-tissue release, IASTM contour scraping, dry cupping decompression, and athletic conditioning.",
+      overview_hi: "अचानक मांसपेशियों में खिंचाव, मोच, दर्दनाक ऐंठन या खेलकूद के दौरान लगी चोटों में IASTM टूल्स और वैक्यूम कपिंग थेरेपी द्वारा गांठों को खोलकर रक्तसंचार बढ़ाया जाता है।",
+      points_en: [
+        "Medical-grade stainless steel IASTM blade myofascial release",
+        "Vacuum negative-pressure dry cupping for tissue decompression",
+        "Progressive eccentric muscle loading and elasticity restoration",
+        "Agility, balance, and sport-specific return-to-play protocols"
+      ],
+      points_hi: [
+        "स्टेनलेस स्टील IASTM टूल्स द्वारा मांसपेशियों की गहरी गांठों और तनाव का विमोचन",
+        "रक्तसंचार तेज करने और जकड़न खोलने हेतु वैक्यूम ड्राई कपिंग थेरेपी",
+        "मांसपेशियों के लचीलेपन और ताकत को वापस लाने हेतु क्रमबद्ध व्यायाम",
+        "खेलकूद और भारी गतिविधियों में दोबारा सुरक्षित वापसी हेतु विशेष ट्रेनिंग"
+      ]
     }
   };
 

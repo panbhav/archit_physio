@@ -739,187 +739,259 @@
         <!-- 9 Conditions Grid -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           
-          <!-- Knee Pain -->
-          <div class="medical-card p-6 flex flex-col justify-between">
+          <!-- 1. Knee Pain & Osteoarthritis -->
+          <div class="medical-card p-5 flex flex-col justify-between group">
             <div>
-              <div class="w-12 h-12 rounded-xl bg-primary-50 text-primary-600 flex items-center justify-center mb-4">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              <div class="aspect-[16/10] rounded-2xl overflow-hidden mb-4 relative shadow-sm border border-slate-100 bg-slate-100">
+                <img src="images/knee_pain_treatment_session.jpeg" alt="Knee Pain & Osteoarthritis Physiotherapy Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute top-3 left-3 bg-navy-950/80 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-lg border border-white/20">
+                  <span data-i18n="cond_knee_badge">Knee & Joint Mobility</span>
+                </div>
               </div>
-              <h3 class="text-lg font-bold text-navy-900 mb-2" data-i18n="cond_knee_title">Knee Pain</h3>
-              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4" data-i18n="cond_knee_desc">
-                Physiotherapy support for knee pain, stiffness, osteoarthritis, and mobility-related difficulties.
+              <h3 class="text-base sm:text-lg font-bold text-navy-900 mb-2 leading-snug" data-i18n="cond_knee_title">Knee Pain & Osteoarthritis</h3>
+              <p class="text-xs text-slate-600 leading-relaxed mb-3" data-i18n="cond_knee_desc">
+                Targeted relief for osteoarthritis, meniscus wear, cartilage stiffness, and post-TKR knee rehabilitation with progressive quadriceps strengthening and CPM mobilization.
               </p>
+              <div class="mb-4">
+                <span class="inline-flex items-center gap-1.5 text-[11px] font-semibold text-primary-700 bg-primary-50 px-2.5 py-1 rounded-lg border border-primary-100" data-i18n="cond_knee_tag">
+                  CPM Machine • Deep Laser • Muscle Strength
+                </span>
+              </div>
             </div>
-            <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
-              <button onclick="openConditionModal('knee')" class="text-xs font-bold text-primary-600 hover:text-primary-800 flex items-center gap-1">
-                <span>View Details</span>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+              <button type="button" onclick="openConditionModal('knee')" class="text-xs font-bold text-primary-600 hover:text-primary-800 flex items-center gap-1">
+                <span>View Protocol</span>
                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
               </button>
-              <button onclick="selectConditionInForm('knee')" class="text-xs font-semibold text-slate-600 hover:text-primary-700 bg-slate-100 hover:bg-slate-200 px-3 py-1.5 rounded-lg transition-colors">
+              <button type="button" onclick="selectConditionInForm('knee')" class="text-xs font-semibold text-primary-700 hover:text-white bg-primary-50 hover:bg-primary-600 px-3 py-1.5 rounded-lg border border-primary-200 transition-colors">
                 Book Slot
               </button>
             </div>
           </div>
 
-          <!-- Back Pain -->
-          <div class="medical-card p-6 flex flex-col justify-between">
+          <!-- 2. Lower Back Pain & Lumbar Strain -->
+          <div class="medical-card p-5 flex flex-col justify-between group">
             <div>
-              <div class="w-12 h-12 rounded-xl bg-primary-50 text-primary-600 flex items-center justify-center mb-4">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+              <div class="aspect-[16/10] rounded-2xl overflow-hidden mb-4 relative shadow-sm border border-slate-100 bg-slate-100">
+                <img src="images/lumbar_spine_therapy.jpeg" alt="Lower Back Pain Lumbar Physiotherapy Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute top-3 left-3 bg-navy-950/80 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-lg border border-white/20">
+                  <span data-i18n="cond_back_badge">Spine & Posture</span>
+                </div>
               </div>
-              <h3 class="text-lg font-bold text-navy-900 mb-2" data-i18n="cond_back_title">Back Pain</h3>
-              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4" data-i18n="cond_back_desc">
-                Physiotherapy assessment and rehabilitation for lower back discomfort, postural strain, and movement problems.
+              <h3 class="text-base sm:text-lg font-bold text-navy-900 mb-2 leading-snug" data-i18n="cond_back_title">Lower Back Pain & Lumbar Strain</h3>
+              <p class="text-xs text-slate-600 leading-relaxed mb-3" data-i18n="cond_back_desc">
+                Targeted spinal decompression, core muscle stabilization, ergonomic posture retraining, and electrotherapy to relieve acute and chronic lower back pain.
               </p>
+              <div class="mb-4">
+                <span class="inline-flex items-center gap-1.5 text-[11px] font-semibold text-primary-700 bg-primary-50 px-2.5 py-1 rounded-lg border border-primary-100" data-i18n="cond_back_tag">
+                  Lumbar Traction • IFT • Core Stabilization
+                </span>
+              </div>
             </div>
-            <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
-              <button onclick="openConditionModal('back')" class="text-xs font-bold text-primary-600 hover:text-primary-800 flex items-center gap-1">
-                <span>View Details</span>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+              <button type="button" onclick="openConditionModal('back')" class="text-xs font-bold text-primary-600 hover:text-primary-800 flex items-center gap-1">
+                <span>View Protocol</span>
                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
               </button>
-              <button onclick="selectConditionInForm('back')" class="text-xs font-semibold text-slate-600 hover:text-primary-700 bg-slate-100 hover:bg-slate-200 px-3 py-1.5 rounded-lg transition-colors">
+              <button type="button" onclick="selectConditionInForm('back')" class="text-xs font-semibold text-primary-700 hover:text-white bg-primary-50 hover:bg-primary-600 px-3 py-1.5 rounded-lg border border-primary-200 transition-colors">
                 Book Slot
               </button>
             </div>
           </div>
 
-          <!-- Neck Pain & Cervical -->
-          <div class="medical-card p-6 flex flex-col justify-between">
+          <!-- 3. Neck Pain & Cervical Spondylosis -->
+          <div class="medical-card p-5 flex flex-col justify-between group">
             <div>
-              <div class="w-12 h-12 rounded-xl bg-primary-50 text-primary-600 flex items-center justify-center mb-4">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+              <div class="aspect-[16/10] rounded-2xl overflow-hidden mb-4 relative shadow-sm border border-slate-100 bg-slate-100">
+                <img src="images/cervical_traction_harness.jpeg" alt="Neck Pain & Cervical Traction Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute top-3 left-3 bg-navy-950/80 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-lg border border-white/20">
+                  <span data-i18n="cond_neck_badge">Cervical Spine</span>
+                </div>
               </div>
-              <h3 class="text-lg font-bold text-navy-900 mb-2" data-i18n="cond_neck_title">Neck Pain & Cervical</h3>
-              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4" data-i18n="cond_neck_desc">
-                Care focused on mobility, muscle release, and functional management of neck and cervical discomfort.
+              <h3 class="text-base sm:text-lg font-bold text-navy-900 mb-2 leading-snug" data-i18n="cond_neck_title">Neck Pain & Cervical Spondylosis</h3>
+              <p class="text-xs text-slate-600 leading-relaxed mb-3" data-i18n="cond_neck_desc">
+                Computerized cervical traction decompression, trapezius trigger-point release, and neck mobility routines to relieve radiating arm numbness and neck stiffness.
               </p>
+              <div class="mb-4">
+                <span class="inline-flex items-center gap-1.5 text-[11px] font-semibold text-primary-700 bg-primary-50 px-2.5 py-1 rounded-lg border border-primary-100" data-i18n="cond_neck_tag">
+                  Cervical Traction • Ultrasound • Posture Care
+                </span>
+              </div>
             </div>
-            <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
-              <button onclick="openConditionModal('neck')" class="text-xs font-bold text-primary-600 hover:text-primary-800 flex items-center gap-1">
-                <span>View Details</span>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+              <button type="button" onclick="openConditionModal('neck')" class="text-xs font-bold text-primary-600 hover:text-primary-800 flex items-center gap-1">
+                <span>View Protocol</span>
                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
               </button>
-              <button onclick="selectConditionInForm('neck')" class="text-xs font-semibold text-slate-600 hover:text-primary-700 bg-slate-100 hover:bg-slate-200 px-3 py-1.5 rounded-lg transition-colors">
+              <button type="button" onclick="selectConditionInForm('neck')" class="text-xs font-semibold text-primary-700 hover:text-white bg-primary-50 hover:bg-primary-600 px-3 py-1.5 rounded-lg border border-primary-200 transition-colors">
                 Book Slot
               </button>
             </div>
           </div>
 
-          <!-- Shoulder Pain -->
-          <div class="medical-card p-6 flex flex-col justify-between">
+          <!-- 4. Frozen Shoulder & Rotator Cuff Care -->
+          <div class="medical-card p-5 flex flex-col justify-between group">
             <div>
-              <div class="w-12 h-12 rounded-xl bg-primary-50 text-primary-600 flex items-center justify-center mb-4">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <div class="aspect-[16/10] rounded-2xl overflow-hidden mb-4 relative shadow-sm border border-slate-100 bg-slate-100">
+                <img src="images/shoulder_pain_mobilization.jpeg" alt="Frozen Shoulder & Rotator Cuff Physiotherapy Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute top-3 left-3 bg-navy-950/80 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-lg border border-white/20">
+                  <span data-i18n="cond_shoulder_badge">Shoulder Range of Motion</span>
+                </div>
               </div>
-              <h3 class="text-lg font-bold text-navy-900 mb-2" data-i18n="cond_shoulder_title">Shoulder Pain & Frozen Shoulder</h3>
-              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4" data-i18n="cond_shoulder_desc">
-                Physiotherapy support for shoulder pain, rotator cuff strain, and movement limitations.
+              <h3 class="text-base sm:text-lg font-bold text-navy-900 mb-2 leading-snug" data-i18n="cond_shoulder_title">Frozen Shoulder & Rotator Cuff Care</h3>
+              <p class="text-xs text-slate-600 leading-relaxed mb-3" data-i18n="cond_shoulder_desc">
+                Gradual 360-degree rotational wheel exercises, joint capsule mobilization, and ultrasound therapy to restore overhead arm reach and pain-free sleep.
               </p>
+              <div class="mb-4">
+                <span class="inline-flex items-center gap-1.5 text-[11px] font-semibold text-primary-700 bg-primary-50 px-2.5 py-1 rounded-lg border border-primary-100" data-i18n="cond_shoulder_tag">
+                  Shoulder Wheel • Deep Laser • Mobilization
+                </span>
+              </div>
             </div>
-            <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
-              <button onclick="openConditionModal('shoulder')" class="text-xs font-bold text-primary-600 hover:text-primary-800 flex items-center gap-1">
-                <span>View Details</span>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+              <button type="button" onclick="openConditionModal('shoulder')" class="text-xs font-bold text-primary-600 hover:text-primary-800 flex items-center gap-1">
+                <span>View Protocol</span>
                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
               </button>
-              <button onclick="selectConditionInForm('shoulder')" class="text-xs font-semibold text-slate-600 hover:text-primary-700 bg-slate-100 hover:bg-slate-200 px-3 py-1.5 rounded-lg transition-colors">
+              <button type="button" onclick="selectConditionInForm('shoulder')" class="text-xs font-semibold text-primary-700 hover:text-white bg-primary-50 hover:bg-primary-600 px-3 py-1.5 rounded-lg border border-primary-200 transition-colors">
                 Book Slot
               </button>
             </div>
           </div>
 
-          <!-- Heel Pain -->
-          <div class="medical-card p-6 flex flex-col justify-between">
+          <!-- 5. Heel Pain & Plantar Fasciitis -->
+          <div class="medical-card p-5 flex flex-col justify-between group">
             <div>
-              <div class="w-12 h-12 rounded-xl bg-primary-50 text-primary-600 flex items-center justify-center mb-4">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+              <div class="aspect-[16/10] rounded-2xl overflow-hidden mb-4 relative shadow-sm border border-slate-100 bg-slate-100">
+                <img src="images/foot_massager_therapy.jpeg" alt="Heel Pain & Plantar Fasciitis Physiotherapy Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute top-3 left-3 bg-navy-950/80 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-lg border border-white/20">
+                  <span data-i18n="cond_heel_badge">Plantar & Foot</span>
+                </div>
               </div>
-              <h3 class="text-lg font-bold text-navy-900 mb-2" data-i18n="cond_heel_title">Heel Pain & Plantar Fasciitis</h3>
-              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4" data-i18n="cond_heel_desc">
-                Rehabilitation, stretching protocols, and physiotherapy support for heel and foot pain.
+              <h3 class="text-base sm:text-lg font-bold text-navy-900 mb-2 leading-snug" data-i18n="cond_heel_title">Heel Pain & Plantar Fasciitis</h3>
+              <p class="text-xs text-slate-600 leading-relaxed mb-3" data-i18n="cond_heel_desc">
+                High-energy acoustic Shockwave Therapy (ESWT) and pneumatic circulatory reflexology to dissolve calcaneal spur inflammation and ease morning steps.
               </p>
+              <div class="mb-4">
+                <span class="inline-flex items-center gap-1.5 text-[11px] font-semibold text-primary-700 bg-primary-50 px-2.5 py-1 rounded-lg border border-primary-100" data-i18n="cond_heel_tag">
+                  Shockwave ESWT • Pneumatic Massager • Fascia Stretch
+                </span>
+              </div>
             </div>
-            <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
-              <button onclick="selectConditionInForm('heel')" class="text-xs font-semibold text-slate-600 hover:text-primary-700 bg-slate-100 hover:bg-slate-200 px-3 py-1.5 rounded-lg transition-colors">
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+              <button type="button" onclick="selectConditionInForm('heel')" class="text-xs font-semibold text-primary-700 hover:text-white bg-primary-50 hover:bg-primary-600 px-3 py-1.5 rounded-lg border border-primary-200 transition-colors w-full text-center">
                 Book Consultation
               </button>
             </div>
           </div>
 
-          <!-- Joint Pain -->
-          <div class="medical-card p-6 flex flex-col justify-between">
+          <!-- 6. Joint Pain, Arthritis & Stiffness -->
+          <div class="medical-card p-5 flex flex-col justify-between group">
             <div>
-              <div class="w-12 h-12 rounded-xl bg-primary-50 text-primary-600 flex items-center justify-center mb-4">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/></svg>
+              <div class="aspect-[16/10] rounded-2xl overflow-hidden mb-4 relative shadow-sm border border-slate-100 bg-slate-100">
+                <img src="images/tens_ultrasonic_combo.jpeg" alt="Joint Pain Arthritis Physiotherapy Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute top-3 left-3 bg-navy-950/80 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-lg border border-white/20">
+                  <span data-i18n="cond_joint_badge">Joints & Cartilage</span>
+                </div>
               </div>
-              <h3 class="text-lg font-bold text-navy-900 mb-2" data-i18n="cond_joint_title">Joint Pain & Arthritis</h3>
-              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4" data-i18n="cond_joint_desc">
-                Individualized physiotherapy approaches to improve joint lubrication, strength, and mobility.
+              <h3 class="text-base sm:text-lg font-bold text-navy-900 mb-2 leading-snug" data-i18n="cond_joint_title">Joint Pain, Arthritis & Stiffness</h3>
+              <p class="text-xs text-slate-600 leading-relaxed mb-3" data-i18n="cond_joint_desc">
+                Synergistic dual-frequency ultrasound micro-massage and gentle active-assisted joint mobilization for osteoarthritis, gout, and rheumatologic stiffness.
               </p>
+              <div class="mb-4">
+                <span class="inline-flex items-center gap-1.5 text-[11px] font-semibold text-primary-700 bg-primary-50 px-2.5 py-1 rounded-lg border border-primary-100" data-i18n="cond_joint_tag">
+                  TENS-Ultrasound Combo • Heat Therapy • Joint Prep
+                </span>
+              </div>
             </div>
-            <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
-              <button onclick="selectConditionInForm('joint')" class="text-xs font-semibold text-slate-600 hover:text-primary-700 bg-slate-100 hover:bg-slate-200 px-3 py-1.5 rounded-lg transition-colors">
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+              <button type="button" onclick="selectConditionInForm('joint')" class="text-xs font-semibold text-primary-700 hover:text-white bg-primary-50 hover:bg-primary-600 px-3 py-1.5 rounded-lg border border-primary-200 transition-colors w-full text-center">
                 Book Consultation
               </button>
             </div>
           </div>
 
-          <!-- Slipped Disc -->
-          <div class="medical-card p-6 flex flex-col justify-between">
+          <!-- 7. Slipped Disc & Sciatica Nerve Pain -->
+          <div class="medical-card p-5 flex flex-col justify-between group">
             <div>
-              <div class="w-12 h-12 rounded-xl bg-primary-50 text-primary-600 flex items-center justify-center mb-4">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+              <div class="aspect-[16/10] rounded-2xl overflow-hidden mb-4 relative shadow-sm border border-slate-100 bg-slate-100">
+                <img src="images/back_electrotherapy_close.jpeg" alt="Slipped Disc & Sciatica Nerve Pain Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute top-3 left-3 bg-navy-950/80 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-lg border border-white/20">
+                  <span data-i18n="cond_disc_badge">Spine Decompression</span>
+                </div>
               </div>
-              <h3 class="text-lg font-bold text-navy-900 mb-2" data-i18n="cond_disc_title">Slipped Disc & Herniation</h3>
-              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4" data-i18n="cond_disc_desc">
-                Gentle physiotherapy and spine rehabilitation support for symptoms associated with disc conditions.
+              <h3 class="text-base sm:text-lg font-bold text-navy-900 mb-2 leading-snug" data-i18n="cond_disc_title">Slipped Disc & Sciatica Nerve Pain</h3>
+              <p class="text-xs text-slate-600 leading-relaxed mb-3" data-i18n="cond_disc_desc">
+                Safe computerized mechanical traction bed decompression, neural flossing, and lumbar stabilization for herniated discs and radiating leg pain.
               </p>
+              <div class="mb-4">
+                <span class="inline-flex items-center gap-1.5 text-[11px] font-semibold text-primary-700 bg-primary-50 px-2.5 py-1 rounded-lg border border-primary-100" data-i18n="cond_disc_tag">
+                  Traction Bed • Nerve Gliding • Lumbar Belt
+                </span>
+              </div>
             </div>
-            <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
-              <button onclick="openConditionModal('back')" class="text-xs font-bold text-primary-600 hover:text-primary-800 flex items-center gap-1">
-                <span>View Details</span>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+              <button type="button" onclick="openConditionModal('back')" class="text-xs font-bold text-primary-600 hover:text-primary-800 flex items-center gap-1">
+                <span>View Protocol</span>
                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
               </button>
-              <button onclick="selectConditionInForm('back')" class="text-xs font-semibold text-slate-600 hover:text-primary-700 bg-slate-100 hover:bg-slate-200 px-3 py-1.5 rounded-lg transition-colors">
+              <button type="button" onclick="selectConditionInForm('back')" class="text-xs font-semibold text-primary-700 hover:text-white bg-primary-50 hover:bg-primary-600 px-3 py-1.5 rounded-lg border border-primary-200 transition-colors">
                 Book Slot
               </button>
             </div>
           </div>
 
-          <!-- Sciatica -->
-          <div class="medical-card p-6 flex flex-col justify-between">
+          <!-- 8. Stroke, Hemiplegia & Paralysis Rehab -->
+          <div class="medical-card p-5 flex flex-col justify-between group">
             <div>
-              <div class="w-12 h-12 rounded-xl bg-primary-50 text-primary-600 flex items-center justify-center mb-4">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+              <div class="aspect-[16/10] rounded-2xl overflow-hidden mb-4 relative shadow-sm border border-slate-100 bg-slate-100">
+                <img src="images/muscle_stimulation_neuro.jpeg" alt="Stroke Hemiplegia Paralysis Neuro Rehab Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute top-3 left-3 bg-navy-950/80 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-lg border border-white/20">
+                  <span data-i18n="cond_neuro_badge">Neurological Recovery</span>
+                </div>
               </div>
-              <h3 class="text-lg font-bold text-navy-900 mb-2" data-i18n="cond_sciatica_title">Sciatica</h3>
-              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4" data-i18n="cond_sciatica_desc">
-                Targeted mobility, nerve gliding, and functional exercises for radiating leg pain and discomfort.
+              <h3 class="text-base sm:text-lg font-bold text-navy-900 mb-2 leading-snug" data-i18n="cond_neuro_title">Stroke, Hemiplegia & Paralysis Rehab</h3>
+              <p class="text-xs text-slate-600 leading-relaxed mb-3" data-i18n="cond_neuro_desc">
+                Neuromuscular electrical stimulation (NMES), therapist-guided gait retraining, balance facilitation, and fine motor grip re-education under MPT Neuro care.
               </p>
+              <div class="mb-4">
+                <span class="inline-flex items-center gap-1.5 text-[11px] font-semibold text-primary-700 bg-primary-50 px-2.5 py-1 rounded-lg border border-primary-100" data-i18n="cond_neuro_tag">
+                  Muscle Stimulator • Gait Retraining • Hand Exerciser
+                </span>
+              </div>
             </div>
-            <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
-              <button onclick="openConditionModal('sciatica')" class="text-xs font-bold text-primary-600 hover:text-primary-800 flex items-center gap-1">
-                <span>View Details</span>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+              <button type="button" onclick="openConditionModal('neuro')" class="text-xs font-bold text-primary-600 hover:text-primary-800 flex items-center gap-1">
+                <span>View Protocol</span>
                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
               </button>
-              <button onclick="selectConditionInForm('sciatica')" class="text-xs font-semibold text-slate-600 hover:text-primary-700 bg-slate-100 hover:bg-slate-200 px-3 py-1.5 rounded-lg transition-colors">
+              <button type="button" onclick="selectConditionInForm('neuro')" class="text-xs font-semibold text-primary-700 hover:text-white bg-primary-50 hover:bg-primary-600 px-3 py-1.5 rounded-lg border border-primary-200 transition-colors">
                 Book Slot
               </button>
             </div>
           </div>
 
-          <!-- Muscle Strain -->
-          <div class="medical-card p-6 flex flex-col justify-between">
+          <!-- 9. Muscle Strain, Spasms & Sports Injury -->
+          <div class="medical-card p-5 flex flex-col justify-between group">
             <div>
-              <div class="w-12 h-12 rounded-xl bg-primary-50 text-primary-600 flex items-center justify-center mb-4">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+              <div class="aspect-[16/10] rounded-2xl overflow-hidden mb-4 relative shadow-sm border border-slate-100 bg-slate-100">
+                <img src="images/iastm_fascia_tools.jpeg" alt="Muscle Strain Sports Injury IASTM Cupping Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute top-3 left-3 bg-navy-950/80 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-lg border border-white/20">
+                  <span data-i18n="cond_muscle_badge">Myofascial Care</span>
+                </div>
               </div>
-              <h3 class="text-lg font-bold text-navy-900 mb-2" data-i18n="cond_muscle_title">Muscle Strain & Sprain</h3>
-              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4" data-i18n="cond_muscle_desc">
-                Rehabilitation support following acute muscle strains, spasms, and movement restrictions.
+              <h3 class="text-base sm:text-lg font-bold text-navy-900 mb-2 leading-snug" data-i18n="cond_muscle_title">Muscle Strain, Spasms & Sports Injury</h3>
+              <p class="text-xs text-slate-600 leading-relaxed mb-3" data-i18n="cond_muscle_desc">
+                Medical-grade stainless steel IASTM contour blade fascia scraping, vacuum dry cupping decompression, and active athletic conditioning for rapid return to sport.
               </p>
+              <div class="mb-4">
+                <span class="inline-flex items-center gap-1.5 text-[11px] font-semibold text-primary-700 bg-primary-50 px-2.5 py-1 rounded-lg border border-primary-100" data-i18n="cond_muscle_tag">
+                  IASTM Blades • Vacuum Cupping • Sports Rehab
+                </span>
+              </div>
             </div>
-            <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
-              <button onclick="selectConditionInForm('muscle')" class="text-xs font-semibold text-slate-600 hover:text-primary-700 bg-slate-100 hover:bg-slate-200 px-3 py-1.5 rounded-lg transition-colors">
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+              <button type="button" onclick="selectConditionInForm('muscle')" class="text-xs font-semibold text-primary-700 hover:text-white bg-primary-50 hover:bg-primary-600 px-3 py-1.5 rounded-lg border border-primary-200 transition-colors w-full text-center">
                 Book Consultation
               </button>
             </div>
