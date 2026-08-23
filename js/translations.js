@@ -318,13 +318,19 @@ const translations = {
     gallery_tab_neuro: "Rehabilitation",
     gallery_tab_videos: "Videos",
 
-    // Video Section (6 Real Clinical Procedures)
+    // Video Section (6 Real Clinical Procedures + 1 Full Tour)
     video_badge: "Real Video Sessions",
     video_title: "Clinical Procedures & Caring Demonstrations",
     video_subtitle: "Watch real therapeutic procedures, patient exercise guidance, and active rehabilitation sessions conducted at Revital Centre, Alwar.",
     video_music_toggle: "Ambient Healing Music",
     video_music_playing: "Music Playing",
     video_music_paused: "Music Paused",
+    btn_watch_tour: "Watch Full Tour",
+    hero_cta_tour: "Watch Clinic Tour (2 min)",
+
+    video_spotlight_badge: "Featured 2-Min Tour",
+    video_spotlight_title: "Complete Clinic Facility & Rehabilitation Tour",
+    video_spotlight_desc: "Watch a complete walkthrough of Revital Ortho & Neuro Physiotherapy Centre in Alwar—exploring private treatment bays, motorized spinal traction beds, laser therapy systems, and dedicated neuro recovery areas with soothing background music.",
 
     video_v1_badge: "Advanced ESWT",
     video_v1_title: "Extracorporeal Shockwave Therapy (ESWT)",
@@ -762,13 +768,19 @@ const translations = {
     gallery_tab_neuro: "पुनर्वास",
     gallery_tab_videos: "वीडियो",
 
-    // Video Section (6 Real Clinical Procedures)
+    // Video Section (6 Real Clinical Procedures + 1 Full Tour)
     video_badge: "वास्तविक वीडियो सत्र",
     video_title: "क्लिनिकल प्रक्रियाएं एवं लाइव सत्र",
     video_subtitle: "रिवाइटल क्लिनिक अलवर में डॉ. अर्चित जोशी की देखरेख में मरीजों के वास्तविक फिजियोथेरेपी व पुनर्वास सत्र देखें।",
     video_music_toggle: "सुकूनदायक हीलिंग संगीत",
     video_music_playing: "संगीत चालू",
     video_music_paused: "संगीत बंद",
+    btn_watch_tour: "पूरा टूर देखें",
+    hero_cta_tour: "क्लिनिक टूर देखें (2 मिनट)",
+
+    video_spotlight_badge: "प्रमुख 2-मिनट क्लिनिक टूर",
+    video_spotlight_title: "संपूर्ण क्लिनिक परिसर एवं आधुनिक फिजियोथेरेपी सुविधाएं",
+    video_spotlight_desc: "रिवाइटल ऑर्थो & न्यूरो फिजियोथेरेपी सेंटर, अलवर का विस्तृत 2 मिनट का वीडियो टूर देखें—जिसमें प्राइवेट ट्रीटमेंट बे, कंप्यूटराइज्ड स्पाइन ट्रैक्शन बेड, डीप लेजर और न्यूरो रिहैबिलिटेशन सेंटर की सभी सुविधाएं शांत संगीत के साथ दिखाई गई हैं।",
 
     video_v1_badge: "एडवांस्ड ESWT",
     video_v1_title: "एडवांस्ड शॉकवेव थेरेपी (ESWT) सत्र",

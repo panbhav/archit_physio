@@ -402,6 +402,11 @@
                 <span data-i18n="hero_cta_book">Book an Appointment</span>
               </a>
 
+              <a href="#videos" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-black text-white text-sm sm:text-base font-semibold px-5 py-3.5 rounded-xl shadow-md transition-all touch-target-min">
+                <svg class="w-5 h-5 text-primary-400 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                <span data-i18n="hero_cta_tour">Watch Clinic Tour (2 min)</span>
+              </a>
+
               <a href="tel:7690913118" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-navy-900 text-sm sm:text-base font-semibold px-5 py-3.5 rounded-xl border border-slate-300 shadow-sm transition-all touch-target-min">
                 <svg class="w-5 h-5 text-primary-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
                 <span data-i18n="hero_cta_call">Call 7690913118</span>
@@ -586,16 +591,26 @@
 
           <!-- About Visual & Features -->
           <div class="lg:col-span-6 space-y-6">
-            <!-- Clinic Real Photo Showcase Card -->
-            <div class="relative rounded-3xl overflow-hidden shadow-xl border border-slate-200 group">
-              <img src="images/clinic_interior_hall.jpeg" alt="Revital Ortho & Neuro Physiotherapy Centre Clinic Interior Hall Alwar" class="w-full h-72 sm:h-80 object-cover group-hover:scale-105 transition-transform duration-500">
-              <div class="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-transparent to-transparent flex items-end p-5 text-white">
-                <div>
-                  <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-primary-600 text-white text-[11px] font-bold uppercase tracking-wider mb-1" data-i18n="about_highlight2_badge">
-                    Spacious & Accessible Facility
-                  </span>
-                  <p class="text-sm font-semibold text-white" data-i18n="about_highlight2_desc">Advanced Physiotherapy Care You Can Trust in Alwar.</p>
+            <!-- Interactive Virtual Clinic Tour Video Showcase Card -->
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-200 bg-slate-950">
+              <video id="aboutClinicTourVideo" controls preload="metadata" poster="images/clinic_interior_hall.jpeg" class="w-full h-72 sm:h-80 object-cover">
+                <source src="images/clinic_virtual_tour_entire.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video>
+              <div class="p-4 bg-navy-950 text-white flex items-center justify-between gap-3">
+                <div class="min-w-0 flex-1">
+                  <div class="flex items-center gap-2 mb-0.5">
+                    <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md bg-primary-600 text-white text-[10px] font-bold uppercase tracking-wider" data-i18n="about_highlight2_badge">
+                      Spacious & Accessible Facility
+                    </span>
+                    <span class="text-[11px] text-primary-300 font-mono font-semibold">2:11 HD Tour</span>
+                  </div>
+                  <p class="text-xs sm:text-sm font-semibold text-slate-200 truncate" data-i18n="about_highlight2_desc">Advanced Physiotherapy Care You Can Trust in Alwar.</p>
                 </div>
+                <button type="button" onclick="document.getElementById('aboutClinicTourVideo').play()" class="inline-flex items-center gap-1.5 bg-primary-600 hover:bg-primary-500 text-white text-xs font-bold px-3 py-2 rounded-xl transition-all shadow touch-target-min flex-shrink-0">
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                  <span data-i18n="btn_watch_tour">Watch Tour</span>
+                </button>
               </div>
             </div>
 
@@ -1996,7 +2011,23 @@
             </div>
           </div>
 
-          <!-- Item 7: Real Video 1 (Gait / Mobility Rehab) -->
+          <!-- Item 7: Complete Clinic Virtual Tour Video (2 Min HD) -->
+          <div class="gallery-item group relative rounded-2xl overflow-hidden shadow-md cursor-pointer aspect-[4/3] bg-black border border-slate-200 flex items-center justify-center sm:col-span-2 lg:col-span-1" data-category="videos" data-video-src="images/clinic_virtual_tour_entire.mp4" data-caption="Complete Virtual Clinic Tour & Modern Rehabilitation Facilities at Revital, Alwar">
+            <video class="w-full h-full object-cover opacity-90 bg-black" preload="metadata" muted playsinline poster="images/clinic_interior_hall.jpeg">
+              <source src="images/clinic_virtual_tour_entire.mp4" type="video/mp4">
+            </video>
+            <div class="absolute inset-0 bg-navy-950/30 flex items-center justify-center pointer-events-none">
+              <div class="w-16 h-16 rounded-full bg-primary-600/90 text-white flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform">
+                <svg class="w-7 h-7 ml-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-navy-950/95 via-navy-950/60 to-transparent p-4 text-white pointer-events-none">
+              <span class="text-[11px] font-bold uppercase text-primary-300">Featured Video (2:11)</span>
+              <p class="text-xs font-semibold">Complete Virtual Clinic Tour</p>
+            </div>
+          </div>
+
+          <!-- Item 8: Real Video 1 (Gait / Mobility Rehab) -->
           <div class="gallery-item group relative rounded-2xl overflow-hidden shadow-md cursor-pointer aspect-[4/3] bg-black border border-slate-200 flex items-center justify-center" data-category="videos" data-video-src="images/video_gait_hemiplegia.mp4" data-caption="Mobility & Gait Rehabilitation Session at Revital Physiotherapy Centre">
             <video class="w-full h-full object-contain opacity-85 bg-black" preload="metadata" muted playsinline>
               <source src="images/video_gait_hemiplegia.mp4" type="video/mp4">
@@ -2086,6 +2117,69 @@
             </div>
           </div>
 
+        </div>
+
+        <!-- GRAND SPOTLIGHT: COMPLETE CLINIC TOUR VIDEO -->
+        <div class="mb-12 bg-navy-900 text-white rounded-3xl overflow-hidden shadow-2xl border border-slate-700">
+          <div class="grid grid-cols-1 lg:grid-cols-12 items-center">
+            <!-- Video Player (7 cols) -->
+            <div class="lg:col-span-7 bg-black relative aspect-[16/9] sm:aspect-[16/10] flex items-center justify-center overflow-hidden">
+              <video id="spotlightTourVideo" controls playsinline preload="metadata" poster="images/clinic_interior_hall.jpeg" class="w-full h-full object-cover">
+                <source src="images/clinic_virtual_tour_entire.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video>
+              <div class="absolute top-4 left-4 bg-primary-600 text-white text-xs font-bold px-3 py-1 rounded-lg shadow pointer-events-none">
+                <span data-i18n="video_spotlight_badge">Featured 2-Min Tour</span>
+              </div>
+            </div>
+
+            <!-- Content & Feature Points (5 cols) -->
+            <div class="lg:col-span-5 p-6 sm:p-8 space-y-4">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-white/10 text-primary-300 text-xs font-bold uppercase tracking-wider">
+                <span>Revital Centre Alwar</span>
+              </div>
+
+              <h3 class="text-xl sm:text-2xl font-extrabold text-white leading-tight" data-i18n="video_spotlight_title">
+                Complete Clinic Facility & Rehabilitation Tour
+              </h3>
+
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed" data-i18n="video_spotlight_desc">
+                Watch a complete walkthrough of Revital Ortho & Neuro Physiotherapy Centre in Alwar—exploring private treatment bays, motorized spinal traction beds, laser therapy systems, and dedicated neuro recovery areas with soothing background music.
+              </p>
+
+              <!-- Feature Highlights -->
+              <div class="grid grid-cols-2 gap-2.5 pt-1 text-xs text-slate-200">
+                <div class="flex items-center gap-2 bg-navy-800/80 p-2.5 rounded-xl border border-white/10">
+                  <svg class="w-4 h-4 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                  <span>Private Therapy Bays</span>
+                </div>
+                <div class="flex items-center gap-2 bg-navy-800/80 p-2.5 rounded-xl border border-white/10">
+                  <svg class="w-4 h-4 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                  <span>Spine Traction Unit</span>
+                </div>
+                <div class="flex items-center gap-2 bg-navy-800/80 p-2.5 rounded-xl border border-white/10">
+                  <svg class="w-4 h-4 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                  <span>High-Power Laser</span>
+                </div>
+                <div class="flex items-center gap-2 bg-navy-800/80 p-2.5 rounded-xl border border-white/10">
+                  <svg class="w-4 h-4 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                  <span>Neuro Rehab Area</span>
+                </div>
+              </div>
+
+              <!-- CTA Row -->
+              <div class="pt-2 flex flex-wrap items-center gap-3">
+                <a href="#appointment" class="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-500 text-white font-bold text-xs px-5 py-3 rounded-xl shadow-md transition-all touch-target-min">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  <span data-i18n="btn_book_appointment">Book Consultation</span>
+                </a>
+                <a href="tel:7690913118" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold text-xs px-4 py-3 rounded-xl border border-white/15 transition-all touch-target-min">
+                  <svg class="w-4 h-4 text-primary-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                  <span>7690913118</span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- 6 Real Clinical Videos Grid -->
