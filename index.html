@@ -241,89 +241,151 @@
   </aside>
 
   <!-- STICKY HEADER / NAVIGATION -->
-  <header id="mainHeader" class="sticky top-0 z-40 bg-white transition-all duration-300 border-b border-slate-200 py-2.5 sm:py-3.5">
+  <!-- STICKY HEADER / NAVIGATION -->
+  <header id="mainHeader" class="sticky top-0 z-40 bg-white transition-all duration-300 border-b border-slate-200 py-2 sm:py-2.5">
     <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between gap-2 sm:gap-4">
+      <div class="flex items-center justify-between gap-3 sm:gap-6">
         
-        <!-- Brand Logo -->
-        <a href="#home" class="flex items-center gap-2 group focus:outline-none flex-shrink-0">
-          <img src="images/logo/logo.jpeg" alt="Revital Ortho & Neuro Physiotherapy Centre" class="h-8 sm:h-9 md:h-10 w-auto object-contain">
-          <span class="hidden xl:inline-block text-[11px] font-bold text-primary-800 bg-primary-50 px-2 py-0.5 rounded-md border border-primary-200" data-i18n="brand_sub">Ortho & Neuro Centre</span>
+        <!-- Brand Logo Lockup (Subtitle positioned neatly underneath logo) -->
+        <a href="#home" class="flex flex-col items-start group focus:outline-none flex-shrink-0">
+          <img src="images/logo/logo.jpeg" alt="Revital Physiotherapy Centre Logo" class="h-8 sm:h-9 md:h-10 w-auto object-contain">
+          <span class="text-[9px] sm:text-[10px] md:text-[11px] font-bold text-primary-700 tracking-tight leading-none mt-1 group-hover:text-primary-800 transition-colors" data-i18n="brand_sub">Ortho & Neuro Physiotherapy Centre</span>
         </a>
 
-        <!-- Desktop Navigation Links with Smart Medical Icons -->
-        <nav class="hidden lg:flex items-center gap-2 xl:gap-3.5 text-xs xl:text-sm font-medium text-slate-700">
+        <!-- Desktop Navigation Links (Smart, Clutter-Free Hub Architecture) -->
+        <nav class="hidden lg:flex items-center gap-4 xl:gap-6 text-xs xl:text-sm font-semibold text-slate-700">
           <a href="#home" class="nav-link-item hover:text-primary-600 transition-colors inline-flex items-center gap-1.5 py-2" data-i18n="nav_home">
             <svg class="w-4 h-4 text-primary-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
             <span>Home</span>
           </a>
           
-          <!-- Dedicated Tab: About Us -->
-          <a href="#about" class="nav-link-item hover:text-primary-600 transition-colors inline-flex items-center gap-1.5 py-2">
-            <svg class="w-4 h-4 text-primary-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
-            <span data-i18n="nav_about">About Us</span>
-          </a>
+          <!-- Hub 1: About & Doctor Dropdown -->
+          <div class="relative group">
+            <a href="#about" class="nav-link-item hover:text-primary-600 transition-colors inline-flex items-center gap-1.5 py-2">
+              <svg class="w-4 h-4 text-primary-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+              <span data-i18n="nav_about_doctor">About & Doctor</span>
+              <svg class="w-3.5 h-3.5 text-slate-400 group-hover:text-primary-600 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </a>
+            <div class="absolute left-0 top-full pt-1.5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 min-w-[240px]">
+              <div class="bg-white rounded-2xl shadow-2xl border border-slate-200 p-2 text-xs font-semibold space-y-1">
+                <a href="#about" class="flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl hover:bg-primary-50 text-navy-900 hover:text-primary-700 transition-colors">
+                  <div class="w-7 h-7 rounded-lg bg-primary-100 text-primary-700 flex items-center justify-center flex-shrink-0">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                  </div>
+                  <div>
+                    <span class="block text-navy-900 font-bold" data-i18n="nav_about">About Us</span>
+                    <span class="text-[10px] text-slate-500 font-normal">Our clinic story & 2-min tour</span>
+                  </div>
+                </a>
+                <a href="#doctor" class="flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl hover:bg-primary-50 text-navy-900 hover:text-primary-700 transition-colors">
+                  <div class="w-7 h-7 rounded-lg bg-primary-100 text-primary-700 flex items-center justify-center flex-shrink-0">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                  </div>
+                  <div>
+                    <span class="block text-navy-900 font-bold" data-i18n="nav_doctor">Dr. Archit Joshi</span>
+                    <span class="text-[10px] text-slate-500 font-normal">BPT, MPT (Neuro) Specialist</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
 
-          <!-- Dedicated Tab: Dr. Archit Joshi -->
-          <a href="#doctor" class="nav-link-item hover:text-primary-600 transition-colors inline-flex items-center gap-1.5 py-2 font-semibold text-primary-900 bg-primary-50/70 hover:bg-primary-100/70 px-2.5 rounded-lg border border-primary-200/60">
-            <svg class="w-4 h-4 text-primary-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
-            <span data-i18n="nav_doctor">Dr. Archit Joshi</span>
-          </a>
-
-          <!-- Clubbed: Treatments & Services with Dropdown -->
+          <!-- Hub 2: Treatments & Care Dropdown -->
           <div class="relative group">
             <a href="#conditions" class="nav-link-item hover:text-primary-600 transition-colors inline-flex items-center gap-1.5 py-2">
               <svg class="w-4 h-4 text-primary-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
               <span data-i18n="nav_treatments_services">Treatments & Services</span>
               <svg class="w-3.5 h-3.5 text-slate-400 group-hover:text-primary-600 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
             </a>
-            <div class="absolute left-0 top-full pt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 min-w-[240px]">
-              <div class="bg-white rounded-2xl shadow-xl border border-slate-200 py-2 text-xs font-semibold">
-                <a href="#conditions" class="flex items-center gap-2 px-4 py-2.5 hover:bg-primary-50 text-navy-900 hover:text-primary-700 transition-colors">
-                  <span class="w-2 h-2 rounded-full bg-primary-600"></span>
-                  <span data-i18n="nav_conditions">Conditions We Treat</span>
+            <div class="absolute left-0 top-full pt-1.5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 min-w-[280px]">
+              <div class="bg-white rounded-2xl shadow-2xl border border-slate-200 p-2 text-xs font-semibold space-y-1">
+                <a href="#conditions" class="flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl hover:bg-primary-50 text-navy-900 hover:text-primary-700 transition-colors">
+                  <div class="w-7 h-7 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center flex-shrink-0">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+                  </div>
+                  <div>
+                    <span class="block text-navy-900 font-bold" data-i18n="nav_conditions">Conditions We Treat</span>
+                    <span class="text-[10px] text-slate-500 font-normal">Back, knee, neck & joint care</span>
+                  </div>
                 </a>
-                <a href="#neuro" class="flex items-center gap-2 px-4 py-2.5 hover:bg-primary-50 text-navy-900 hover:text-primary-700 transition-colors">
-                  <span class="w-2 h-2 rounded-full bg-purple-600"></span>
-                  <span data-i18n="nav_neuro">Neuro Rehab (Stroke/Paralysis)</span>
+                <a href="#neuro" class="flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl hover:bg-purple-50 text-navy-900 hover:text-purple-700 transition-colors">
+                  <div class="w-7 h-7 rounded-lg bg-purple-100 text-purple-700 flex items-center justify-center flex-shrink-0">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                  </div>
+                  <div>
+                    <span class="block text-navy-900 font-bold" data-i18n="nav_neuro">Neuro Rehab</span>
+                    <span class="text-[10px] text-slate-500 font-normal">Stroke, paralysis & nerve training</span>
+                  </div>
                 </a>
-                <a href="#ortho" class="flex items-center gap-2 px-4 py-2.5 hover:bg-primary-50 text-navy-900 hover:text-primary-700 transition-colors">
-                  <span class="w-2 h-2 rounded-full bg-blue-600"></span>
-                  <span data-i18n="nav_ortho">Ortho Care (Joint & Spine)</span>
+                <a href="#ortho" class="flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl hover:bg-blue-50 text-navy-900 hover:text-blue-700 transition-colors">
+                  <div class="w-7 h-7 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center flex-shrink-0">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  </div>
+                  <div>
+                    <span class="block text-navy-900 font-bold" data-i18n="nav_ortho">Ortho Care</span>
+                    <span class="text-[10px] text-slate-500 font-normal">Spinal decompression & joint mobility</span>
+                  </div>
                 </a>
-                <a href="#services" class="flex items-center gap-2 px-4 py-2.5 hover:bg-primary-50 text-navy-900 hover:text-primary-700 transition-colors">
-                  <span class="w-2 h-2 rounded-full bg-emerald-600"></span>
-                  <span data-i18n="nav_services">Specialized Clinical Care</span>
+                <a href="#services" class="flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl hover:bg-emerald-50 text-navy-900 hover:text-emerald-700 transition-colors">
+                  <div class="w-7 h-7 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center flex-shrink-0">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                  </div>
+                  <div>
+                    <span class="block text-navy-900 font-bold" data-i18n="nav_services">Specialized Clinical Care</span>
+                    <span class="text-[10px] text-slate-500 font-normal">Mobilization, pediatric & home visits</span>
+                  </div>
                 </a>
               </div>
             </div>
           </div>
 
-          <!-- Modern Equipment with Icon -->
-          <a href="#equipment" class="nav-link-item hover:text-primary-600 transition-colors inline-flex items-center gap-1.5 py-2">
-            <svg class="w-4 h-4 text-primary-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-            <span data-i18n="nav_equipment">Modern Equipment</span>
-          </a>
+          <!-- Hub 3: Facility & Media Dropdown -->
+          <div class="relative group">
+            <a href="#equipment" class="nav-link-item hover:text-primary-600 transition-colors inline-flex items-center gap-1.5 py-2">
+              <svg class="w-4 h-4 text-primary-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              <span data-i18n="nav_facility_media">Facility & Media</span>
+              <svg class="w-3.5 h-3.5 text-slate-400 group-hover:text-primary-600 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </a>
+            <div class="absolute left-0 top-full pt-1.5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 min-w-[270px]">
+              <div class="bg-white rounded-2xl shadow-2xl border border-slate-200 p-2 text-xs font-semibold space-y-1">
+                <a href="#equipment" class="flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl hover:bg-primary-50 text-navy-900 hover:text-primary-700 transition-colors">
+                  <div class="w-7 h-7 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center flex-shrink-0">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                  </div>
+                  <div>
+                    <span class="block text-navy-900 font-bold" data-i18n="nav_equipment">Modern Equipment</span>
+                    <span class="text-[10px] text-slate-500 font-normal">Traction, laser, CPM & modalities</span>
+                  </div>
+                </a>
+                <a href="#videos" class="flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl hover:bg-primary-50 text-navy-900 hover:text-primary-700 transition-colors">
+                  <div class="w-7 h-7 rounded-lg bg-red-100 text-red-700 flex items-center justify-center flex-shrink-0">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  </div>
+                  <div>
+                    <span class="block text-navy-900 font-bold" data-i18n="nav_videos">Demonstrations</span>
+                    <span class="text-[10px] text-slate-500 font-normal">Real clinical rehabilitation videos</span>
+                  </div>
+                </a>
+                <a href="#gallery" class="flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl hover:bg-primary-50 text-navy-900 hover:text-primary-700 transition-colors">
+                  <div class="w-7 h-7 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center flex-shrink-0">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  </div>
+                  <div>
+                    <span class="block text-navy-900 font-bold" data-i18n="nav_gallery">Clinic Gallery</span>
+                    <span class="text-[10px] text-slate-500 font-normal">Clinic photos & patient care</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
 
-          <!-- Demonstrations with Icon -->
-          <a href="#videos" class="nav-link-item hover:text-primary-600 transition-colors inline-flex items-center gap-1.5 py-2">
-            <svg class="w-4 h-4 text-primary-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-            <span data-i18n="nav_videos">Demonstrations</span>
-          </a>
-
-          <!-- Gallery with Icon -->
-          <a href="#gallery" class="nav-link-item hover:text-primary-600 transition-colors inline-flex items-center gap-1.5 py-2">
-            <svg class="w-4 h-4 text-primary-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            <span data-i18n="nav_gallery">Gallery</span>
-          </a>
-
-          <!-- FAQs with Icon -->
+          <!-- FAQs -->
           <a href="#faqs" class="nav-link-item hover:text-primary-600 transition-colors inline-flex items-center gap-1.5 py-2">
             <svg class="w-4 h-4 text-primary-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
             <span data-i18n="nav_faqs">FAQs</span>
           </a>
 
-          <!-- Contact with Icon -->
+          <!-- Contact -->
           <a href="#contact" class="nav-link-item hover:text-primary-600 transition-colors inline-flex items-center gap-1.5 py-2" data-i18n="nav_contact">
             <svg class="w-4 h-4 text-primary-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
             <span>Contact</span>
@@ -369,9 +431,10 @@
   <div id="mobileMenuBackdrop" class="fixed inset-0 bg-slate-900/60 z-50 backdrop-blur-sm hidden opacity-0 transition-opacity duration-300"></div>
   <aside id="mobileMenuDrawer" aria-label="Mobile Navigation Menu" class="fixed top-0 right-0 bottom-0 w-80 max-w-[85vw] bg-white z-50 shadow-2xl p-6 flex flex-col justify-between translate-x-full transition-transform duration-300 overflow-y-auto">
     <div>
-      <div class="flex items-center justify-between pb-5 border-b border-slate-200 mb-6">
-        <a href="#home" class="flex items-center gap-2 focus:outline-none">
-          <img src="images/logo/logo.jpeg" alt="Revital Ortho & Neuro Centre" class="h-9 w-auto object-contain">
+      <div class="flex items-center justify-between pb-4 border-b border-slate-200 mb-5">
+        <a href="#home" class="flex flex-col items-start focus:outline-none">
+          <img src="images/logo/logo.jpeg" alt="Revital Ortho & Neuro Centre" class="h-8 w-auto object-contain">
+          <span class="text-[9px] font-bold text-primary-700 tracking-tight leading-none mt-1" data-i18n="brand_sub">Ortho & Neuro Physiotherapy Centre</span>
         </a>
         <button id="closeMobileMenuBtn" aria-label="Close mobile menu" class="p-2 rounded-lg text-slate-500 hover:bg-slate-100">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
@@ -379,34 +442,31 @@
       </div>
 
       <!-- Mobile Navigation Links with Smart Medical Icons -->
-      <nav class="flex flex-col space-y-2 text-base font-medium text-slate-700">
+      <nav class="flex flex-col space-y-1.5 text-sm font-semibold text-slate-700">
         <a href="#home" class="nav-link-item hover:text-primary-600 py-1.5 flex items-center gap-2.5">
           <svg class="w-4 h-4 text-primary-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
           <span data-i18n="nav_home">Home</span>
         </a>
         
-        <!-- Dedicated: About Us -->
-        <a href="#about" class="nav-link-item hover:text-primary-600 py-1.5 flex items-center gap-2.5 border-t border-slate-100 pt-2">
-          <svg class="w-4 h-4 text-primary-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
-          <span data-i18n="nav_about">About Us</span>
-        </a>
+        <!-- Mobile Hub 1: About & Doctor -->
+        <div class="border-y border-slate-100 py-2">
+          <div class="font-bold text-navy-950 flex items-center gap-2 text-xs uppercase tracking-wider text-slate-400 mb-1.5">
+            <svg class="w-3.5 h-3.5 text-primary-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+            <span data-i18n="nav_about_doctor">About & Doctor</span>
+          </div>
+          <div class="space-y-1 pl-5">
+            <a href="#about" class="nav-link-item flex items-center gap-2 py-1 text-slate-700 hover:text-primary-600" data-i18n="nav_about">About Us & Facilities</a>
+            <a href="#doctor" class="nav-link-item flex items-center gap-2 py-1 font-bold text-primary-900 hover:text-primary-700" data-i18n="nav_doctor">Dr. Archit Joshi (MPT Neuro)</a>
+          </div>
+        </div>
 
-        <!-- Dedicated: Dr. Archit Joshi -->
-        <a href="#doctor" class="nav-link-item hover:text-primary-600 py-1.5 flex items-center gap-2.5 font-bold text-navy-950 bg-primary-50 px-2.5 py-2 rounded-xl border border-primary-200">
-          <svg class="w-4 h-4 text-primary-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
-          <span data-i18n="nav_doctor">Dr. Archit Joshi (MPT Neuro)</span>
-        </a>
-
-        <!-- Clubbed 2: Specialized Care & Treatments -->
+        <!-- Mobile Hub 2: Treatments & Care -->
         <div class="border-b border-slate-100 pb-2">
-          <a href="#conditions" class="nav-link-item font-bold text-navy-900 hover:text-primary-600 flex items-center justify-between py-1">
-            <div class="flex items-center gap-2.5">
-              <svg class="w-4 h-4 text-primary-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
-              <span data-i18n="nav_treatments_services">Treatments & Services</span>
-            </div>
-            <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-          </a>
-          <div class="pl-7 pt-1 space-y-1.5 text-xs text-slate-600">
+          <div class="font-bold text-navy-950 flex items-center gap-2 text-xs uppercase tracking-wider text-slate-400 mb-1.5">
+            <svg class="w-3.5 h-3.5 text-primary-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+            <span data-i18n="nav_treatments_services">Treatments & Care</span>
+          </div>
+          <div class="space-y-1 pl-5">
             <a href="#conditions" class="nav-link-item block py-1 hover:text-primary-600" data-i18n="nav_conditions">Conditions We Treat</a>
             <a href="#neuro" class="nav-link-item block py-1 hover:text-primary-600" data-i18n="nav_neuro">Neuro Rehab (Stroke/Paralysis)</a>
             <a href="#ortho" class="nav-link-item block py-1 hover:text-primary-600" data-i18n="nav_ortho">Ortho Care (Joint & Spine)</a>
@@ -414,18 +474,19 @@
           </div>
         </div>
 
-        <a href="#equipment" class="nav-link-item hover:text-primary-600 py-1.5 flex items-center gap-2.5">
-          <svg class="w-4 h-4 text-primary-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-          <span data-i18n="nav_equipment">Modern Equipment</span>
-        </a>
-        <a href="#videos" class="nav-link-item hover:text-primary-600 py-1.5 flex items-center gap-2.5">
-          <svg class="w-4 h-4 text-primary-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-          <span data-i18n="nav_videos">Demonstrations</span>
-        </a>
-        <a href="#gallery" class="nav-link-item hover:text-primary-600 py-1.5 flex items-center gap-2.5">
-          <svg class="w-4 h-4 text-primary-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-          <span data-i18n="nav_gallery">Gallery</span>
-        </a>
+        <!-- Mobile Hub 3: Facility & Media -->
+        <div class="border-b border-slate-100 pb-2">
+          <div class="font-bold text-navy-950 flex items-center gap-2 text-xs uppercase tracking-wider text-slate-400 mb-1.5">
+            <svg class="w-3.5 h-3.5 text-primary-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            <span data-i18n="nav_facility_media">Facility & Media</span>
+          </div>
+          <div class="space-y-1 pl-5">
+            <a href="#equipment" class="nav-link-item block py-1 hover:text-primary-600" data-i18n="nav_equipment">Modern Equipment</a>
+            <a href="#videos" class="nav-link-item block py-1 hover:text-primary-600" data-i18n="nav_videos">Video Demonstrations</a>
+            <a href="#gallery" class="nav-link-item block py-1 hover:text-primary-600" data-i18n="nav_gallery">Clinic Gallery</a>
+          </div>
+        </div>
+
         <a href="#faqs" class="nav-link-item hover:text-primary-600 py-1.5 flex items-center gap-2.5">
           <svg class="w-4 h-4 text-primary-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
           <span data-i18n="nav_faqs">FAQs</span>
