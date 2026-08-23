@@ -31,6 +31,7 @@
     initBackToTop();
     initClinicStatus();
     initScrollSpy();
+    initAnimatedCounters();
   });
 
   // 1. Initialize DOM Elements
@@ -712,6 +713,48 @@
     }, { threshold: 0.2, rootMargin: '-10% 0px -60% 0px' });
 
     sections.forEach(sec => observer.observe(sec));
+  }
+
+  // 11. Animated Stats Counter (Smooth Ease-Out Animation upon Scroll)
+  function initAnimatedCounters() {
+    const counterElements = document.querySelectorAll('.stat-counter');
+    if (!counterElements.length || !('IntersectionObserver' in window)) return;
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const target = parseInt(el.getAttribute('data-target'), 10);
+          const prefix = el.getAttribute('data-prefix') || '';
+          const suffix = el.getAttribute('data-suffix') || '';
+          const duration = parseInt(el.getAttribute('data-duration'), 10) || 1600;
+
+          if (isNaN(target)) return;
+
+          let startTimestamp = null;
+          const step = (timestamp) => {
+            if (!startTimestamp) startTimestamp = timestamp;
+            const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+            // Ease out cubic
+            const easeOut = 1 - Math.pow(1 - progress, 3);
+            const currentCount = Math.floor(easeOut * target);
+
+            el.textContent = `${prefix}${currentCount.toLocaleString()}${suffix}`;
+
+            if (progress < 1) {
+              window.requestAnimationFrame(step);
+            } else {
+              el.textContent = `${prefix}${target.toLocaleString()}${suffix}`;
+            }
+          };
+
+          window.requestAnimationFrame(step);
+          observer.unobserve(el);
+        }
+      });
+    }, { threshold: 0.25 });
+
+    counterElements.forEach(el => observer.observe(el));
   }
 
 })();

@@ -59,6 +59,18 @@ const translations = {
     trust_card5_title: "Consultation Charge: ₹100/-",
     trust_card5_desc: "Nominal ₹100 consultation fee with economical, transparent treatment packages and a dedicated incharge.",
 
+    // Animated Clinical Milestones & Stats
+    stat_exp_title: "Years Clinical Experience",
+    stat_exp_desc: "Advanced Ortho & Neuro Rehabilitation in Alwar",
+    stat_patients_title: "Recovered Patients",
+    stat_patients_desc: "Successfully treated joint pain, spine & paralysis",
+    stat_fee_title: "Affordable Consultation",
+    stat_fee_desc: "₹100/- Only with dedicated incharge care",
+    stat_rating_title: "Patient Rating",
+    stat_rating_desc: "5.0 ★ Top-rated physiotherapy clinic in Alwar",
+    stat_success_title: "Mobility Success Rate",
+    stat_success_desc: "Structured evidence-based recovery protocols",
+
     // About Clinic
     about_badge: "About Our Centre",
     about_title: "About Revital Ortho & Neuro Physiotherapy Centre",
@@ -519,6 +531,18 @@ const translations = {
     trust_card4_desc: "विजय मंदिर रोड, विजय नगर, अलवर में आसानी से पहुंचने योग्य क्लिनिक।",
     trust_card5_title: "परामर्श शुल्क: मात्र ₹100/-",
     trust_card5_desc: "मात्र ₹100 में विस्तृत जांच व परामर्श। समस्या के अनुसार किफायती इलाज व समर्पित फिजियोथेरेपिस्ट इंचार्ज।",
+
+    // Animated Clinical Milestones & Stats
+    stat_exp_title: "वर्षों का क्लिनिकल अनुभव",
+    stat_exp_desc: "अलवर में उन्नत ऑर्थो एवं न्यूरो फिजियोथेरेपी देखभाल",
+    stat_patients_title: "मरीज स्वस्थ और ठीक हुए",
+    stat_patients_desc: "जोड़ों के दर्द, स्लिप डिस्क और लकवा से सफल रिकवरी",
+    stat_fee_title: "किफायती परामर्श शुल्क",
+    stat_fee_desc: "मात्र ₹100 एवं समर्पित फिजियोथेरेपिस्ट इंचार्ज",
+    stat_rating_title: "सत्यापित गूगल रेटिंग",
+    stat_rating_desc: "5.0 ★ अलवर में मरीजों द्वारा सर्वश्रेष्ठ मूल्यांकित",
+    stat_success_title: "संतुष्टि और गतिशीलता दर",
+    stat_success_desc: "प्रमाणित फिजियोथेरेपी तकनीकों द्वारा उच्च सुधार",
 
     // About Clinic
     about_badge: "हमारे क्लिनिक के बारे में",
