@@ -225,6 +225,8 @@
           <svg class="w-3.5 h-3.5 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
           <span>Mon–Sat: 9:00 AM–1:00 PM & 4:30 PM–8:00 PM | Sun: 9:00 AM–1:00 PM</span>
         </div>
+        <!-- Real-Time Clinic Live Status Badge -->
+        <div class="clinic-live-status"></div>
       </div>
 
       <div class="flex items-center gap-5">
@@ -571,7 +573,7 @@
                 
                 <!-- Doctor Image Container -->
                 <div class="doctor-photo-frame aspect-[3/4] sm:aspect-[4/5] rounded-xl overflow-hidden relative">
-                  <img src="images/archit_doct_phot.jpeg" alt="Dr. Archit Joshi - Physiotherapist BPT MPT Neuro in Alwar" class="w-full h-full object-cover">
+                  <img src="images/archit_doct_phot.jpeg" alt="Dr. Archit Joshi - Physiotherapist BPT MPT Neuro in Alwar" class="w-full h-full object-cover" loading="lazy" decoding="async">
                   
                   <!-- Gradient overlay for text clarity -->
                   <div class="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-transparent to-transparent"></div>
@@ -599,6 +601,9 @@
                   </div>
                   <span class="text-[11px] font-bold text-primary-800 bg-primary-100 px-2 py-1 rounded-md" data-i18n="hero_badge">Consultation: ₹100/-</span>
                 </div>
+
+                <!-- Live Clinic Status Pill in Doctor Card -->
+                <div class="mt-2 text-center clinic-live-status"></div>
 
               </div>
             </div>
@@ -804,7 +809,7 @@
             <div class="lg:col-span-5 text-center">
               <div class="relative max-w-sm mx-auto">
                 <div class="aspect-[3/4] rounded-2xl overflow-hidden shadow-lg border-4 border-slate-100">
-                  <img src="images/archit_doct_phot.jpeg" alt="Dr. Archit Joshi Physiotherapist BPT MPT Neuro Alwar" class="w-full h-full object-cover">
+                  <img src="images/archit_doct_phot.jpeg" alt="Dr. Archit Joshi Physiotherapist BPT MPT Neuro Alwar" class="w-full h-full object-cover" loading="lazy" decoding="async">
                 </div>
                 <div class="mt-4 inline-block bg-navy-900 text-white text-xs font-semibold px-4 py-2 rounded-xl shadow-md">
                   <span data-i18n="doctor_creds">Physiotherapist | BPT, MPT (Neuro)</span>
@@ -896,7 +901,7 @@
           <div class="medical-card p-5 flex flex-col justify-between group">
             <div>
               <div class="aspect-[16/10] rounded-2xl overflow-hidden mb-4 relative shadow-sm border border-slate-100 bg-slate-100">
-                <img src="images/knee_pain_treatment_session.jpeg" alt="Knee Pain & Osteoarthritis Physiotherapy Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <img src="images/knee_pain_treatment_session.jpeg" alt="Knee Pain & Osteoarthritis Physiotherapy Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
                 <div class="absolute top-3 left-3 bg-navy-950/80 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-lg border border-white/20">
                   <span data-i18n="cond_knee_badge">Knee & Joint Mobility</span>
                 </div>
@@ -926,7 +931,7 @@
           <div class="medical-card p-5 flex flex-col justify-between group">
             <div>
               <div class="aspect-[16/10] rounded-2xl overflow-hidden mb-4 relative shadow-sm border border-slate-100 bg-slate-100">
-                <img src="images/lumbar_spine_therapy.jpeg" alt="Lower Back Pain Lumbar Physiotherapy Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <img src="images/lumbar_spine_therapy.jpeg" alt="Lower Back Pain Lumbar Physiotherapy Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
                 <div class="absolute top-3 left-3 bg-navy-950/80 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-lg border border-white/20">
                   <span data-i18n="cond_back_badge">Spine & Posture</span>
                 </div>
@@ -956,7 +961,7 @@
           <div class="medical-card p-5 flex flex-col justify-between group">
             <div>
               <div class="aspect-[16/10] rounded-2xl overflow-hidden mb-4 relative shadow-sm border border-slate-100 bg-slate-100">
-                <img src="images/cervical_traction_harness.jpeg" alt="Neck Pain & Cervical Traction Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <img src="images/cervical_traction_harness.jpeg" alt="Neck Pain & Cervical Traction Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
                 <div class="absolute top-3 left-3 bg-navy-950/80 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-lg border border-white/20">
                   <span data-i18n="cond_neck_badge">Cervical Spine</span>
                 </div>
@@ -986,7 +991,7 @@
           <div class="medical-card p-5 flex flex-col justify-between group">
             <div>
               <div class="aspect-[16/10] rounded-2xl overflow-hidden mb-4 relative shadow-sm border border-slate-100 bg-slate-100">
-                <img src="images/shoulder_pain_mobilization.jpeg" alt="Frozen Shoulder & Rotator Cuff Physiotherapy Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <img src="images/shoulder_pain_mobilization.jpeg" alt="Frozen Shoulder & Rotator Cuff Physiotherapy Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
                 <div class="absolute top-3 left-3 bg-navy-950/80 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-lg border border-white/20">
                   <span data-i18n="cond_shoulder_badge">Shoulder Range of Motion</span>
                 </div>
@@ -1016,7 +1021,7 @@
           <div class="medical-card p-5 flex flex-col justify-between group">
             <div>
               <div class="aspect-[16/10] rounded-2xl overflow-hidden mb-4 relative shadow-sm border border-slate-100 bg-slate-100">
-                <img src="images/foot_massager_therapy.jpeg" alt="Heel Pain & Plantar Fasciitis Physiotherapy Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <img src="images/foot_massager_therapy.jpeg" alt="Heel Pain & Plantar Fasciitis Physiotherapy Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
                 <div class="absolute top-3 left-3 bg-navy-950/80 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-lg border border-white/20">
                   <span data-i18n="cond_heel_badge">Plantar & Foot</span>
                 </div>
@@ -1042,7 +1047,7 @@
           <div class="medical-card p-5 flex flex-col justify-between group">
             <div>
               <div class="aspect-[16/10] rounded-2xl overflow-hidden mb-4 relative shadow-sm border border-slate-100 bg-slate-100">
-                <img src="images/tens_ultrasonic_combo.jpeg" alt="Joint Pain Arthritis Physiotherapy Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <img src="images/tens_ultrasonic_combo.jpeg" alt="Joint Pain Arthritis Physiotherapy Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
                 <div class="absolute top-3 left-3 bg-navy-950/80 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-lg border border-white/20">
                   <span data-i18n="cond_joint_badge">Joints & Cartilage</span>
                 </div>
@@ -1068,7 +1073,7 @@
           <div class="medical-card p-5 flex flex-col justify-between group">
             <div>
               <div class="aspect-[16/10] rounded-2xl overflow-hidden mb-4 relative shadow-sm border border-slate-100 bg-slate-100">
-                <img src="images/back_electrotherapy_close.jpeg" alt="Slipped Disc & Sciatica Nerve Pain Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <img src="images/back_electrotherapy_close.jpeg" alt="Slipped Disc & Sciatica Nerve Pain Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
                 <div class="absolute top-3 left-3 bg-navy-950/80 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-lg border border-white/20">
                   <span data-i18n="cond_disc_badge">Spine Decompression</span>
                 </div>
@@ -1098,7 +1103,7 @@
           <div class="medical-card p-5 flex flex-col justify-between group">
             <div>
               <div class="aspect-[16/10] rounded-2xl overflow-hidden mb-4 relative shadow-sm border border-slate-100 bg-slate-100">
-                <img src="images/muscle_stimulation_neuro.jpeg" alt="Stroke Hemiplegia Paralysis Neuro Rehab Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <img src="images/muscle_stimulation_neuro.jpeg" alt="Stroke Hemiplegia Paralysis Neuro Rehab Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
                 <div class="absolute top-3 left-3 bg-navy-950/80 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-lg border border-white/20">
                   <span data-i18n="cond_neuro_badge">Neurological Recovery</span>
                 </div>
@@ -1128,7 +1133,7 @@
           <div class="medical-card p-5 flex flex-col justify-between group">
             <div>
               <div class="aspect-[16/10] rounded-2xl overflow-hidden mb-4 relative shadow-sm border border-slate-100 bg-slate-100">
-                <img src="images/iastm_fascia_tools.jpeg" alt="Muscle Strain Sports Injury IASTM Cupping Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <img src="images/iastm_fascia_tools.jpeg" alt="Muscle Strain Sports Injury IASTM Cupping Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
                 <div class="absolute top-3 left-3 bg-navy-950/80 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-lg border border-white/20">
                   <span data-i18n="cond_muscle_badge">Myofascial Care</span>
                 </div>
@@ -1417,7 +1422,7 @@
           <!-- Equip Card 1: Traction Bed (Spine) -->
           <div class="equip-item rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group" data-category="spine">
             <div class="relative h-56 bg-slate-100 overflow-hidden cursor-pointer" onclick="openEquipmentLightbox('images/traction_bed_cervical_lumbar.jpeg', 'Advanced Cervical & Lumbar Traction Bed', 'Computerized mechanical spinal decompression table')">
-              <img src="images/traction_bed_cervical_lumbar.jpeg" alt="Cervical and Lumbar Traction Bed Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <img src="images/traction_bed_cervical_lumbar.jpeg" alt="Cervical and Lumbar Traction Bed Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
               <div class="absolute top-3 left-3 bg-navy-900/80 backdrop-blur-md text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
                 <span data-i18n="equip1_badge">Spine Decompression</span>
               </div>
@@ -1443,7 +1448,7 @@
           <!-- Equip Card 2: CPM Knee Machine (Joint) -->
           <div class="equip-item rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group" data-category="joint">
             <div class="relative h-56 bg-slate-100 overflow-hidden cursor-pointer" onclick="openEquipmentLightbox('images/cpm_knee_machine.jpeg', 'Continuous Passive Motion (CPM) Machine', 'Motorized knee flexion rehabilitation unit')">
-              <img src="images/cpm_knee_machine.jpeg" alt="Continuous Passive Motion CPM Knee Machine Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <img src="images/cpm_knee_machine.jpeg" alt="Continuous Passive Motion CPM Knee Machine Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
               <div class="absolute top-3 left-3 bg-navy-900/80 backdrop-blur-md text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
                 <span data-i18n="equip2_badge">Post-Surgical Knee Rehab</span>
               </div>
@@ -1469,7 +1474,7 @@
           <!-- Equip Card 3: High-Intensity Laser (Electro) -->
           <div class="equip-item rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group" data-category="electro">
             <div class="relative h-56 bg-slate-100 overflow-hidden cursor-pointer" onclick="openEquipmentLightbox('images/laser_therapy_unit.jpeg', 'High-Intensity Therapeutic Laser Unit', 'Deep tissue photobiomodulation healing system')">
-              <img src="images/laser_therapy_unit.jpeg" alt="Advanced Laser Therapy Unit Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <img src="images/laser_therapy_unit.jpeg" alt="Advanced Laser Therapy Unit Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
               <div class="absolute top-3 left-3 bg-navy-900/80 backdrop-blur-md text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
                 <span data-i18n="equip3_badge">Deep Cellular Healing</span>
               </div>
@@ -1495,7 +1500,7 @@
           <!-- Equip Card 4: IFT (Electro) -->
           <div class="equip-item rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group" data-category="electro">
             <div class="relative h-56 bg-slate-100 overflow-hidden cursor-pointer" onclick="openEquipmentLightbox('images/ift_pain_management.jpeg', '4-Channel Interferential Therapy (IFT)', 'Medium-frequency deep tissue pain gating')">
-              <img src="images/ift_pain_management.jpeg" alt="Interferential Therapy IFT Unit Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <img src="images/ift_pain_management.jpeg" alt="Interferential Therapy IFT Unit Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
               <div class="absolute top-3 left-3 bg-navy-900/80 backdrop-blur-md text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
                 <span data-i18n="equip4_badge">Deep Pain Management</span>
               </div>
@@ -1521,7 +1526,7 @@
           <!-- Equip Card 5: Muscle Stimulator (Electro) -->
           <div class="equip-item rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group" data-category="electro">
             <div class="relative h-56 bg-slate-100 overflow-hidden cursor-pointer" onclick="openEquipmentLightbox('images/muscle_stimulation_neuro.jpeg', 'Clinical Muscle Stimulator (MS & NMES)', 'Neuromuscular re-education and muscle activation')">
-              <img src="images/muscle_stimulation_neuro.jpeg" alt="Muscle Stimulation MS Neuro Rehab Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <img src="images/muscle_stimulation_neuro.jpeg" alt="Muscle Stimulation MS Neuro Rehab Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
               <div class="absolute top-3 left-3 bg-navy-900/80 backdrop-blur-md text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
                 <span data-i18n="equip5_badge">Neuro Re-Education</span>
               </div>
@@ -1547,7 +1552,7 @@
           <!-- Equip Card 6: IASTM Tools (Manual) -->
           <div class="equip-item rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group" data-category="manual">
             <div class="relative h-56 bg-slate-100 overflow-hidden cursor-pointer" onclick="openEquipmentLightbox('images/iastm_fascia_tools.jpeg', 'Stainless Steel IASTM Precision Tools', 'Myofascial contour blades for scar and trigger point release')">
-              <img src="images/iastm_fascia_tools.jpeg" alt="IASTM Soft Tissue Tools Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <img src="images/iastm_fascia_tools.jpeg" alt="IASTM Soft Tissue Tools Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
               <div class="absolute top-3 left-3 bg-navy-900/80 backdrop-blur-md text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
                 <span data-i18n="equip6_badge">Myofascial Release</span>
               </div>
@@ -1573,7 +1578,7 @@
           <!-- Equip Card 7: Vacuum Cupping (Manual) -->
           <div class="equip-item rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group" data-category="manual">
             <div class="relative h-56 bg-slate-100 overflow-hidden cursor-pointer" onclick="openEquipmentLightbox('images/vacuum_cupping_therapy.jpeg', 'Medical Vacuum Dry Cupping Set', 'Negative pressure decompression cups')">
-              <img src="images/vacuum_cupping_therapy.jpeg" alt="Vacuum Cupping Therapy Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <img src="images/vacuum_cupping_therapy.jpeg" alt="Vacuum Cupping Therapy Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
               <div class="absolute top-3 left-3 bg-navy-900/80 backdrop-blur-md text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
                 <span data-i18n="equip7_badge">Circulation & Knot Release</span>
               </div>
@@ -1599,7 +1604,7 @@
           <!-- Equip Card 8: TENS & Ultrasound Combo (Electro) -->
           <div class="equip-item rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group" data-category="electro">
             <div class="relative h-56 bg-slate-100 overflow-hidden cursor-pointer" onclick="openEquipmentLightbox('images/tens_ultrasonic_combo.jpeg', 'TENS & Therapeutic Ultrasound Combo', 'Synergistic acoustic healing and electrical pain gating')">
-              <img src="images/tens_ultrasonic_combo.jpeg" alt="TENS and Ultrasonic Combo Machine Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <img src="images/tens_ultrasonic_combo.jpeg" alt="TENS and Ultrasonic Combo Machine Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
               <div class="absolute top-3 left-3 bg-navy-900/80 backdrop-blur-md text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
                 <span data-i18n="equip8_badge">Dual Pain & Ultrasound Healing</span>
               </div>
@@ -1625,7 +1630,7 @@
           <!-- Equip Card 9: Shoulder Wheel (Joint) -->
           <div class="equip-item rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group" data-category="joint">
             <div class="relative h-56 bg-slate-100 overflow-hidden cursor-pointer" onclick="openEquipmentLightbox('images/shoulder_wheel_exerciser.jpeg', 'Calibrated Shoulder Rotator Wheel', 'Rotational resistance exerciser for frozen shoulder')">
-              <img src="images/shoulder_wheel_exerciser.jpeg" alt="Shoulder Wheel Exerciser Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <img src="images/shoulder_wheel_exerciser.jpeg" alt="Shoulder Wheel Exerciser Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
               <div class="absolute top-3 left-3 bg-navy-900/80 backdrop-blur-md text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
                 <span data-i18n="equip9_badge">Shoulder Range of Motion</span>
               </div>
@@ -1651,7 +1656,7 @@
           <!-- Equip Card 10: Finger Gripper (Joint) -->
           <div class="equip-item rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group" data-category="joint">
             <div class="relative h-56 bg-slate-100 overflow-hidden cursor-pointer" onclick="openEquipmentLightbox('images/finger_gripper_rehab.jpeg', 'Hand Dynamometer & Finger Resistance Unit', 'Fine motor coordination and grip strength station')">
-              <img src="images/finger_gripper_rehab.jpeg" alt="Finger Gripper and Hand Rehab Exerciser Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <img src="images/finger_gripper_rehab.jpeg" alt="Finger Gripper and Hand Rehab Exerciser Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
               <div class="absolute top-3 left-3 bg-navy-900/80 backdrop-blur-md text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
                 <span data-i18n="equip10_badge">Fine Motor & Grip Training</span>
               </div>
@@ -1677,7 +1682,7 @@
           <!-- Equip Card 11: Foot Massager (Joint) -->
           <div class="equip-item rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group" data-category="joint">
             <div class="relative h-56 bg-slate-100 overflow-hidden cursor-pointer" onclick="openEquipmentLightbox('images/foot_massager_therapy.jpeg', 'Pneumatic Foot Massager & Circulation Booster', 'Plantar reflexology and nerve stimulation unit')">
-              <img src="images/foot_massager_therapy.jpeg" alt="Pneumatic Foot Massager Therapy Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <img src="images/foot_massager_therapy.jpeg" alt="Pneumatic Foot Massager Therapy Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
               <div class="absolute top-3 left-3 bg-navy-900/80 backdrop-blur-md text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
                 <span data-i18n="equip11_badge">Plantar Reflexology</span>
               </div>
@@ -1703,7 +1708,7 @@
           <!-- Equip Card 12: Private Therapy Bays (All / Facility) -->
           <div class="equip-item rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group" data-category="spine">
             <div class="relative h-56 bg-slate-100 overflow-hidden cursor-pointer" onclick="openEquipmentLightbox('images/clinic_therapy_bay_care.jpeg', 'Private Treatment Bays & Orthopedic Bolsters', 'Hygienic one-on-one therapy cubicles')">
-              <img src="images/clinic_therapy_bay_care.jpeg" alt="Private Treatment Bays Revital Clinic Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <img src="images/clinic_therapy_bay_care.jpeg" alt="Private Treatment Bays Revital Clinic Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
               <div class="absolute top-3 left-3 bg-navy-900/80 backdrop-blur-md text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
                 <span data-i18n="equip12_badge">Individualized Treatment</span>
               </div>
@@ -1949,7 +1954,7 @@
                 <label for="patient_name" class="block text-xs sm:text-sm font-semibold text-slate-700 mb-1.5" data-i18n="form_name_label">
                   Patient's Full Name *
                 </label>
-                <input type="text" id="patient_name" name="patient_name" required placeholder="e.g. Ramesh Kumar" data-i18n-placeholder="form_name_placeholder" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:border-primary-500 focus:ring-1 focus:ring-primary-500">
+                <input type="text" id="patient_name" name="patient_name" required autocomplete="name" placeholder="e.g. Ramesh Kumar" data-i18n-placeholder="form_name_placeholder" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:border-primary-500 focus:ring-1 focus:ring-primary-500">
               </div>
 
               <!-- Phone Number -->
@@ -1957,7 +1962,7 @@
                 <label for="patient_phone" class="block text-xs sm:text-sm font-semibold text-slate-700 mb-1.5" data-i18n="form_phone_label">
                   Phone Number (10 Digits) *
                 </label>
-                <input type="tel" id="patient_phone" name="patient_phone" required placeholder="e.g. 7690913118" data-i18n-placeholder="form_phone_placeholder" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:border-primary-500 focus:ring-1 focus:ring-primary-500">
+                <input type="tel" id="patient_phone" name="patient_phone" required inputmode="tel" autocomplete="tel" placeholder="e.g. 7690913118" data-i18n-placeholder="form_phone_placeholder" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:border-primary-500 focus:ring-1 focus:ring-primary-500">
               </div>
 
               <!-- User Email Address -->
@@ -1965,7 +1970,7 @@
                 <label for="patient_email" class="block text-xs sm:text-sm font-semibold text-slate-700 mb-1.5" data-i18n="form_email_label">
                   Your Email Address (For Direct Confirmation & Copy) *
                 </label>
-                <input type="email" id="patient_email" name="patient_email" required placeholder="e.g. yourname@gmail.com" data-i18n-placeholder="form_email_placeholder" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:border-primary-500 focus:ring-1 focus:ring-primary-500">
+                <input type="email" id="patient_email" name="patient_email" required autocomplete="email" placeholder="e.g. yourname@gmail.com" data-i18n-placeholder="form_email_placeholder" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:border-primary-500 focus:ring-1 focus:ring-primary-500">
               </div>
 
             </div>
@@ -1996,11 +2001,40 @@
 
             </div>
 
-            <!-- Treatment / Condition of Concern -->
+            <!-- Treatment / Condition of Concern with Quick 1-Tap Chips -->
             <div>
-              <label for="condition_select" class="block text-xs sm:text-sm font-semibold text-slate-700 mb-1.5" data-i18n="form_concern_label">
-                Treatment / Condition of Concern *
-              </label>
+              <div class="flex items-center justify-between mb-1.5">
+                <label for="condition_select" class="block text-xs sm:text-sm font-semibold text-slate-700" data-i18n="form_concern_label">
+                  Treatment / Condition of Concern *
+                </label>
+                <span class="text-[11px] text-primary-700 font-medium hidden sm:inline">Tap a chip or select from list</span>
+              </div>
+
+              <!-- 1-Tap Quick Symptom Chips -->
+              <div class="flex flex-wrap gap-1.5 sm:gap-2 mb-2.5">
+                <button type="button" class="quick-chip px-3 py-1.5 rounded-xl text-xs font-semibold bg-white text-slate-700 hover:bg-primary-50 hover:text-primary-700 border border-slate-200 transition-all touch-target-min" data-val="knee">
+                  🦴 Knee Pain
+                </button>
+                <button type="button" class="quick-chip px-3 py-1.5 rounded-xl text-xs font-semibold bg-white text-slate-700 hover:bg-primary-50 hover:text-primary-700 border border-slate-200 transition-all touch-target-min" data-val="back">
+                  ⚡ Back Pain / Disc
+                </button>
+                <button type="button" class="quick-chip px-3 py-1.5 rounded-xl text-xs font-semibold bg-white text-slate-700 hover:bg-primary-50 hover:text-primary-700 border border-slate-200 transition-all touch-target-min" data-val="neuro">
+                  🧠 Stroke / Paralysis
+                </button>
+                <button type="button" class="quick-chip px-3 py-1.5 rounded-xl text-xs font-semibold bg-white text-slate-700 hover:bg-primary-50 hover:text-primary-700 border border-slate-200 transition-all touch-target-min" data-val="neck">
+                  💆 Neck / Cervical
+                </button>
+                <button type="button" class="quick-chip px-3 py-1.5 rounded-xl text-xs font-semibold bg-white text-slate-700 hover:bg-primary-50 hover:text-primary-700 border border-slate-200 transition-all touch-target-min" data-val="shoulder">
+                  💪 Frozen Shoulder
+                </button>
+                <button type="button" class="quick-chip px-3 py-1.5 rounded-xl text-xs font-semibold bg-white text-slate-700 hover:bg-primary-50 hover:text-primary-700 border border-slate-200 transition-all touch-target-min" data-val="sciatica">
+                  🦵 Sciatica / Leg Pain
+                </button>
+                <button type="button" class="quick-chip px-3 py-1.5 rounded-xl text-xs font-semibold bg-white text-slate-700 hover:bg-primary-50 hover:text-primary-700 border border-slate-200 transition-all touch-target-min" data-val="home">
+                  🏠 Home Visit Enquiry
+                </button>
+              </div>
+
               <select id="condition_select" name="condition" required class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:border-primary-500 focus:ring-1 focus:ring-primary-500">
                 <option value="" disabled selected data-i18n="form_concern_opt_select">Select condition or care needed</option>
                 <option value="knee" data-i18n="form_concern_opt_knee">Knee Pain / Mobility Issue</option>
@@ -2499,7 +2533,7 @@
               <!-- Floating Google Place Profile Badge Overlay -->
               <div class="absolute top-3 left-3 z-10 max-w-xs sm:max-w-sm bg-white/95 backdrop-blur-md rounded-2xl p-3.5 shadow-xl border border-slate-200">
                 <div class="flex items-start gap-3">
-                  <img src="images/clinic_interior_hall.jpeg" alt="Revital Clinic Alwar" class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl object-cover flex-shrink-0 shadow-sm">
+                  <img src="images/clinic_interior_hall.jpeg" alt="Revital Clinic Alwar" class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl object-cover flex-shrink-0 shadow-sm" loading="lazy" decoding="async">
                   <div class="min-w-0 flex-1">
                     <h4 class="text-xs sm:text-sm font-bold text-navy-900 leading-tight">Revital Ortho & Neuro Physiotherapy Centre</h4>
                     <p class="text-[11px] text-slate-500 font-medium">रिवाइटल ऑर्थो & न्यूरो फिजियोथेरेपी सेंटर</p>
@@ -2724,7 +2758,7 @@
       <button id="lightboxCloseBtn" aria-label="Close Lightbox" class="absolute -top-12 right-0 text-white p-2 rounded-lg hover:bg-white/10">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
       </button>
-      <img id="lightboxImg" src="" alt="Revital Media" class="max-h-[80vh] max-w-full mx-auto rounded-2xl shadow-2xl object-contain">
+      <img id="lightboxImg" src="" alt="Revital Media" class="max-h-[80vh] max-w-full mx-auto rounded-2xl shadow-2xl object-contain" loading="lazy" decoding="async">
       <video id="lightboxVideo" controls playsinline class="hidden max-h-[85vh] max-w-full mx-auto rounded-2xl shadow-2xl bg-black object-contain"></video>
       <p id="lightboxCaption" class="text-white text-sm mt-4 font-medium"></p>
     </div>

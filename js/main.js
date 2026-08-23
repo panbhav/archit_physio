@@ -29,6 +29,8 @@
     initScrollAnimations();
     initModals();
     initBackToTop();
+    initClinicStatus();
+    initScrollSpy();
   });
 
   // 1. Initialize DOM Elements
@@ -610,6 +612,106 @@
     backToTopBtn.addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
+  }
+
+  // 9. Real-Time Clinic Status (Open / Closed / Break)
+  function initClinicStatus() {
+    function updateStatus() {
+      // Calculate current IST Time (UTC+5:30)
+      const now = new Date();
+      const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+      const istDate = new Date(utc + (3600000 * 5.5));
+
+      const day = istDate.getDay(); // 0 = Sun, 1 = Mon ... 6 = Sat
+      const hours = istDate.getHours();
+      const minutes = istDate.getMinutes();
+      const timeVal = hours + (minutes / 60);
+
+      const isHi = getCurrentLang() === 'hi';
+      let isOpen = false;
+      let statusText = '';
+
+      if (day === 0) { // Sunday (9:00 AM - 1:00 PM)
+        if (timeVal >= 9.0 && timeVal < 13.0) {
+          isOpen = true;
+          statusText = isHi ? '🟢 अभी खुला है • रविवार परामर्श जारी (1:00 PM तक)' : '🟢 Open Now • Sunday Morning (Closes 1:00 PM)';
+        } else {
+          isOpen = false;
+          statusText = isHi ? '🟠 अभी बंद है • ऑनलाइन बुकिंग खुली है (सोमवार 9:00 AM)' : '🟠 Closed Now • Booking Open (Opens Mon 9:00 AM)';
+        }
+      } else { // Mon - Sat (9:00 AM - 1:00 PM & 4:30 PM - 8:00 PM)
+        if (timeVal >= 9.0 && timeVal < 13.0) {
+          isOpen = true;
+          statusText = isHi ? '🟢 अभी खुला है • सुबह का सत्र (1:00 PM तक)' : '🟢 Open Now • Morning Session (Closes 1:00 PM)';
+        } else if (timeVal >= 16.5 && timeVal < 20.0) {
+          isOpen = true;
+          statusText = isHi ? '🟢 अभी खुला है • शाम का सत्र (8:00 PM तक)' : '🟢 Open Now • Evening Session (Closes 8:00 PM)';
+        } else if (timeVal >= 13.0 && timeVal < 16.5) {
+          isOpen = false;
+          statusText = isHi ? '🟠 दोपहर विश्राम • शाम 4:30 बजे खुलेगा' : '🟠 Afternoon Break • Re-opens at 4:30 PM';
+        } else if (timeVal < 9.0) {
+          isOpen = false;
+          statusText = isHi ? '🟠 अभी बंद है • सुबह 9:00 बजे खुलेगा' : '🟠 Closed Now • Opens at 9:00 AM';
+        } else {
+          isOpen = false;
+          statusText = isHi ? '🟠 आज का समय समाप्त • कल सुबह 9:00 बजे खुलेगा' : '🟠 Closed for Today • Opens Tomorrow 9:00 AM';
+        }
+      }
+
+      const statusBadges = document.querySelectorAll('.clinic-live-status');
+      statusBadges.forEach(badge => {
+        if (isOpen) {
+          badge.innerHTML = `
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 text-[11px] font-bold shadow-sm">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              <span>${statusText}</span>
+            </span>
+          `;
+        } else {
+          badge.innerHTML = `
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/15 text-amber-300 border border-amber-500/30 text-[11px] font-bold shadow-sm">
+              <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+              <span>${statusText}</span>
+            </span>
+          `;
+        }
+      });
+    }
+
+    updateStatus();
+    // Update every minute
+    setInterval(updateStatus, 60000);
+
+    // Re-run on language change
+    window.addEventListener('languageChanged', updateStatus);
+  }
+
+  // 10. Scroll-Spy Active Nav Item Highlighting
+  function initScrollSpy() {
+    const sections = document.querySelectorAll('section[id]');
+    if (!sections.length || !('IntersectionObserver' in window)) return;
+
+    const desktopNavLinks = document.querySelectorAll('header nav a[href^="#"]');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.getAttribute('id');
+          desktopNavLinks.forEach(link => {
+            const href = link.getAttribute('href');
+            if (href === `#${id}`) {
+              link.classList.add('text-primary-600', 'font-extrabold');
+              link.classList.remove('text-slate-700');
+            } else if (!link.closest('.group')) {
+              link.classList.remove('text-primary-600', 'font-extrabold');
+              link.classList.add('text-slate-700');
+            }
+          });
+        }
+      });
+    }, { threshold: 0.2, rootMargin: '-10% 0px -60% 0px' });
+
+    sections.forEach(sec => observer.observe(sec));
   }
 
 })();

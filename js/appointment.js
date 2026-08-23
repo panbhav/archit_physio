@@ -8,11 +8,59 @@ document.addEventListener('DOMContentLoaded', () => {
   const formFeedback = document.getElementById('formFeedback');
   const directWhatsAppBtn = document.getElementById('directWhatsAppBtn');
   const directEmailBtn = document.getElementById('directEmailBtn');
+  const conditionSelect = document.getElementById('condition_select');
+  const prefDateInput = document.getElementById('pref_date');
 
   // Clinic direct contact parameters
   const CLINIC_PHONE = "917690913118";
   const CLINIC_EMAIL = "Architjoshi018@gmail.com";
   const FORMSUBMIT_URL = `https://formsubmit.co/ajax/${CLINIC_EMAIL}`;
+
+  // 1. Dynamic Minimum Date Constraint (Cannot pick past dates)
+  if (prefDateInput) {
+    const today = new Date();
+    const yyyy = today.getFullYear();
+    const mm = String(today.getMonth() + 1).padStart(2, '0');
+    const dd = String(today.getDate()).padStart(2, '0');
+    const todayStr = `${yyyy}-${mm}-${dd}`;
+    prefDateInput.min = todayStr;
+    if (!prefDateInput.value) {
+      prefDateInput.value = todayStr;
+    }
+  }
+
+  // 2. 1-Tap Quick Symptom / Condition Chips
+  const quickChips = document.querySelectorAll('.quick-chip');
+  quickChips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      const val = chip.getAttribute('data-val');
+      quickChips.forEach(c => {
+        c.classList.remove('bg-primary-600', 'text-white', 'border-primary-600', 'shadow-sm');
+        c.classList.add('bg-white', 'text-slate-700', 'border-slate-200');
+      });
+      chip.classList.add('bg-primary-600', 'text-white', 'border-primary-600', 'shadow-sm');
+      chip.classList.remove('bg-white', 'text-slate-700', 'border-slate-200');
+
+      if (conditionSelect) {
+        conditionSelect.value = val;
+        conditionSelect.dispatchEvent(new Event('change'));
+      }
+    });
+  });
+
+  // Sync chip active state when select dropdown changes directly
+  conditionSelect?.addEventListener('change', (e) => {
+    const selectedVal = e.target.value;
+    quickChips.forEach(chip => {
+      if (chip.getAttribute('data-val') === selectedVal) {
+        chip.classList.add('bg-primary-600', 'text-white', 'border-primary-600', 'shadow-sm');
+        chip.classList.remove('bg-white', 'text-slate-700', 'border-slate-200');
+      } else {
+        chip.classList.remove('bg-primary-600', 'text-white', 'border-primary-600', 'shadow-sm');
+        chip.classList.add('bg-white', 'text-slate-700', 'border-slate-200');
+      }
+    });
+  });
 
   // Handle Form Submission
   if (appointmentForm) {
@@ -300,6 +348,17 @@ window.selectConditionInForm = function(conditionKey) {
   const select = document.getElementById('condition_select');
   if (select && conditionKey) {
     select.value = conditionKey;
+    select.dispatchEvent(new Event('change'));
+  }
+  const matchingChip = document.querySelector(`.quick-chip[data-val="${conditionKey}"]`);
+  if (matchingChip) {
+    const allChips = document.querySelectorAll('.quick-chip');
+    allChips.forEach(c => {
+      c.classList.remove('bg-primary-600', 'text-white', 'border-primary-600', 'shadow-sm');
+      c.classList.add('bg-white', 'text-slate-700', 'border-slate-200');
+    });
+    matchingChip.classList.add('bg-primary-600', 'text-white', 'border-primary-600', 'shadow-sm');
+    matchingChip.classList.remove('bg-white', 'text-slate-700', 'border-slate-200');
   }
   const formSection = document.getElementById('appointment');
   if (formSection) {
