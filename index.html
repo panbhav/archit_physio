@@ -264,13 +264,39 @@
         </a>
 
         <!-- Desktop Navigation Links -->
-        <nav class="hidden xl:flex items-center gap-5 text-sm font-medium text-slate-700">
+        <nav class="hidden lg:flex items-center gap-4 xl:gap-6 text-sm font-medium text-slate-700">
           <a href="#home" class="nav-link-item hover:text-primary-600 transition-colors" data-i18n="nav_home">Home</a>
-          <a href="#about" class="nav-link-item hover:text-primary-600 transition-colors" data-i18n="nav_about">About Us</a>
-          <a href="#doctor" class="nav-link-item hover:text-primary-600 transition-colors" data-i18n="nav_doctor">Dr. Archit Joshi</a>
-          <a href="#neuro" class="nav-link-item hover:text-primary-600 transition-colors" data-i18n="nav_neuro">Neuro Rehab</a>
-          <a href="#ortho" class="nav-link-item hover:text-primary-600 transition-colors" data-i18n="nav_ortho">Ortho Care</a>
-          <a href="#services" class="nav-link-item hover:text-primary-600 transition-colors" data-i18n="nav_services">Services</a>
+          
+          <!-- Clubbed 1: About & Doctor -->
+          <div class="relative group">
+            <a href="#about" class="nav-link-item hover:text-primary-600 transition-colors inline-flex items-center gap-1 py-2">
+              <span data-i18n="nav_about_doctor">About & Doctor</span>
+              <svg class="w-3.5 h-3.5 text-slate-400 group-hover:text-primary-600 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </a>
+            <div class="absolute left-0 top-full pt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 min-w-[200px]">
+              <div class="bg-white rounded-2xl shadow-xl border border-slate-200 py-2 text-xs font-semibold">
+                <a href="#about" class="block px-4 py-2 hover:bg-primary-50 text-navy-900 hover:text-primary-700 transition-colors" data-i18n="nav_about">About Us</a>
+                <a href="#doctor" class="block px-4 py-2 hover:bg-primary-50 text-navy-900 hover:text-primary-700 transition-colors" data-i18n="nav_doctor">Dr. Archit Joshi</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Clubbed 2: Treatments & Services -->
+          <div class="relative group">
+            <a href="#conditions" class="nav-link-item hover:text-primary-600 transition-colors inline-flex items-center gap-1 py-2">
+              <span data-i18n="nav_treatments_services">Treatments & Services</span>
+              <svg class="w-3.5 h-3.5 text-slate-400 group-hover:text-primary-600 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </a>
+            <div class="absolute left-0 top-full pt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 min-w-[220px]">
+              <div class="bg-white rounded-2xl shadow-xl border border-slate-200 py-2 text-xs font-semibold">
+                <a href="#conditions" class="block px-4 py-2 hover:bg-primary-50 text-navy-900 hover:text-primary-700 transition-colors" data-i18n="nav_conditions">Conditions We Treat</a>
+                <a href="#neuro" class="block px-4 py-2 hover:bg-primary-50 text-navy-900 hover:text-primary-700 transition-colors" data-i18n="nav_neuro">Neuro Rehab (Stroke/Paralysis)</a>
+                <a href="#ortho" class="block px-4 py-2 hover:bg-primary-50 text-navy-900 hover:text-primary-700 transition-colors" data-i18n="nav_ortho">Ortho Care (Joint & Spine)</a>
+                <a href="#services" class="block px-4 py-2 hover:bg-primary-50 text-navy-900 hover:text-primary-700 transition-colors" data-i18n="nav_services">Specialized Services</a>
+              </div>
+            </div>
+          </div>
+
           <a href="#equipment" class="nav-link-item hover:text-primary-600 transition-colors" data-i18n="nav_equipment">Modern Equipment</a>
           <a href="#videos" class="nav-link-item hover:text-primary-600 transition-colors" data-i18n="nav_videos">Demonstrations</a>
           <a href="#gallery" class="nav-link-item hover:text-primary-600 transition-colors" data-i18n="nav_gallery">Gallery</a>
@@ -328,16 +354,37 @@
       </div>
 
       <!-- Mobile Navigation Links -->
-      <nav class="flex flex-col space-y-3 text-base font-medium text-slate-700">
+      <nav class="flex flex-col space-y-2 text-base font-medium text-slate-700">
         <a href="#home" class="nav-link-item hover:text-primary-600 py-1" data-i18n="nav_home">Home</a>
-        <a href="#about" class="nav-link-item hover:text-primary-600 py-1" data-i18n="nav_about">About Us</a>
-        <a href="#doctor" class="nav-link-item hover:text-primary-600 py-1" data-i18n="nav_doctor">Dr. Archit Joshi</a>
-        <a href="#neuro" class="nav-link-item hover:text-primary-600 py-1" data-i18n="nav_neuro">Neuro Rehab</a>
-        <a href="#ortho" class="nav-link-item hover:text-primary-600 py-1" data-i18n="nav_ortho">Ortho Care</a>
-        <a href="#services" class="nav-link-item hover:text-primary-600 py-1" data-i18n="nav_services">Services</a>
+        
+        <!-- Clubbed 1: About & Doctor -->
+        <div class="border-y border-slate-100 py-1.5">
+          <a href="#about" class="nav-link-item font-bold text-navy-900 hover:text-primary-600 flex items-center justify-between py-1">
+            <span data-i18n="nav_about_doctor">About & Doctor</span>
+            <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </a>
+          <div class="pl-3 pt-0.5 space-y-1 text-xs text-slate-600">
+            <a href="#about" class="nav-link-item block py-1 hover:text-primary-600" data-i18n="nav_about">About Us</a>
+            <a href="#doctor" class="nav-link-item block py-1 hover:text-primary-600" data-i18n="nav_doctor">Dr. Archit Joshi</a>
+          </div>
+        </div>
+
+        <!-- Clubbed 2: Treatments & Services -->
+        <div class="border-b border-slate-100 pb-1.5">
+          <a href="#conditions" class="nav-link-item font-bold text-navy-900 hover:text-primary-600 flex items-center justify-between py-1">
+            <span data-i18n="nav_treatments_services">Treatments & Services</span>
+            <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </a>
+          <div class="pl-3 pt-0.5 space-y-1 text-xs text-slate-600">
+            <a href="#conditions" class="nav-link-item block py-1 hover:text-primary-600" data-i18n="nav_conditions">Conditions We Treat</a>
+            <a href="#neuro" class="nav-link-item block py-1 hover:text-primary-600" data-i18n="nav_neuro">Neuro Rehab</a>
+            <a href="#ortho" class="nav-link-item block py-1 hover:text-primary-600" data-i18n="nav_ortho">Ortho Care</a>
+            <a href="#services" class="nav-link-item block py-1 hover:text-primary-600" data-i18n="nav_services">Specialized Services</a>
+          </div>
+        </div>
+
         <a href="#equipment" class="nav-link-item hover:text-primary-600 py-1" data-i18n="nav_equipment">Modern Equipment</a>
         <a href="#videos" class="nav-link-item hover:text-primary-600 py-1" data-i18n="nav_videos">Demonstrations</a>
-        <a href="#process" class="nav-link-item hover:text-primary-600 py-1" data-i18n="nav_process">Treatment Journey</a>
         <a href="#gallery" class="nav-link-item hover:text-primary-600 py-1" data-i18n="nav_gallery">Gallery</a>
         <a href="#faqs" class="nav-link-item hover:text-primary-600 py-1" data-i18n="nav_faqs">FAQs</a>
         <a href="#contact" class="nav-link-item hover:text-primary-600 py-1" data-i18n="nav_contact">Contact & Timings</a>
