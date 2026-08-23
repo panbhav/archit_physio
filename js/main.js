@@ -25,7 +25,6 @@
     initNavigation();
     initFAQAccordion();
     initEquipment();
-    initAmbientMusic();
     initGallery();
     initScrollAnimations();
     initModals();
@@ -343,71 +342,6 @@
     };
   }
 
-  // 5c. Ambient Healing Music Controller
-  function initAmbientMusic() {
-    const audio = document.getElementById('ambientAudio');
-    const toggleBtn = document.getElementById('ambientMusicToggleBtn');
-    const playIcon = document.getElementById('musicPlayIcon');
-    const pauseIcon = document.getElementById('musicPauseIcon');
-    const toggleText = document.getElementById('musicToggleText');
-    const muteBtn = document.getElementById('ambientMuteBtn');
-    if (!audio || !toggleBtn) return;
-
-    audio.volume = 0.45; // gentle relaxing background volume
-
-    function updateBtnState(playing) {
-      if (playing) {
-        playIcon?.classList.add('hidden');
-        pauseIcon?.classList.remove('hidden');
-        if (toggleText) toggleText.textContent = currentLanguage === 'hi' ? 'संगीत बंद करें' : 'Pause Music';
-        toggleBtn.classList.remove('bg-primary-600', 'hover:bg-primary-700');
-        toggleBtn.classList.add('bg-emerald-600', 'hover:bg-emerald-700');
-      } else {
-        playIcon?.classList.remove('hidden');
-        pauseIcon?.classList.add('hidden');
-        if (toggleText) toggleText.textContent = currentLanguage === 'hi' ? 'संगीत चालू करें' : 'Play Calming Music';
-        toggleBtn.classList.remove('bg-emerald-600', 'hover:bg-emerald-700');
-        toggleBtn.classList.add('bg-primary-600', 'hover:bg-primary-700');
-      }
-    }
-
-    toggleBtn.addEventListener('click', () => {
-      if (audio.paused) {
-        audio.play().then(() => {
-          updateBtnState(true);
-        }).catch(() => {
-          // Autoplay protection fallback
-        });
-      } else {
-        audio.pause();
-        updateBtnState(false);
-      }
-    });
-
-    muteBtn?.addEventListener('click', () => {
-      audio.muted = !audio.muted;
-      muteBtn.classList.toggle('bg-amber-200', audio.muted);
-    });
-
-    // Auto-duck ambient music volume when any video on the page starts playing
-    document.querySelectorAll('video').forEach(vid => {
-      vid.addEventListener('play', () => {
-        if (!audio.paused) {
-          audio.volume = 0.12; // soft ducking
-        }
-      });
-      vid.addEventListener('pause', () => {
-        if (!audio.paused) {
-          audio.volume = 0.45; // restore
-        }
-      });
-      vid.addEventListener('ended', () => {
-        if (!audio.paused) {
-          audio.volume = 0.45; // restore
-        }
-      });
-    });
-  }
 
   // 6. Condition Detail Modal
   const conditionDetailsData = {
