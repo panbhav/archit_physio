@@ -1,13 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  
+  <!-- 1. Home Page (Bilingual English & Hindi) -->
   <url>
-    <loc>https://panbhav.github.io/archit_physio/</loc>
+    <loc>https://drarchitjoshi.com/</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://panbhav.github.io/archit_physio/?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://panbhav.github.io/archit_physio/?lang=hi"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://panbhav.github.io/archit_physio/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drarchitjoshi.com/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://drarchitjoshi.com/?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drarchitjoshi.com/"/>
+    <image:image>
+      <image:loc>https://drarchitjoshi.com/images/archit_doct_phot.jpeg</image:loc>
+      <image:title>Dr. Archit Joshi - Lead Physiotherapist (MPT Neuro) in Alwar</image:title>
+      <image:caption>Dr. Archit Joshi, BPT, MPT (Neuro), Lead Physiotherapist at Revital Ortho and Neuro Physiotherapy Centre Alwar</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://drarchitjoshi.com/images/logo/logo.jpeg</image:loc>
+      <image:title>Revital Ortho &amp; Neuro Physiotherapy Centre Logo</image:title>
+    </image:image>
   </url>
+
+  <!-- 2. Dedicated Media & Video Demonstrations Hub -->
+  <url>
+    <loc>https://drarchitjoshi.com/media.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drarchitjoshi.com/media.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://drarchitjoshi.com/media.html?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drarchitjoshi.com/media.html"/>
+    <video:video>
+      <video:thumbnail_loc>https://drarchitjoshi.com/images/clinic_interior_hall.jpeg</video:thumbnail_loc>
+      <video:title>Revital Physiotherapy Centre Clinic Tour &amp; Procedures</video:title>
+      <video:description>Complete clinical walkthrough and modern equipment demonstration at Revital Physiotherapy Centre, Alwar</video:description>
+      <video:content_loc>https://drarchitjoshi.com/images/clinic_virtual_tour_entire.mp4</video:content_loc>
+      <video:publication_date>2026-08-23T00:00:00+05:30</video:publication_date>
+    </video:video>
+  </url>
+
 </urlset>
