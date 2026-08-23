@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const formData = new FormData(appointmentForm);
       const name = formData.get('patient_name')?.trim();
       const phone = formData.get('patient_phone')?.trim();
+      const email = formData.get('patient_email')?.trim() || '';
       const date = formData.get('pref_date');
       const timeSlot = formData.get('pref_time');
       const condition = formData.get('condition');
@@ -53,18 +54,22 @@ document.addEventListener('DOMContentLoaded', () => {
         ? `🏥 *रिवाइटल फिजियोथेरेपी अपॉइंटमेंट / पूछताछ अनुरोध*\n\n` +
           `👤 *मरीज का नाम:* ${name}\n` +
           `📞 *फोन:* ${phoneClean}\n` +
+          `✉️ *ईमेल:* ${email || 'N/A'}\n` +
           `📅 *तारीख:* ${date}\n` +
           `⏰ *समय:* ${timeSlot}\n` +
           `🩺 *समस्या/उपचार:* ${condition}\n` +
+          `💰 *परामर्श शुल्क:* ₹100/- मात्र\n` +
           `📋 *मरीज स्थिति:* ${patientType === 'new' ? 'नया मरीज' : 'पुराना मरीज'}\n` +
           `🏠 *होम विजिट:* ${homeVisit === 'yes' ? 'हाँ (Home Visit Requested)' : 'नहीं (Clinic Visit)'}\n` +
           `📝 *अतिरिक्त विवरण:* ${notes}`
         : `🏥 *Revital Physiotherapy Appointment / Query Request*\n\n` +
           `👤 *Patient Name:* ${name}\n` +
           `📞 *Phone:* ${phoneClean}\n` +
+          `✉️ *Email:* ${email || 'N/A'}\n` +
           `📅 *Preferred Date:* ${date}\n` +
           `⏰ *Time Slot:* ${timeSlot}\n` +
           `🩺 *Condition/Care:* ${condition}\n` +
+          `💰 *Consultation Fee:* ₹100/- Only\n` +
           `📋 *Patient Type:* ${patientType === 'new' ? 'New Patient' : 'Existing Patient'}\n` +
           `🏠 *Home Visit:* ${homeVisit === 'yes' ? 'Yes (Requested)' : 'No (Clinic Visit)'}\n` +
           `📝 *Notes:* ${notes}`;
@@ -76,9 +81,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const emailBody = `Hello Dr. Archit Joshi,\n\nI would like to request an appointment / consultation query:\n\n` +
         `Patient Name: ${name}\n` +
         `Phone: ${phoneClean}\n` +
+        `Email: ${email || 'N/A'}\n` +
         `Preferred Date: ${date}\n` +
         `Preferred Time Slot: ${timeSlot}\n` +
         `Concern / Condition: ${condition}\n` +
+        `Consultation Fee: ₹100/- Only\n` +
         `Patient Status: ${patientType}\n` +
         `Home Visit Needed: ${homeVisit}\n` +
         `Additional Symptoms / Notes: ${notes}\n\n` +
@@ -86,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const mailtoUrl = `mailto:${CLINIC_EMAIL}?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
 
-      // Submit asynchronous email copy to Architjoshi018@gmail.com
+      // Submit asynchronous email copy directly to Architjoshi018@gmail.com
       const submitBtn = appointmentForm.querySelector('button[type="submit"]');
       const originalBtnText = submitBtn ? submitBtn.innerHTML : '';
       if (submitBtn) {
@@ -96,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
             <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
           </svg>
-          ${currentLang === 'hi' ? 'भेजा जा रहा है...' : 'Sending Request...'}`;
+          ${currentLang === 'hi' ? 'ईमेल भेजा जा रहा है...' : 'Dispatching Query to Mail...'}`;
       }
 
       try {
@@ -108,19 +115,22 @@ document.addEventListener('DOMContentLoaded', () => {
           },
           body: JSON.stringify({
             name: name,
+            email: email || 'Direct-Query@revital-physio.local',
+            _replyto: email || CLINIC_EMAIL,
             phone: phoneClean,
             date: date,
             timeSlot: timeSlot,
             condition: condition,
+            consultationFee: '₹100/- Only',
             patientType: patientType,
             homeVisit: homeVisit,
             notes: notes,
-            _subject: `New Physiotherapy Appointment Query from ${name} - Revital Clinic Alwar`,
+            _subject: `Direct Query: ${name} (${phoneClean}) - Revital Clinic Alwar`,
             _template: 'table'
           })
         });
       } catch (err) {
-        // Quiet fallback
+        // Fallback continues
       } finally {
         if (submitBtn) {
           submitBtn.disabled = false;
@@ -248,7 +258,8 @@ function showSuccessModal(name, date, timeSlot, condition, waUrl, mailtoUrl) {
           <div><strong class="text-slate-900">${isHindi ? 'दिनांक:' : 'Date:'}</strong> ${date}</div>
           <div><strong class="text-slate-900">${isHindi ? 'समय स्लॉट:' : 'Time Slot:'}</strong> ${timeSlot}</div>
           <div><strong class="text-slate-900">${isHindi ? 'परामर्श:' : 'Concern:'}</strong> ${condition}</div>
-          <div><strong class="text-slate-900">${isHindi ? 'परामर्श शुल्क:' : 'Consultation Fee:'}</strong> <span class="text-emerald-700 font-semibold">${isHindi ? 'निःशुल्क (Free Consultation)' : 'Free Consultation'}</span></div>
+          <div><strong class="text-slate-900">${isHindi ? 'परामर्श शुल्क:' : 'Consultation Fee:'}</strong> <span class="text-primary-700 font-bold">${isHindi ? 'मात्र ₹100/-' : '₹100/- Only'}</span></div>
+          <div><strong class="text-slate-900">${isHindi ? 'मरीज ईमेल:' : 'Patient Email:'}</strong> ${email || 'N/A'}</div>
           <div><strong class="text-slate-900">${isHindi ? 'डॉक्टर ईमेल:' : 'Doctor Email:'}</strong> Architjoshi018@gmail.com</div>
         </div>
 
