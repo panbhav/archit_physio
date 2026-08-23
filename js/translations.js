@@ -396,6 +396,19 @@ const translations = {
     address_val: "A1, Sahab Johra, Shakti Nagar, Vijay Mandir Rd, Vijay Nagar, Alwar, Rajasthan – 301001",
     phone_card_title: "Direct Phone & WhatsApp",
     phone_val: "7690913118",
+    contact_email_title: "Official Email & Inquiries",
+    contact_email_val: "Architjoshi018@gmail.com",
+    btn_send_email: "Send Email Query",
+
+    // Mobile Bottom Sticky Bar
+    mobile_nav_call: "Call",
+    mobile_nav_whatsapp: "WhatsApp",
+    mobile_nav_email: "Email",
+    mobile_nav_book: "Book Free",
+    form_tab_appointment: "Book Consultation",
+    form_tab_email_query: "Email Query Directly",
+    form_query_success_title: "Query Dispatched Successfully!",
+    form_query_success_desc: "Your request has been routed to Architjoshi018@gmail.com. Dr. Archit Joshi will review and contact you promptly.",
 
     // Footer
     footer_tagline: "Dedicated Orthopedic & Neuro Rehabilitation in Alwar, Rajasthan.",
@@ -801,6 +814,19 @@ const translations = {
     address_val: "A1, साहब जोहड़ा, शक्ति नगर, विजय मंदिर रोड, विजय नगर, अलवर, राजस्थान – 301001",
     phone_card_title: "फोन एवं व्हाट्सएप",
     phone_val: "7690913118",
+    contact_email_title: "आधिकारिक ईमेल एवं प्रश्न",
+    contact_email_val: "Architjoshi018@gmail.com",
+    btn_send_email: "ईमेल द्वारा पूछें",
+
+    // Mobile Bottom Sticky Bar
+    mobile_nav_call: "कॉल",
+    mobile_nav_whatsapp: "व्हाट्सएप",
+    mobile_nav_email: "ईमेल",
+    mobile_nav_book: "परामर्श बुक करें",
+    form_tab_appointment: "परामर्श बुक करें",
+    form_tab_email_query: "सीधे ईमेल से पूछें",
+    form_query_success_title: "ईमेल अनुरोध तैयार व भेजा गया!",
+    form_query_success_desc: "आपका अनुरोध Architjoshi018@gmail.com पर भेज दिया गया है। डॉ. अर्चित जोशी जल्द ही आपसे संपर्क करेंगे।",
 
     // Footer
     footer_tagline: "अलवर, राजस्थान में समर्पित ऑर्थोपेडिक एवं न्यूरोलॉजिकल फिजियोथेरेपी सेवा।",

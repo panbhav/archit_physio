@@ -209,7 +209,8 @@ textarea:focus-visible {
 }
 
 /* Mobile Bottom Action Bar Safe Area Padding */
-.mobile-safe-bottom {
+.mobile-safe-bottom,
+.safe-bottom {
   padding-bottom: max(0.625rem, env(safe-area-inset-bottom, 0.625rem));
 }
 

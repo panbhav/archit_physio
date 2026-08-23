@@ -1,0 +1,6 @@
+# Robots.txt for Revital Ortho & Neuro Physiotherapy Centre
+User-agent: *
+Allow: /
+
+# Sitemap Index
+Sitemap: https://panbhav.github.io/archit_physio/sitemap.xml
