@@ -474,7 +474,8 @@ const translations = {
     footer_contact_info: "Clinic Information",
     footer_disclaimer_title: "Medical Disclaimer",
     footer_disclaimer_text: "The information provided on this website is for educational and general informational purposes only and does not constitute formal medical diagnosis or guaranteed treatment outcomes. Individual results may vary based on condition severity and personal compliance. Please consult a qualified physiotherapist or physician for personalized advice.",
-    footer_copyright: "© 2026 Revital Ortho & Neuro Physiotherapy Centre. All rights reserved."
+    footer_copyright: "© 2026 Revital Ortho & Neuro Physiotherapy Centre. All rights reserved.",
+    dev_credit: "Website & Software Services provided by"
   },
 
   hi: {
@@ -949,7 +950,8 @@ const translations = {
     footer_contact_info: "क्लिनिक संपर्क",
     footer_disclaimer_title: "चिकित्सीय अस्वीकरण (Medical Disclaimer)",
     footer_disclaimer_text: "इस वेबसाइट पर दी गई जानकारी केवल सामान्य स्वास्थ्य जागरूकता और शैक्षिक उद्देश्य के लिए है। यह किसी औपचारिक चिकित्सीय निदान या 100% निश्चित परिणाम का दावा नहीं करती। प्रत्येक व्यक्ति का शारीरिक स्वास्थ्य और रिकवरी अलग होती है। कृपया व्यक्तिगत परामर्श हेतु फिजियोथेरेपिस्ट से मिलें।",
-    footer_copyright: "© 2026 रिवाइटल ऑर्थो एवं न्यूरो फिजियोथेरेपी सेन्टर। सर्वाधिकार सुरक्षित।"
+    footer_copyright: "© 2026 रिवाइटल ऑर्थो एवं न्यूरो फिजियोथेरेपी सेन्टर। सर्वाधिकार सुरक्षित।",
+    dev_credit: "वेबसाइट एवं सॉफ्टवेयर सेवाएं:"
   }
 };
 
