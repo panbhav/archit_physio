@@ -25,8 +25,8 @@ A modern, trustworthy, mobile-first healthcare website for **Revital Ortho & Neu
    - Language preference saved in `localStorage`.
 
 2. **Physiotherapist Branding & Verified Media:**
-   - Real photograph of Dr. Archit Joshi (`images/archit_doct_phot.jpeg`) integrated into the Hero and Doctor Profile sections.
-   - Highlights specialized qualification: **BPT, MPT (Neuro)**.
+   - Real photograph of Dr. Archit Joshi (`images/archit_doct_phot.jpeg`) featured prominently in the Hero section and Media Gallery.
+   - Highlights specialized qualification: **BPT, MPT (Neuro)** and 8+ years clinical experience.
 
 3. **Specialized Clinical Sections:**
    - **Orthopedic Physiotherapy:** Knee pain, back pain, neck/cervical pain, shoulder/frozen shoulder, heel pain, joint pain, slipped disc, sciatica, muscle strain, sports injury, post-surgery rehabilitation.
@@ -61,6 +61,8 @@ A modern, trustworthy, mobile-first healthcare website for **Revital Ortho & Neu
 ```
 d:/Works/archit_physio/
 ├── index.html              # Core semantic HTML5 website with Schema.org & Tailwind CDN
+├── equipment.html          # Dedicated modern modalities & therapy technology page
+├── media.html              # Dedicated photo gallery & recovery videos page
 ├── css/
 │   └── styles.css          # Custom medical styling, animations & fonts
 ├── js/
