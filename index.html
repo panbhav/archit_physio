@@ -343,7 +343,7 @@
           </div>
 
           <!-- Modern Equipment -->
-          <a href="#equipment" class="nav-link-item hover:text-primary-600 transition-colors px-1.5 py-1" data-i18n="nav_equipment">
+          <a href="equipment.html" class="nav-link-item hover:text-primary-600 transition-colors px-1.5 py-1" data-i18n="nav_equipment">
             <span>Equipment</span>
           </a>
 
@@ -440,7 +440,7 @@
         </div>
 
         <!-- Equipment -->
-        <a href="#equipment" class="nav-link-item hover:text-primary-600 py-1.5 flex items-center gap-2.5">
+        <a href="equipment.html" class="nav-link-item hover:text-primary-600 py-1.5 flex items-center gap-2.5">
           <svg class="w-4 h-4 text-primary-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
           <span data-i18n="nav_equipment">Modern Equipment</span>
         </a>
@@ -1414,357 +1414,107 @@
       </div>
     </section>
 
-    <!-- 9. MODERN TECHNOLOGY & SPECIALIZED EQUIPMENT SECTION -->
+    <!-- 9. MODERN TECHNOLOGY & SPECIALIZED EQUIPMENT SECTION (TEASER HIGHLIGHT) -->
     <section id="equipment" class="py-16 md:py-24 bg-white border-b border-slate-200">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <!-- Section Header -->
         <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
           <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-primary-100 text-primary-800 text-xs font-bold uppercase tracking-wider mb-3">
-            <span data-i18n="equip_badge">Modern Rehabilitation Technology</span>
+            <span data-i18n="equip_teaser_badge">Modern Equipment & Technology</span>
           </div>
-          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-navy-900 tracking-tight" data-i18n="equip_title">
-            Advanced Physiotherapy Equipment & Care Modalities
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-navy-900 tracking-tight" data-i18n="equip_teaser_title">
+            Advanced Care Modalities & Equipment
           </h2>
-          <p class="text-sm sm:text-base text-slate-600 mt-3" data-i18n="equip_subtitle">
-            Equipped with state-of-the-art electrotherapy, spine decompression, automated knee mobilization, and precision myofascial release systems in Alwar.
+          <p class="text-sm sm:text-base text-slate-600 mt-3" data-i18n="equip_teaser_desc">
+            Equipped with computerized spinal decompression, motorized CPM knee mobilization, class-IV laser therapy, and advanced electrotherapy in Alwar.
           </p>
         </div>
 
-        <!-- Category Filter Tabs -->
-        <div class="flex flex-wrap items-center justify-center gap-2 mb-10">
-          <button type="button" class="equip-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-primary-600 text-white shadow-sm transition-all" data-equip-filter="all">
-            <span data-i18n="equip_cat_all">All Equipment</span>
-          </button>
-          <button type="button" class="equip-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all" data-equip-filter="spine">
-            <span data-i18n="equip_cat_spine">Spine & Traction</span>
-          </button>
-          <button type="button" class="equip-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all" data-equip-filter="electro">
-            <span data-i18n="equip_cat_electro">Electrotherapy & Laser</span>
-          </button>
-          <button type="button" class="equip-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all" data-equip-filter="joint">
-            <span data-i18n="equip_cat_joint">Joint & Mobility</span>
-          </button>
-          <button type="button" class="equip-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all" data-equip-filter="manual">
-            <span data-i18n="equip_cat_manual">Myofascial & Manual</span>
-          </button>
-        </div>
+        <!-- 3 Highlight Modality Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-        <!-- 12 Equipment Cards Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="equipmentGrid">
-
-          <!-- Equip Card 1: Traction Bed (Spine) -->
-          <div class="equip-item rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group" data-category="spine">
-            <div class="relative h-56 bg-slate-100 overflow-hidden cursor-pointer" onclick="openEquipmentLightbox('images/traction_bed_cervical_lumbar.jpeg', 'Advanced Cervical & Lumbar Traction Bed', 'Computerized mechanical spinal decompression table')">
+          <!-- Highlight 1: Traction Bed -->
+          <div class="rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group">
+            <div class="relative h-56 bg-slate-100 overflow-hidden">
               <img src="images/traction_bed_cervical_lumbar.jpeg" alt="Cervical and Lumbar Traction Bed Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
               <div class="absolute top-3 left-3 bg-navy-900/80 backdrop-blur-md text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
                 <span data-i18n="equip1_badge">Spine Decompression</span>
               </div>
-              <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-md text-slate-800 text-[10px] font-semibold px-2 py-1 rounded-md shadow flex items-center gap-1">
-                <svg class="w-3 h-3 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
-                <span>View Full Photo</span>
-              </div>
             </div>
             <div class="p-5 flex-1 flex flex-col justify-between">
               <div>
-                <h3 class="text-base font-bold text-navy-900 mb-2 leading-snug" data-i18n="equip1_title">Advanced Cervical & Lumbar Traction Bed</h3>
-                <p class="text-xs text-slate-600 leading-relaxed" data-i18n="equip1_desc">
-                  Computerized mechanical decompression that gently creates space between compressed spinal vertebrae, relieving pinched nerves, disc herniation, sciatica, and cervical spondylosis.
+                <h3 class="text-base font-bold text-navy-900 mb-2 leading-snug" data-i18n="equip_teaser_feat1_title">Cervical & Lumbar Traction Bed</h3>
+                <p class="text-xs text-slate-600 leading-relaxed" data-i18n="equip_teaser_feat1_sub">
+                  Computerized spinal decompression for sciatica & disc herniation
                 </p>
               </div>
               <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
                 <span class="text-[11px] font-medium text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">✓ Slip Disc & Sciatica</span>
-                <a href="#appointment" class="text-xs font-bold text-primary-600 hover:text-primary-800">Book Care &rarr;</a>
+                <a href="equipment.html" class="text-xs font-bold text-primary-600 hover:text-primary-800">Explore &rarr;</a>
               </div>
             </div>
           </div>
 
-          <!-- Equip Card 2: CPM Knee Machine (Joint) -->
-          <div class="equip-item rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group" data-category="joint">
-            <div class="relative h-56 bg-slate-100 overflow-hidden cursor-pointer" onclick="openEquipmentLightbox('images/cpm_knee_machine.jpeg', 'Continuous Passive Motion (CPM) Machine', 'Motorized knee flexion rehabilitation unit')">
+          <!-- Highlight 2: CPM Knee Machine -->
+          <div class="rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group">
+            <div class="relative h-56 bg-slate-100 overflow-hidden">
               <img src="images/cpm_knee_machine.jpeg" alt="Continuous Passive Motion CPM Knee Machine Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
               <div class="absolute top-3 left-3 bg-navy-900/80 backdrop-blur-md text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
                 <span data-i18n="equip2_badge">Post-Surgical Knee Rehab</span>
               </div>
-              <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-md text-slate-800 text-[10px] font-semibold px-2 py-1 rounded-md shadow flex items-center gap-1">
-                <svg class="w-3 h-3 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
-                <span>View Full Photo</span>
-              </div>
             </div>
             <div class="p-5 flex-1 flex flex-col justify-between">
               <div>
-                <h3 class="text-base font-bold text-navy-900 mb-2 leading-snug" data-i18n="equip2_title">Continuous Passive Motion (CPM) Machine</h3>
-                <p class="text-xs text-slate-600 leading-relaxed" data-i18n="equip2_desc">
-                  Motorized joint mobilizer for post-operative recovery (Total Knee Replacement/TKR & ACL repair) to safely restore knee flexion, prevent stiffness, and reduce scar tissue.
+                <h3 class="text-base font-bold text-navy-900 mb-2 leading-snug" data-i18n="equip_teaser_feat2_title">Continuous Passive Motion (CPM)</h3>
+                <p class="text-xs text-slate-600 leading-relaxed" data-i18n="equip_teaser_feat2_sub">
+                  Automated knee joint mobilizer for post-TKR & ligament surgery
                 </p>
               </div>
               <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
                 <span class="text-[11px] font-medium text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">✓ Post-TKR Recovery</span>
-                <a href="#appointment" class="text-xs font-bold text-primary-600 hover:text-primary-800">Book Care &rarr;</a>
+                <a href="equipment.html" class="text-xs font-bold text-primary-600 hover:text-primary-800">Explore &rarr;</a>
               </div>
             </div>
           </div>
 
-          <!-- Equip Card 3: High-Intensity Laser (Electro) -->
-          <div class="equip-item rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group" data-category="electro">
-            <div class="relative h-56 bg-slate-100 overflow-hidden cursor-pointer" onclick="openEquipmentLightbox('images/laser_therapy_unit.jpeg', 'High-Intensity Therapeutic Laser Unit', 'Deep tissue photobiomodulation healing system')">
-              <img src="images/laser_therapy_unit.jpeg" alt="Advanced Laser Therapy Unit Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
+          <!-- Highlight 3: High-Intensity Laser & IFT -->
+          <div class="rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group">
+            <div class="relative h-56 bg-slate-100 overflow-hidden">
+              <img src="images/laser_therapy_unit.jpeg" alt="High Intensity Laser and IFT Therapy Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
               <div class="absolute top-3 left-3 bg-navy-900/80 backdrop-blur-md text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
                 <span data-i18n="equip3_badge">Deep Cellular Healing</span>
               </div>
-              <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-md text-slate-800 text-[10px] font-semibold px-2 py-1 rounded-md shadow flex items-center gap-1">
-                <svg class="w-3 h-3 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
-                <span>View Full Photo</span>
-              </div>
             </div>
             <div class="p-5 flex-1 flex flex-col justify-between">
               <div>
-                <h3 class="text-base font-bold text-navy-900 mb-2 leading-snug" data-i18n="equip3_title">High-Intensity Therapeutic Laser Unit</h3>
-                <p class="text-xs text-slate-600 leading-relaxed" data-i18n="equip3_desc">
-                  Advanced photobiomodulation technology penetrating deep into ligaments and tendons to accelerate tissue regeneration, reduce inflammation, and alleviate acute/chronic pain.
+                <h3 class="text-base font-bold text-navy-900 mb-2 leading-snug" data-i18n="equip_teaser_feat3_title">High-Intensity Laser & IFT</h3>
+                <p class="text-xs text-slate-600 leading-relaxed" data-i18n="equip_teaser_feat3_sub">
+                  Cellular tissue regeneration & deep electrotherapy pain relief
                 </p>
               </div>
               <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-                <span class="text-[11px] font-medium text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">✓ Tendon & Ligament Healing</span>
-                <a href="#appointment" class="text-xs font-bold text-primary-600 hover:text-primary-800">Book Care &rarr;</a>
+                <span class="text-[11px] font-medium text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">✓ Pain & Tissue Repair</span>
+                <a href="equipment.html" class="text-xs font-bold text-primary-600 hover:text-primary-800">Explore &rarr;</a>
               </div>
             </div>
           </div>
 
-          <!-- Equip Card 4: IFT (Electro) -->
-          <div class="equip-item rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group" data-category="electro">
-            <div class="relative h-56 bg-slate-100 overflow-hidden cursor-pointer" onclick="openEquipmentLightbox('images/ift_pain_management.jpeg', '4-Channel Interferential Therapy (IFT)', 'Medium-frequency deep tissue pain gating')">
-              <img src="images/ift_pain_management.jpeg" alt="Interferential Therapy IFT Unit Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
-              <div class="absolute top-3 left-3 bg-navy-900/80 backdrop-blur-md text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
-                <span data-i18n="equip4_badge">Deep Pain Management</span>
-              </div>
-              <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-md text-slate-800 text-[10px] font-semibold px-2 py-1 rounded-md shadow flex items-center gap-1">
-                <svg class="w-3 h-3 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
-                <span>View Full Photo</span>
-              </div>
-            </div>
-            <div class="p-5 flex-1 flex flex-col justify-between">
-              <div>
-                <h3 class="text-base font-bold text-navy-900 mb-2 leading-snug" data-i18n="equip4_title">4-Channel Interferential Therapy (IFT)</h3>
-                <p class="text-xs text-slate-600 leading-relaxed" data-i18n="equip4_desc">
-                  Medium-frequency electrotherapy that penetrates deep into muscular tissue to block pain pathways (Gate Control Theory), improve circulation, and reduce inflammatory swelling.
-                </p>
-              </div>
-              <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-                <span class="text-[11px] font-medium text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">✓ Chronic Joint & Back Pain</span>
-                <a href="#appointment" class="text-xs font-bold text-primary-600 hover:text-primary-800">Book Care &rarr;</a>
-              </div>
-            </div>
-          </div>
+        </div>
 
-          <!-- Equip Card 5: Muscle Stimulator (Electro) -->
-          <div class="equip-item rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group" data-category="electro">
-            <div class="relative h-56 bg-slate-100 overflow-hidden cursor-pointer" onclick="openEquipmentLightbox('images/muscle_stimulation_neuro.jpeg', 'Clinical Muscle Stimulator (MS & NMES)', 'Neuromuscular re-education and muscle activation')">
-              <img src="images/muscle_stimulation_neuro.jpeg" alt="Muscle Stimulation MS Neuro Rehab Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
-              <div class="absolute top-3 left-3 bg-navy-900/80 backdrop-blur-md text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
-                <span data-i18n="equip5_badge">Neuro Re-Education</span>
-              </div>
-              <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-md text-slate-800 text-[10px] font-semibold px-2 py-1 rounded-md shadow flex items-center gap-1">
-                <svg class="w-3 h-3 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
-                <span>View Full Photo</span>
-              </div>
-            </div>
-            <div class="p-5 flex-1 flex flex-col justify-between">
-              <div>
-                <h3 class="text-base font-bold text-navy-900 mb-2 leading-snug" data-i18n="equip5_title">Clinical Muscle Stimulator (MS & NMES)</h3>
-                <p class="text-xs text-slate-600 leading-relaxed" data-i18n="equip5_desc">
-                  Precision neuromuscular electrical currents that activate denervated or weakened muscles in stroke, hemiplegia, facial palsy, and nerve injuries to re-train motor control.
-                </p>
-              </div>
-              <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-                <span class="text-[11px] font-medium text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">✓ Stroke & Facial Palsy</span>
-                <a href="#appointment" class="text-xs font-bold text-primary-600 hover:text-primary-800">Book Care &rarr;</a>
-              </div>
-            </div>
+        <!-- Teaser CTA Banner linking to equipment.html -->
+        <div class="mt-10 p-6 sm:p-8 rounded-2xl bg-gradient-to-r from-primary-50 via-sky-50 to-primary-100/60 border border-primary-200/80 flex flex-col sm:flex-row items-center justify-between gap-5 text-center sm:text-left shadow-sm">
+          <div class="max-w-xl">
+            <h4 class="text-base sm:text-lg font-bold text-navy-900">
+              Want to see all 12 advanced rehabilitation modalities?
+            </h4>
+            <p class="text-xs sm:text-sm text-slate-600 mt-1">
+              Explore our complete range including IASTM myofascial blades, vacuum cupping, clinical muscle stimulators, and ultrasonic therapy.
+            </p>
           </div>
-
-          <!-- Equip Card 6: IASTM Tools (Manual) -->
-          <div class="equip-item rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group" data-category="manual">
-            <div class="relative h-56 bg-slate-100 overflow-hidden cursor-pointer" onclick="openEquipmentLightbox('images/iastm_fascia_tools.jpeg', 'Stainless Steel IASTM Precision Tools', 'Myofascial contour blades for scar and trigger point release')">
-              <img src="images/iastm_fascia_tools.jpeg" alt="IASTM Soft Tissue Tools Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
-              <div class="absolute top-3 left-3 bg-navy-900/80 backdrop-blur-md text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
-                <span data-i18n="equip6_badge">Myofascial Release</span>
-              </div>
-              <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-md text-slate-800 text-[10px] font-semibold px-2 py-1 rounded-md shadow flex items-center gap-1">
-                <svg class="w-3 h-3 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
-                <span>View Full Photo</span>
-              </div>
-            </div>
-            <div class="p-5 flex-1 flex flex-col justify-between">
-              <div>
-                <h3 class="text-base font-bold text-navy-900 mb-2 leading-snug" data-i18n="equip6_title">Stainless Steel IASTM Precision Tools</h3>
-                <p class="text-xs text-slate-600 leading-relaxed" data-i18n="equip6_desc">
-                  Instrument-Assisted Soft Tissue Mobilization blades designed to break down fibrous adhesions, release stubborn myofascial trigger points, and restore smooth muscular gliding.
-                </p>
-              </div>
-              <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-                <span class="text-[11px] font-medium text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">✓ Scar Tissue & Fascia</span>
-                <a href="#appointment" class="text-xs font-bold text-primary-600 hover:text-primary-800">Book Care &rarr;</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Equip Card 7: Vacuum Cupping (Manual) -->
-          <div class="equip-item rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group" data-category="manual">
-            <div class="relative h-56 bg-slate-100 overflow-hidden cursor-pointer" onclick="openEquipmentLightbox('images/vacuum_cupping_therapy.jpeg', 'Medical Vacuum Dry Cupping Set', 'Negative pressure decompression cups')">
-              <img src="images/vacuum_cupping_therapy.jpeg" alt="Vacuum Cupping Therapy Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
-              <div class="absolute top-3 left-3 bg-navy-900/80 backdrop-blur-md text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
-                <span data-i18n="equip7_badge">Circulation & Knot Release</span>
-              </div>
-              <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-md text-slate-800 text-[10px] font-semibold px-2 py-1 rounded-md shadow flex items-center gap-1">
-                <svg class="w-3 h-3 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
-                <span>View Full Photo</span>
-              </div>
-            </div>
-            <div class="p-5 flex-1 flex flex-col justify-between">
-              <div>
-                <h3 class="text-base font-bold text-navy-900 mb-2 leading-snug" data-i18n="equip7_title">Medical Vacuum Dry Cupping Set</h3>
-                <p class="text-xs text-slate-600 leading-relaxed" data-i18n="equip7_desc">
-                  Negative pressure suction therapy that decompresses connective tissue, increases micro-vascular blood flow, and relieves chronic neck, shoulder, and lumbar tension.
-                </p>
-              </div>
-              <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-                <span class="text-[11px] font-medium text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">✓ Deep Muscle Relaxation</span>
-                <a href="#appointment" class="text-xs font-bold text-primary-600 hover:text-primary-800">Book Care &rarr;</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Equip Card 8: TENS & Ultrasound Combo (Electro) -->
-          <div class="equip-item rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group" data-category="electro">
-            <div class="relative h-56 bg-slate-100 overflow-hidden cursor-pointer" onclick="openEquipmentLightbox('images/tens_ultrasonic_combo.jpeg', 'TENS & Therapeutic Ultrasound Combo', 'Synergistic acoustic healing and electrical pain gating')">
-              <img src="images/tens_ultrasonic_combo.jpeg" alt="TENS and Ultrasonic Combo Machine Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
-              <div class="absolute top-3 left-3 bg-navy-900/80 backdrop-blur-md text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
-                <span data-i18n="equip8_badge">Dual Pain & Ultrasound Healing</span>
-              </div>
-              <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-md text-slate-800 text-[10px] font-semibold px-2 py-1 rounded-md shadow flex items-center gap-1">
-                <svg class="w-3 h-3 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
-                <span>View Full Photo</span>
-              </div>
-            </div>
-            <div class="p-5 flex-1 flex flex-col justify-between">
-              <div>
-                <h3 class="text-base font-bold text-navy-900 mb-2 leading-snug" data-i18n="equip8_title">TENS & Therapeutic Ultrasound Combo</h3>
-                <p class="text-xs text-slate-600 leading-relaxed" data-i18n="equip8_desc">
-                  Synergistic combo therapy combining 1MHz/3MHz acoustic micro-massage for deep tendon healing with Transcutaneous Electrical Nerve Stimulation for instant pain gating.
-                </p>
-              </div>
-              <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-                <span class="text-[11px] font-medium text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">✓ Muscle Spasms & Sprains</span>
-                <a href="#appointment" class="text-xs font-bold text-primary-600 hover:text-primary-800">Book Care &rarr;</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Equip Card 9: Shoulder Wheel (Joint) -->
-          <div class="equip-item rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group" data-category="joint">
-            <div class="relative h-56 bg-slate-100 overflow-hidden cursor-pointer" onclick="openEquipmentLightbox('images/shoulder_wheel_exerciser.jpeg', 'Calibrated Shoulder Rotator Wheel', 'Rotational resistance exerciser for frozen shoulder')">
-              <img src="images/shoulder_wheel_exerciser.jpeg" alt="Shoulder Wheel Exerciser Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
-              <div class="absolute top-3 left-3 bg-navy-900/80 backdrop-blur-md text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
-                <span data-i18n="equip9_badge">Shoulder Range of Motion</span>
-              </div>
-              <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-md text-slate-800 text-[10px] font-semibold px-2 py-1 rounded-md shadow flex items-center gap-1">
-                <svg class="w-3 h-3 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
-                <span>View Full Photo</span>
-              </div>
-            </div>
-            <div class="p-5 flex-1 flex flex-col justify-between">
-              <div>
-                <h3 class="text-base font-bold text-navy-900 mb-2 leading-snug" data-i18n="equip9_title">Calibrated Shoulder Rotator Wheel</h3>
-                <p class="text-xs text-slate-600 leading-relaxed" data-i18n="equip9_desc">
-                  Smooth 360-degree rotational mobility exerciser for restoring abduction and rotation in frozen shoulder (adhesive capsulitis), rotator cuff injuries, and joint stiffness.
-                </p>
-              </div>
-              <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-                <span class="text-[11px] font-medium text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">✓ Frozen Shoulder Care</span>
-                <a href="#appointment" class="text-xs font-bold text-primary-600 hover:text-primary-800">Book Care &rarr;</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Equip Card 10: Finger Gripper (Joint) -->
-          <div class="equip-item rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group" data-category="joint">
-            <div class="relative h-56 bg-slate-100 overflow-hidden cursor-pointer" onclick="openEquipmentLightbox('images/finger_gripper_rehab.jpeg', 'Hand Dynamometer & Finger Resistance Unit', 'Fine motor coordination and grip strength station')">
-              <img src="images/finger_gripper_rehab.jpeg" alt="Finger Gripper and Hand Rehab Exerciser Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
-              <div class="absolute top-3 left-3 bg-navy-900/80 backdrop-blur-md text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
-                <span data-i18n="equip10_badge">Fine Motor & Grip Training</span>
-              </div>
-              <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-md text-slate-800 text-[10px] font-semibold px-2 py-1 rounded-md shadow flex items-center gap-1">
-                <svg class="w-3 h-3 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
-                <span>View Full Photo</span>
-              </div>
-            </div>
-            <div class="p-5 flex-1 flex flex-col justify-between">
-              <div>
-                <h3 class="text-base font-bold text-navy-900 mb-2 leading-snug" data-i18n="equip10_title">Hand Dynamometer & Finger Resistance Unit</h3>
-                <p class="text-xs text-slate-600 leading-relaxed" data-i18n="equip10_desc">
-                  Targeted resistance exerciser for restoring finger dexterity, grip strength, and fine motor coordination in neurological hemiplegia and post-fracture hand rehabilitation.
-                </p>
-              </div>
-              <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-                <span class="text-[11px] font-medium text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">✓ Hand & Finger Mobility</span>
-                <a href="#appointment" class="text-xs font-bold text-primary-600 hover:text-primary-800">Book Care &rarr;</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Equip Card 11: Foot Massager (Joint) -->
-          <div class="equip-item rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group" data-category="joint">
-            <div class="relative h-56 bg-slate-100 overflow-hidden cursor-pointer" onclick="openEquipmentLightbox('images/foot_massager_therapy.jpeg', 'Pneumatic Foot Massager & Circulation Booster', 'Plantar reflexology and nerve stimulation unit')">
-              <img src="images/foot_massager_therapy.jpeg" alt="Pneumatic Foot Massager Therapy Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
-              <div class="absolute top-3 left-3 bg-navy-900/80 backdrop-blur-md text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
-                <span data-i18n="equip11_badge">Plantar Reflexology</span>
-              </div>
-              <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-md text-slate-800 text-[10px] font-semibold px-2 py-1 rounded-md shadow flex items-center gap-1">
-                <svg class="w-3 h-3 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
-                <span>View Full Photo</span>
-              </div>
-            </div>
-            <div class="p-5 flex-1 flex flex-col justify-between">
-              <div>
-                <h3 class="text-base font-bold text-navy-900 mb-2 leading-snug" data-i18n="equip11_title">Pneumatic Foot Massager & Circulation Booster</h3>
-                <p class="text-xs text-slate-600 leading-relaxed" data-i18n="equip11_desc">
-                  Acupressure and pneumatic massage therapy supporting plantar fasciitis recovery, diabetic foot neuropathy circulation, calcaneal spur relief, and heel comfort.
-                </p>
-              </div>
-              <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-                <span class="text-[11px] font-medium text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">✓ Plantar Fasciitis & Heel Spur</span>
-                <a href="#appointment" class="text-xs font-bold text-primary-600 hover:text-primary-800">Book Care &rarr;</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Equip Card 12: Private Therapy Bays (All / Facility) -->
-          <div class="equip-item rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group" data-category="spine">
-            <div class="relative h-56 bg-slate-100 overflow-hidden cursor-pointer" onclick="openEquipmentLightbox('images/clinic_therapy_bay_care.jpeg', 'Private Treatment Bays & Orthopedic Bolsters', 'Hygienic one-on-one therapy cubicles')">
-              <img src="images/clinic_therapy_bay_care.jpeg" alt="Private Treatment Bays Revital Clinic Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
-              <div class="absolute top-3 left-3 bg-navy-900/80 backdrop-blur-md text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
-                <span data-i18n="equip12_badge">Individualized Treatment</span>
-              </div>
-              <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-md text-slate-800 text-[10px] font-semibold px-2 py-1 rounded-md shadow flex items-center gap-1">
-                <svg class="w-3 h-3 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
-                <span>View Full Photo</span>
-              </div>
-            </div>
-            <div class="p-5 flex-1 flex flex-col justify-between">
-              <div>
-                <h3 class="text-base font-bold text-navy-900 mb-2 leading-snug" data-i18n="equip12_title">Private Treatment Bays & Orthopedic Bolsters</h3>
-                <p class="text-xs text-slate-600 leading-relaxed" data-i18n="equip12_desc">
-                  Hygienic, private therapy stations equipped with orthopedic positioning bolsters, wedges, and sanitized treatment beds ensuring patient comfort and focused doctor attention.
-                </p>
-              </div>
-              <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-                <span class="text-[11px] font-medium text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">✓ Patient Comfort & Privacy</span>
-                <a href="#appointment" class="text-xs font-bold text-primary-600 hover:text-primary-800">Book Care &rarr;</a>
-              </div>
-            </div>
-          </div>
-
+          <a href="equipment.html" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-primary-600 hover:bg-primary-700 text-white font-bold text-xs sm:text-sm shadow-md hover:shadow-lg transition-all flex-shrink-0 group">
+            <span data-i18n="equip_teaser_btn">Explore All 12 Advanced Equipment & Technology →</span>
+          </a>
         </div>
 
       </div>
@@ -2663,6 +2413,7 @@
             <li><a href="#doctor" class="hover:text-primary-400 transition-colors" data-i18n="nav_doctor">Dr. Archit Joshi</a></li>
             <li><a href="#neuro" class="hover:text-primary-400 transition-colors" data-i18n="nav_neuro">Neuro Rehab</a></li>
             <li><a href="#ortho" class="hover:text-primary-400 transition-colors" data-i18n="nav_ortho">Ortho Care</a></li>
+            <li><a href="equipment.html" class="hover:text-primary-400 transition-colors" data-i18n="nav_equipment">Equipment</a></li>
             <li><a href="media.html" class="hover:text-primary-400 transition-colors font-bold text-primary-300" data-i18n="nav_media_gallery">Media & Videos</a></li>
             <li><a href="#faqs" class="hover:text-primary-400 transition-colors" data-i18n="nav_faqs">FAQs</a></li>
             <li><a href="#contact" class="hover:text-primary-400 transition-colors" data-i18n="nav_contact">Contact</a></li>
