@@ -348,7 +348,7 @@
           </a>
 
           <!-- Dedicated Media & Videos Page Link -->
-          <a href="media.html" class="nav-link-item text-primary-700 bg-primary-50 hover:bg-primary-100 px-2 py-1 rounded-lg border border-primary-200 font-bold transition-all" data-i18n="nav_media_gallery">
+          <a href="media.html" class="nav-link-item hover:text-primary-600 transition-colors px-1.5 py-1" data-i18n="nav_media_gallery">
             <span>Media & Videos</span>
           </a>
 
@@ -446,9 +446,9 @@
         </a>
 
         <!-- Dedicated Media & Videos Link -->
-        <a href="media.html" class="nav-link-item py-2 px-3 rounded-xl bg-primary-50 text-primary-700 border border-primary-200 flex items-center gap-2.5 font-bold" data-i18n="nav_media_gallery">
+        <a href="media.html" class="nav-link-item hover:text-primary-600 py-1.5 flex items-center gap-2.5" data-i18n="nav_media_gallery">
           <svg class="w-4 h-4 text-primary-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-          <span>Media & Videos (Demonstrations)</span>
+          <span>Media & Videos</span>
         </a>
 
         <a href="#faqs" class="nav-link-item hover:text-primary-600 py-1.5 flex items-center gap-2.5">
@@ -804,6 +804,23 @@
           </div>
           <a href="media.html" class="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-500 text-white font-bold text-xs sm:text-sm px-5 py-3 rounded-xl shadow-lg transition-all flex-shrink-0 touch-target-min">
             <span data-i18n="btn_explore_media">View Full Video & Photo Gallery</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
+        </div>
+
+        <!-- Equipment Hub Discovery Strip -->
+        <div class="mt-4 bg-gradient-to-r from-primary-950 via-navy-950 to-slate-900 text-white p-5 sm:p-6 rounded-3xl flex flex-col sm:flex-row items-center justify-between gap-4 border border-primary-500/20 shadow-xl">
+          <div class="flex items-center gap-3.5 text-left">
+            <div class="w-12 h-12 rounded-2xl bg-primary-600/30 text-primary-300 flex items-center justify-center flex-shrink-0 border border-primary-400/30">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </div>
+            <div>
+              <h4 class="text-sm sm:text-base font-bold text-white" data-i18n="equip_teaser_title">Advanced Care Modalities & Equipment</h4>
+              <p class="text-xs text-slate-300" data-i18n="equip_teaser_desc">Equipped with computerized spinal decompression, motorized CPM knee mobilization, class-IV laser therapy, and advanced electrotherapy in Alwar.</p>
+            </div>
+          </div>
+          <a href="equipment.html" class="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-500 text-white font-bold text-xs sm:text-sm px-5 py-3 rounded-xl shadow-lg transition-all flex-shrink-0 touch-target-min">
+            <span data-i18n="equip_teaser_btn">Explore All 12 Advanced Equipment & Technology →</span>
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
           </a>
         </div>
@@ -1409,112 +1426,6 @@
             </div>
 
           </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- 9. MODERN TECHNOLOGY & SPECIALIZED EQUIPMENT SECTION (TEASER HIGHLIGHT) -->
-    <section id="equipment" class="py-16 md:py-24 bg-white border-b border-slate-200">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <!-- Section Header -->
-        <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-primary-100 text-primary-800 text-xs font-bold uppercase tracking-wider mb-3">
-            <span data-i18n="equip_teaser_badge">Modern Equipment & Technology</span>
-          </div>
-          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-navy-900 tracking-tight" data-i18n="equip_teaser_title">
-            Advanced Care Modalities & Equipment
-          </h2>
-          <p class="text-sm sm:text-base text-slate-600 mt-3" data-i18n="equip_teaser_desc">
-            Equipped with computerized spinal decompression, motorized CPM knee mobilization, class-IV laser therapy, and advanced electrotherapy in Alwar.
-          </p>
-        </div>
-
-        <!-- 3 Highlight Modality Cards -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-
-          <!-- Highlight 1: Traction Bed -->
-          <div class="rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group">
-            <div class="relative h-56 bg-slate-100 overflow-hidden">
-              <img src="images/traction_bed_cervical_lumbar.jpeg" alt="Cervical and Lumbar Traction Bed Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
-              <div class="absolute top-3 left-3 bg-navy-900/80 backdrop-blur-md text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
-                <span data-i18n="equip1_badge">Spine Decompression</span>
-              </div>
-            </div>
-            <div class="p-5 flex-1 flex flex-col justify-between">
-              <div>
-                <h3 class="text-base font-bold text-navy-900 mb-2 leading-snug" data-i18n="equip_teaser_feat1_title">Cervical & Lumbar Traction Bed</h3>
-                <p class="text-xs text-slate-600 leading-relaxed" data-i18n="equip_teaser_feat1_sub">
-                  Computerized spinal decompression for sciatica & disc herniation
-                </p>
-              </div>
-              <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-                <span class="text-[11px] font-medium text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">✓ Slip Disc & Sciatica</span>
-                <a href="equipment.html" class="text-xs font-bold text-primary-600 hover:text-primary-800">Explore &rarr;</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Highlight 2: CPM Knee Machine -->
-          <div class="rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group">
-            <div class="relative h-56 bg-slate-100 overflow-hidden">
-              <img src="images/cpm_knee_machine.jpeg" alt="Continuous Passive Motion CPM Knee Machine Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
-              <div class="absolute top-3 left-3 bg-navy-900/80 backdrop-blur-md text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
-                <span data-i18n="equip2_badge">Post-Surgical Knee Rehab</span>
-              </div>
-            </div>
-            <div class="p-5 flex-1 flex flex-col justify-between">
-              <div>
-                <h3 class="text-base font-bold text-navy-900 mb-2 leading-snug" data-i18n="equip_teaser_feat2_title">Continuous Passive Motion (CPM)</h3>
-                <p class="text-xs text-slate-600 leading-relaxed" data-i18n="equip_teaser_feat2_sub">
-                  Automated knee joint mobilizer for post-TKR & ligament surgery
-                </p>
-              </div>
-              <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-                <span class="text-[11px] font-medium text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">✓ Post-TKR Recovery</span>
-                <a href="equipment.html" class="text-xs font-bold text-primary-600 hover:text-primary-800">Explore &rarr;</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Highlight 3: High-Intensity Laser & IFT -->
-          <div class="rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group">
-            <div class="relative h-56 bg-slate-100 overflow-hidden">
-              <img src="images/laser_therapy_unit.jpeg" alt="High Intensity Laser and IFT Therapy Alwar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
-              <div class="absolute top-3 left-3 bg-navy-900/80 backdrop-blur-md text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
-                <span data-i18n="equip3_badge">Deep Cellular Healing</span>
-              </div>
-            </div>
-            <div class="p-5 flex-1 flex flex-col justify-between">
-              <div>
-                <h3 class="text-base font-bold text-navy-900 mb-2 leading-snug" data-i18n="equip_teaser_feat3_title">High-Intensity Laser & IFT</h3>
-                <p class="text-xs text-slate-600 leading-relaxed" data-i18n="equip_teaser_feat3_sub">
-                  Cellular tissue regeneration & deep electrotherapy pain relief
-                </p>
-              </div>
-              <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-                <span class="text-[11px] font-medium text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">✓ Pain & Tissue Repair</span>
-                <a href="equipment.html" class="text-xs font-bold text-primary-600 hover:text-primary-800">Explore &rarr;</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Teaser CTA Banner linking to equipment.html -->
-        <div class="mt-10 p-6 sm:p-8 rounded-2xl bg-gradient-to-r from-primary-50 via-sky-50 to-primary-100/60 border border-primary-200/80 flex flex-col sm:flex-row items-center justify-between gap-5 text-center sm:text-left shadow-sm">
-          <div class="max-w-xl">
-            <h4 class="text-base sm:text-lg font-bold text-navy-900">
-              Want to see all 12 advanced rehabilitation modalities?
-            </h4>
-            <p class="text-xs sm:text-sm text-slate-600 mt-1">
-              Explore our complete range including IASTM myofascial blades, vacuum cupping, clinical muscle stimulators, and ultrasonic therapy.
-            </p>
-          </div>
-          <a href="equipment.html" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-primary-600 hover:bg-primary-700 text-white font-bold text-xs sm:text-sm shadow-md hover:shadow-lg transition-all flex-shrink-0 group">
-            <span data-i18n="equip_teaser_btn">Explore All 12 Advanced Equipment & Technology →</span>
-          </a>
         </div>
 
       </div>
