@@ -1,0 +1,52 @@
+name: Sync Google Reviews
+
+on:
+  schedule:
+    # Runs daily at 02:00 UTC (7:30 AM IST)
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync-reviews:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Puppeteer
+        run: npm install puppeteer
+
+      - name: Run Review Sync Script
+        run: node scripts/sync-reviews.js
+
+      - name: Commit and Push to main & gh-pages
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "Changes detected in review count. Committing to main..."
+            git add index.html js/translations.js
+            git commit -m "chore(reviews): auto-sync google review count [skip ci]"
+            git push origin main
+
+            echo "Syncing changes to gh-pages..."
+            git checkout gh-pages
+            git merge main -m "chore(reviews): sync updated review count to gh-pages [skip ci]"
+            git push origin gh-pages
+            git checkout main
+          else
+            echo "Review count is already up to date. No commits needed."
+          fi
