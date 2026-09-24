@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found (404) | Revital Physiotherapy Centre Alwar</title>
+  <meta name="robots" content="noindex, follow">
+  
+  <!-- Immediate Smart URL Normalizer for GitHub Pages -->
+  <script>
+    (function() {
+      var p = window.location.pathname;
+      // If trailing slash (e.g. /equipment/ or /media/)
+      if (p.length > 1 && p.endsWith('/')) {
+        var clean = p.slice(0, -1);
+        window.location.replace(clean + window.location.search + window.location.hash);
+        return;
+      }
+      // If someone arrived via legacy .html (e.g. /equipment.html)
+      if (p.endsWith('.html')) {
+        var clean = p.slice(0, -5);
+        if (clean === '/index') clean = '/';
+        window.location.replace(clean + window.location.search + window.location.hash);
+        return;
+      }
+    })();
+  </script>
+
+  <!-- Google Fonts & Tailwind -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              50: '#ecfeff',
+              100: '#cffafe',
+              200: '#a5f3fc',
+              300: '#67e8f9',
+              400: '#22d3ee',
+              500: '#06b6d4',
+              600: '#0891b2',
+              700: '#0e7490',
+              800: '#155e75',
+              900: '#164e63',
+              950: '#083344',
+            },
+            navy: {
+              900: '#0B1528',
+              950: '#060D1A',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="icon" type="image/jpeg" href="images/logo/logo.jpeg">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans min-h-screen flex flex-col justify-between antialiased selection:bg-primary-500 selection:text-white">
+
+  <!-- Header -->
+  <header class="bg-white/95 backdrop-blur-md border-b border-slate-100 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3 focus:outline-none">
+        <img src="images/logo/logo.jpeg" alt="Revital Physiotherapy Centre Logo" class="h-10 w-auto object-contain rounded-lg">
+        <div class="flex flex-col">
+          <span class="text-base sm:text-lg font-black tracking-tight text-navy-900 leading-none">REVITAL</span>
+          <span class="text-[10px] sm:text-xs font-semibold text-primary-700 tracking-tight leading-none mt-0.5">Ortho & Neuro Physiotherapy Centre</span>
+        </div>
+      </a>
+      <a href="/#appointment" class="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-700 text-white font-bold text-xs sm:text-sm px-4 py-2 rounded-xl transition-all shadow-sm">
+        <span>Book Consultation</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow flex items-center justify-center px-4 py-16">
+    <div class="max-w-lg w-full text-center space-y-6">
+      <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary-50 text-primary-600 mb-2 border border-primary-100 shadow-inner">
+        <span class="text-3xl font-black">404</span>
+      </div>
+      <h1 class="text-2xl sm:text-3xl font-black text-navy-900 tracking-tight">
+        Page Not Found
+      </h1>
+      <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+        The page you are looking for might have been moved or renamed. Please check the clean links below to access our treatments and services.
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+        <a href="/" class="flex items-center justify-center gap-2 px-4 py-3 bg-white border border-slate-200 hover:border-primary-500 hover:bg-primary-50/50 rounded-xl text-navy-900 font-bold text-sm shadow-sm transition-all group">
+          <svg class="w-4 h-4 text-primary-600 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+          <span>Home Page</span>
+        </a>
+        <a href="/equipment" class="flex items-center justify-center gap-2 px-4 py-3 bg-white border border-slate-200 hover:border-primary-500 hover:bg-primary-50/50 rounded-xl text-navy-900 font-bold text-sm shadow-sm transition-all group">
+          <svg class="w-4 h-4 text-primary-600 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+          <span>Modern Equipment</span>
+        </a>
+        <a href="/media" class="flex items-center justify-center gap-2 px-4 py-3 bg-white border border-slate-200 hover:border-primary-500 hover:bg-primary-50/50 rounded-xl text-navy-900 font-bold text-sm shadow-sm transition-all group">
+          <svg class="w-4 h-4 text-primary-600 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          <span>Media & Videos</span>
+        </a>
+        <a href="/#appointment" class="flex items-center justify-center gap-2 px-4 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-xl font-bold text-sm shadow-md transition-all">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          <span>Book Consultation</span>
+        </a>
+      </div>
+
+      <div class="pt-4 border-t border-slate-200 flex items-center justify-center gap-4 text-xs text-slate-500">
+        <span>Need urgent assistance?</span>
+        <a href="tel:7690913118" class="text-primary-700 font-bold hover:underline">+91 7690913118</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-navy-950 text-slate-400 text-xs border-t border-slate-800 py-6 text-center">
+    <div class="max-w-7xl mx-auto px-4">
+      <p>&copy; 2026 Revital Ortho & Neuro Physiotherapy Centre, Alwar. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

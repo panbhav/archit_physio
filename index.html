@@ -40,6 +40,18 @@
   <meta name="twitter:description" content="Expert Orthopedic & Neuro Physiotherapy in Alwar by Dr. Archit Joshi (MPT Neuro). Consultation ₹100. Call 7690913118.">
   <meta name="twitter:image" content="https://drarchitjoshi.com/images/archit_doct_phot.jpeg">
   
+  <!-- Clean URL normalizer (strips .html and /index.html from address bar) -->
+  <script>
+    (function() {
+      var p = window.location.pathname;
+      if (p.endsWith('.html') || p.endsWith('/index.html')) {
+        var clean = p.replace(/\/index\.html$/, '/').replace(/\.html$/, '');
+        if (!clean) clean = '/';
+        window.history.replaceState(null, '', clean + window.location.search + window.location.hash);
+      }
+    })();
+  </script>
+
   <!-- Tailwind CSS CDN with custom config -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -340,12 +352,12 @@
           </div>
 
           <!-- Modern Equipment -->
-          <a href="equipment.html" class="nav-link-item hover:text-primary-600 transition-colors px-1.5 py-1" data-i18n="nav_equipment">
+          <a href="/equipment" class="nav-link-item hover:text-primary-600 transition-colors px-1.5 py-1" data-i18n="nav_equipment">
             <span>Equipment</span>
           </a>
 
           <!-- Dedicated Media & Videos Page Link -->
-          <a href="media.html" class="nav-link-item hover:text-primary-600 transition-colors px-1.5 py-1" data-i18n="nav_media_gallery">
+          <a href="/media" class="nav-link-item hover:text-primary-600 transition-colors px-1.5 py-1" data-i18n="nav_media_gallery">
             <span>Media & Videos</span>
           </a>
 
@@ -430,13 +442,13 @@
         </div>
 
         <!-- Equipment -->
-        <a href="equipment.html" class="nav-link-item hover:text-primary-600 py-1.5 flex items-center gap-2.5">
+        <a href="/equipment" class="nav-link-item hover:text-primary-600 py-1.5 flex items-center gap-2.5">
           <svg class="w-4 h-4 text-primary-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
           <span data-i18n="nav_equipment">Modern Equipment</span>
         </a>
 
         <!-- Dedicated Media & Videos Link -->
-        <a href="media.html" class="nav-link-item hover:text-primary-600 py-1.5 flex items-center gap-2.5" data-i18n="nav_media_gallery">
+        <a href="/media" class="nav-link-item hover:text-primary-600 py-1.5 flex items-center gap-2.5" data-i18n="nav_media_gallery">
           <svg class="w-4 h-4 text-primary-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
           <span>Media & Videos</span>
         </a>
@@ -859,7 +871,7 @@
               <p class="text-xs text-slate-300">Explore complete demonstrations of Deep Tissue Laser, ESWT Shockwave, Stroke Gait Rehabilitation, and interactive clinic gallery.</p>
             </div>
           </div>
-          <a href="media.html" class="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-500 text-white font-bold text-xs sm:text-sm px-5 py-3 rounded-xl shadow-lg transition-all flex-shrink-0 touch-target-min">
+          <a href="/media" class="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-500 text-white font-bold text-xs sm:text-sm px-5 py-3 rounded-xl shadow-lg transition-all flex-shrink-0 touch-target-min">
             <span data-i18n="btn_explore_media">View Full Video & Photo Gallery</span>
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
           </a>
@@ -876,7 +888,7 @@
               <p class="text-xs text-slate-300" data-i18n="equip_teaser_desc">Equipped with computerized spinal decompression, motorized CPM knee mobilization, class-IV laser therapy, and advanced electrotherapy in Alwar.</p>
             </div>
           </div>
-          <a href="equipment.html" class="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-500 text-white font-bold text-xs sm:text-sm px-5 py-3 rounded-xl shadow-lg transition-all flex-shrink-0 touch-target-min">
+          <a href="/equipment" class="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-500 text-white font-bold text-xs sm:text-sm px-5 py-3 rounded-xl shadow-lg transition-all flex-shrink-0 touch-target-min">
             <span data-i18n="equip_teaser_btn">Explore All 12 Advanced Equipment & Technology →</span>
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
           </a>
@@ -2279,8 +2291,8 @@
             <li><a href="#about" class="hover:text-primary-400 transition-colors" data-i18n="nav_about">About Us</a></li>
             <li><a href="#neuro" class="hover:text-primary-400 transition-colors" data-i18n="nav_neuro">Neuro Rehab</a></li>
             <li><a href="#ortho" class="hover:text-primary-400 transition-colors" data-i18n="nav_ortho">Ortho Care</a></li>
-            <li><a href="equipment.html" class="hover:text-primary-400 transition-colors" data-i18n="nav_equipment">Equipment</a></li>
-            <li><a href="media.html" class="hover:text-primary-400 transition-colors font-bold text-primary-300" data-i18n="nav_media_gallery">Media & Videos</a></li>
+            <li><a href="/equipment" class="hover:text-primary-400 transition-colors" data-i18n="nav_equipment">Equipment</a></li>
+            <li><a href="/media" class="hover:text-primary-400 transition-colors font-bold text-primary-300" data-i18n="nav_media_gallery">Media & Videos</a></li>
             <li><a href="#faqs" class="hover:text-primary-400 transition-colors" data-i18n="nav_faqs">FAQs</a></li>
             <li><a href="#contact" class="hover:text-primary-400 transition-colors" data-i18n="nav_contact">Contact</a></li>
           </ul>
