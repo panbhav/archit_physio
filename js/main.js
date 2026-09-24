@@ -156,12 +156,82 @@
     closeMobileMenuBtn?.addEventListener('click', () => toggleMobileMenu(false));
     mobileMenuBackdrop?.addEventListener('click', () => toggleMobileMenu(false));
 
-    // Close menu when clicking nav links
-    navLinks.forEach(link => {
-      link.addEventListener('click', () => {
+    // Smooth Scroll with Header Offset and Address Bar URL Cleaning
+    document.addEventListener('click', (e) => {
+      const link = e.target.closest('a');
+      if (!link) return;
+      const href = link.getAttribute('href');
+      if (!href) return;
+
+      const isHomePage = window.location.pathname === '/' || window.location.pathname.endsWith('index.html');
+
+      // 1. Home / Logo links: smooth scroll to top without showing #home
+      if (href === '/' || href === '#home' || href === '/#home') {
+        if (isHomePage) {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+          if (window.location.hash) {
+            history.replaceState(null, document.title, window.location.pathname + window.location.search);
+          }
+          toggleMobileMenu(false);
+          return;
+        }
+      }
+
+      // 2. In-page section anchors (#about, #conditions, #appointment, etc.)
+      if (href.startsWith('#') && href.length > 1) {
+        const targetId = href.substring(1);
+        const targetEl = document.getElementById(targetId);
+        if (targetEl) {
+          e.preventDefault();
+          const headerEl = document.getElementById('mainHeader') || document.querySelector('header');
+          const headerOffset = headerEl ? headerEl.offsetHeight + 12 : 80;
+          const targetTop = targetEl.getBoundingClientRect().top + window.pageYOffset - headerOffset;
+
+          window.scrollTo({
+            top: Math.max(0, targetTop),
+            behavior: 'smooth'
+          });
+
+          // Keep address bar pristine: wipe #hash from address bar
+          if (window.history && window.history.replaceState) {
+            window.history.replaceState(null, document.title, window.location.pathname + window.location.search);
+          }
+
+          toggleMobileMenu(false);
+        }
+      } else if (link.classList.contains('nav-link-item')) {
         toggleMobileMenu(false);
-      });
+      }
     });
+
+    // Handle initial page load with hash (e.g. arrived via /#about or bookmark)
+    if (window.location.hash) {
+      const hash = window.location.hash.substring(1);
+      if (hash === 'home' || !hash) {
+        if (window.history && window.history.replaceState) {
+          window.history.replaceState(null, document.title, window.location.pathname + window.location.search);
+        }
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        const targetEl = document.getElementById(hash);
+        if (targetEl) {
+          setTimeout(() => {
+            const headerEl = document.getElementById('mainHeader') || document.querySelector('header');
+            const headerOffset = headerEl ? headerEl.offsetHeight + 12 : 80;
+            const targetTop = targetEl.getBoundingClientRect().top + window.pageYOffset - headerOffset;
+            window.scrollTo({
+              top: Math.max(0, targetTop),
+              behavior: 'smooth'
+            });
+            // Clean hash from address bar
+            if (window.history && window.history.replaceState) {
+              window.history.replaceState(null, document.title, window.location.pathname + window.location.search);
+            }
+          }, 80);
+        }
+      }
+    }
   }
 
   // 4. FAQ Accordion
@@ -711,7 +781,7 @@
     const sections = document.querySelectorAll('section[id]');
     if (!sections.length || !('IntersectionObserver' in window)) return;
 
-    const desktopNavLinks = document.querySelectorAll('header nav a[href^="#"]');
+    const desktopNavLinks = document.querySelectorAll('header nav a');
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -719,10 +789,12 @@
           const id = entry.target.getAttribute('id');
           desktopNavLinks.forEach(link => {
             const href = link.getAttribute('href');
-            if (href === `#${id}`) {
+            const isMatch = (id === 'home' && (href === '/' || href === '#home' || href === '/#home')) ||
+                            (href === `#${id}` || href === `/#${id}`);
+            if (isMatch) {
               link.classList.add('text-primary-600', 'font-extrabold');
               link.classList.remove('text-slate-700');
-            } else if (!link.closest('.group')) {
+            } else if (!link.closest('.group') && !link.classList.contains('lang-toggle-btn')) {
               link.classList.remove('text-primary-600', 'font-extrabold');
               link.classList.add('text-slate-700');
             }

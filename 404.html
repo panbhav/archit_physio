@@ -6,21 +6,46 @@
   <title>Page Not Found (404) | Revital Physiotherapy Centre Alwar</title>
   <meta name="robots" content="noindex, follow">
   
-  <!-- Immediate Smart URL Normalizer for GitHub Pages -->
+  <!-- Immediate Smart URL Normalizer & Section Router for GitHub Pages -->
   <script>
     (function() {
-      var p = window.location.pathname;
-      // If trailing slash (e.g. /equipment/ or /media/)
-      if (p.length > 1 && p.endsWith('/')) {
-        var clean = p.slice(0, -1);
+      var p = window.location.pathname.replace(/\/+$/, ''); // strip trailing slash
+      
+      // 1. Direct section aliases (e.g. /about, /contact, /appointment)
+      var sectionMap = {
+        '/about': 'about',
+        '/conditions': 'conditions',
+        '/treatments': 'conditions',
+        '/appointment': 'appointment',
+        '/contact': 'contact',
+        '/faqs': 'faqs',
+        '/faq': 'faqs',
+        '/neuro': 'neuro',
+        '/ortho': 'ortho',
+        '/services': 'services'
+      };
+      if (sectionMap[p]) {
+        window.location.replace('/#' + sectionMap[p]);
+        return;
+      }
+
+      // 2. Trailing slash on root pages (e.g. /equipment/ or /media/)
+      var raw = window.location.pathname;
+      if (raw.length > 1 && raw.endsWith('/')) {
+        var clean = raw.slice(0, -1);
         window.location.replace(clean + window.location.search + window.location.hash);
         return;
       }
-      // If someone arrived via legacy .html (e.g. /equipment.html)
-      if (p.endsWith('.html')) {
-        var clean = p.slice(0, -5);
-        if (clean === '/index') clean = '/';
-        window.location.replace(clean + window.location.search + window.location.hash);
+
+      // 3. Legacy .html URLs
+      if (raw.endsWith('.html')) {
+        var cleanHtml = raw.slice(0, -5);
+        if (cleanHtml === '/index') cleanHtml = '/';
+        if (sectionMap[cleanHtml]) {
+          window.location.replace('/#' + sectionMap[cleanHtml]);
+          return;
+        }
+        window.location.replace(cleanHtml + window.location.search + window.location.hash);
         return;
       }
     })();

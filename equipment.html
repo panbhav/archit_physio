@@ -18,14 +18,21 @@
   <meta property="og:url" content="https://drarchitjoshi.com/equipment">
   <meta property="og:image" content="https://drarchitjoshi.com/images/traction_bed_cervical_lumbar.jpeg">
 
-  <!-- Clean URL normalizer (strips .html and /index.html from address bar) -->
+  <!-- Clean URL normalizer (strips .html, /index.html and #home from address bar) -->
   <script>
     (function() {
       var p = window.location.pathname;
+      var clean = p;
       if (p.endsWith('.html') || p.endsWith('/index.html')) {
-        var clean = p.replace(/\/index\.html$/, '/').replace(/\.html$/, '');
+        clean = p.replace(/\/index\.html$/, '/').replace(/\.html$/, '');
         if (!clean) clean = '/';
-        window.history.replaceState(null, '', clean + window.location.search + window.location.hash);
+      }
+      var h = window.location.hash;
+      if (h === '#home' || h === '#') {
+        h = '';
+      }
+      if (clean !== p || (window.location.hash && !h)) {
+        window.history.replaceState(null, '', clean + window.location.search + h);
       }
     })();
   </script>
@@ -123,14 +130,14 @@
       <div class="flex items-center justify-between gap-2 lg:gap-3 xl:gap-5">
         
         <!-- Brand Logo Lockup -->
-        <a href="/#home" class="flex flex-col items-start group focus:outline-none flex-shrink-0">
+        <a href="/" class="flex flex-col items-start group focus:outline-none flex-shrink-0">
           <img src="images/logo/logo.jpeg" alt="Revital Physiotherapy Centre Logo" class="h-7 sm:h-8 lg:h-8 xl:h-9 w-auto object-contain">
           <span class="text-[8px] sm:text-[9px] lg:text-[9px] xl:text-[10px] font-bold text-primary-700 tracking-tight leading-none mt-0.5 group-hover:text-primary-800 transition-colors" data-i18n="brand_sub">Ortho & Neuro Physiotherapy Centre</span>
         </a>
 
         <!-- Desktop Navigation Links -->
         <nav class="hidden lg:flex items-center gap-1.5 xl:gap-3 2xl:gap-5 text-xs xl:text-[13px] font-semibold text-slate-700 whitespace-nowrap">
-          <a href="/#home" class="nav-link-item hover:text-primary-600 transition-colors px-1.5 py-1" data-i18n="nav_home">
+          <a href="/" class="nav-link-item hover:text-primary-600 transition-colors px-1.5 py-1" data-i18n="nav_home">
             <span>Home</span>
           </a>
           
@@ -190,7 +197,7 @@
   <aside id="mobileMenuDrawer" aria-label="Mobile Navigation Menu" class="fixed top-0 right-0 bottom-0 w-80 max-w-[85vw] bg-white z-50 shadow-2xl p-6 flex flex-col justify-between translate-x-full transition-transform duration-300 overflow-y-auto">
     <div>
       <div class="flex items-center justify-between pb-4 border-b border-slate-200 mb-5">
-        <a href="/#home" class="flex flex-col items-start focus:outline-none">
+        <a href="/" class="flex flex-col items-start focus:outline-none">
           <img src="images/logo/logo.jpeg" alt="Revital Ortho & Neuro Centre" class="h-8 w-auto object-contain">
           <span class="text-[9px] font-bold text-primary-700 tracking-tight leading-none mt-1" data-i18n="brand_sub">Ortho & Neuro Physiotherapy Centre</span>
         </a>
@@ -200,7 +207,7 @@
       </div>
 
       <nav class="flex flex-col space-y-2 text-sm font-semibold text-slate-700">
-        <a href="/#home" class="nav-link-item hover:text-primary-600 py-1.5 flex items-center gap-2.5">
+        <a href="/" class="nav-link-item hover:text-primary-600 py-1.5 flex items-center gap-2.5">
           <svg class="w-4 h-4 text-primary-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
           <span data-i18n="nav_home">Home</span>
         </a>
@@ -247,7 +254,7 @@
         
         <!-- Breadcrumb navigation -->
         <nav class="flex items-center gap-2 text-xs font-semibold text-slate-500 mb-4">
-          <a href="/#home" class="hover:text-primary-600 transition-colors">Home</a>
+          <a href="/" class="hover:text-primary-600 transition-colors">Home</a>
           <span>/</span>
           <span class="text-primary-700" data-i18n="nav_equipment">Equipment</span>
         </nav>
@@ -269,7 +276,7 @@
           <div class="flex flex-wrap items-center gap-3 flex-shrink-0">
             <a href="/#appointment" class="inline-flex items-center gap-2 px-4 sm:px-5 py-2.5 rounded-xl bg-primary-600 hover:bg-primary-700 text-white font-bold text-xs sm:text-sm shadow-md hover:shadow-lg transition-all">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-              <span data-i18n="btn_book_appointment">Book Consultation (₹100)</span>
+              <span data-i18n="btn_book_appointment">Book Consultation</span>
             </a>
             <a href="tel:7690913118" class="inline-flex items-center gap-2 px-3.5 sm:px-4 py-2.5 rounded-xl bg-white hover:bg-slate-100 text-navy-900 font-bold text-xs sm:text-sm border border-slate-200 shadow-sm transition-all">
               <svg class="w-4 h-4 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
@@ -702,7 +709,7 @@
         <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
           <a href="/#appointment" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary-600 hover:bg-primary-500 text-white font-bold text-sm shadow-lg hover:shadow-xl transition-all">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            <span data-i18n="btn_book_appointment">Book Consultation (₹100)</span>
+            <span data-i18n="btn_book_appointment">Book Consultation</span>
           </a>
           <a href="tel:7690913118" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-sm border border-white/20 backdrop-blur-sm transition-all">
             <svg class="w-4 h-4 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
@@ -735,7 +742,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         
         <div class="space-y-4">
-          <a href="/#home" class="flex flex-col items-start focus:outline-none">
+          <a href="/" class="flex flex-col items-start focus:outline-none">
             <img src="images/logo/logo.jpeg" alt="Revital Logo" class="h-8 w-auto object-contain brightness-110">
             <span class="text-[10px] font-bold text-primary-400 tracking-tight leading-none mt-1">Ortho & Neuro Physiotherapy Centre</span>
           </a>
@@ -747,7 +754,7 @@
         <div class="space-y-3">
           <h4 class="text-sm font-bold text-white uppercase tracking-wider" data-i18n="footer_quick_links">Quick Links</h4>
           <ul class="space-y-2">
-            <li><a href="/#home" class="hover:text-primary-400 transition-colors" data-i18n="nav_home">Home</a></li>
+            <li><a href="/" class="hover:text-primary-400 transition-colors" data-i18n="nav_home">Home</a></li>
             <li><a href="/#about" class="hover:text-primary-400 transition-colors" data-i18n="nav_about">About Us</a></li>
             <li><a href="/#conditions" class="hover:text-primary-400 transition-colors" data-i18n="nav_treatments_services">Treatments</a></li>
             <li><a href="/equipment" class="text-primary-400 font-semibold" data-i18n="nav_equipment">Equipment</a></li>
