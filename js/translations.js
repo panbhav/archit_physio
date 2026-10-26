@@ -496,7 +496,7 @@ const translations = {
     footer_disclaimer_title: "Medical Disclaimer",
     footer_disclaimer_text: "The information provided on this website is for educational and general informational purposes only and does not constitute formal medical diagnosis or guaranteed treatment outcomes. Individual results may vary based on condition severity and personal compliance. Please consult a qualified physiotherapist or physician for personalized advice.",
     footer_copyright: "© 2026 Revital Ortho & Neuro Physiotherapy Centre. All rights reserved.",
-    dev_credit: "Website & Software Services provided by"
+    dev_credit: "Website Designed & Developed by"
   },
 
   hi: {
